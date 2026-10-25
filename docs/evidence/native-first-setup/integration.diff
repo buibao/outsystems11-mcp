@@ -1,0 +1,499 @@
+--- before/AGENTS.md
++++ after/AGENTS.md
+@@ -45,15 +45,17 @@
+ 
+ ## OutSystems UI and CSS reuse
+ 
+-- Before UI work, inspect the application theme/base theme, existing
+-  project components, resident OutSystems UI patterns, utility classes
+-  and CSS variables. Use the actual installed version.
++- Follow the [native-first standard](docs/standards/O11_UI_NATIVE_FIRST.md). Before design or implementation, inspect the actual Screen/UI Flow theme/base chain and layout, installed native widgets/patterns, public actions, utility classes and CSS tokens; module defaults alone are insufficient.
+ 
+ - Apply this priority:
+-  1. Existing project components and patterns.
+-  2. OutSystems UI/native widgets with their required base classes.
+-  3. Existing utility classes and theme tokens.
+-  4. Scoped custom CSS for remaining design gaps.
++  1. Accepted, suitable project components retaining native foundations.
++  2. Corresponding native widgets or OutSystems UI patterns.
++  3. Supported parameters/public actions, existing classes and tokens.
++  4. Minimal custom extensions for evidenced, accepted design gaps.
++  5. New owned tokens only for missing accepted semantic/design values.
++
++- Buttons styled as tabs/accordion do not reuse Tabs/Accordion patterns. Record missing dependencies; never clone components or refresh references to bypass a dependency boundary.
++- New UI or material redesign requires the installed Sites skill, reviewable states, O11 component mapping, token/class map and justified custom exceptions, with web simulations labeled honestly. Use one versioned [UI contract](templates/UI_DESIGN_CONTRACT.template.md) as the handoff body. Obtain actual user acceptance before dependent O11 writes; reuse acceptance within unchanged scope. Small maintenance may reuse a valid accepted design/foundation. Read-only discovery and independent documentation continue.
+ 
+ - Preserve framework base classes. Custom modifier classes may extend
+   controls but must not replace them with a parallel button, input,
+@@ -96,15 +98,14 @@
+ - Report the spec version, actual changed objects, evidence, achieved stage, limitations, and precise remaining user or agent actions. Do not claim a higher completion stage than the evidence supports.
+ 
+ 
+-## Reusable VibeWorkflow integration
++## Reusable project workflow
+ 
+ The existing O11 project rules above remain in force. Setup observations do not select a future business target. For new tasks use the workflow below. Existing docs/specs and docs/execution records remain historical; do not restore removed features or treat them as active work. New workflow tasks use tasks/<task-id>/ and link their report from docs/execution when required. Existing O11 specs retain their selected format. Workflow G0 is intake; O11 protocol G0 is target/baseline. Record the namespace when citing gates; both relevant conditions apply.
+ 
+-# Reusable project workflow
+ 
+ Resolve paths from this business workspace. Read `project.json`, the explicitly selected task's `task-state.json`, `brief.md`, `spec.md` and `report.md`, then `workflow/PROTOCOL.md`. Read only applicable platform adapters and references. Missing task files may be drafted within a documentation task; never implement an unfilled template.
+ 
+-The primary agent is the Coordinator. Use applicable custom agents for substantive staged work: requirements, design, architecture, planning, implementation preparation, review and QA. Consult `workflow/ROLES.md`. Delegate independent bounded work; sequence dependent stages. For small changes collapse unnecessary roles, keeping independent review when material. Do not spawn all roles or delegate recursively by default. Use the available runtime's real agent controls; do not invent commands/tools or pretend role-play is an independently executed subagent.
++The primary Coordinator owns coordination, planning and implementation. Default to one independent reviewer at meaningful milestones; other roles are optional for concrete independent outputs, not a seven-role relay. Follow [roles](workflow/ROLES.md) and [lean UI workflow](docs/standards/LEAN_UI_WORKFLOW.md). Do not delegate recursively by default. Use the available runtime's real agent controls; do not invent commands/tools or pretend role-play is an independently executed subagent.
+ 
+ Every assignment names project/task/revisions, input snapshots, outcome, permitted file paths/operations and expected result contract. Follow `workflow/CONTRACTS.md`. Workers return findings and evidence; the Coordinator reconciles them and owns canonical task state/spec/report. Concurrent workers use disjoint outputs or return results without editing files.
+ 
+@@ -121,7 +122,7 @@
+ 
+ Before material O11 changes establish an appropriate recoverable checkpoint, inspect affected elements and compare validation with baseline. Read back bounded changes. Record pending, accepted-live, published and runtime evidence separately. After interrupted/unknown writes inspect actual state before retrying. Do not discard/reset/refresh/publish as a probe.
+ 
+-For UI, settle the Visual Contract and platform component mapping before broad implementation. Keep native semantics/behavior and scoped custom CSS where needed. Do not equate fewer custom classes with design fidelity. For business features enforce authorization on the server; prototype role switches are presentation only.
++For UI, apply the accepted contract and representative-slice evidence conditions in the existing [protocol](workflow/PROTOCOL.md). Keep native semantics/behavior and scoped custom CSS where needed. Do not equate fewer custom classes with design fidelity. For business features enforce authorization on the server; prototype role switches are presentation only.
+ 
+ Report actual checks as PASS/FAIL/NOT_RUN/BLOCKED/N/A. A PASS requires evidence at the required layer/version. No fabricated logs or scores. Do not downgrade requirements or CompletionTarget to claim DONE. Finish using `templates/EXECUTION_REPORT.template.md` and the selected target's required checks.
+ 
+--- before/README.md
++++ after/README.md
+@@ -1,6 +1,6 @@
+ # Vibe Workflow — Sites + O11, v1.0
+ 
+-Workspace integration: installed locally on 2026-10-23. See [setup report](docs/execution/VIBE-SETUP.report.md) and [first-task guide](docs/VIBEWORKFLOW_QUICKSTART.md) for actual discovery, read-only preflight and remaining limits. The generic kit text below is not an end-to-end verification claim. The current `project.json` is an unbound DRAFT.
++Workspace integration: installed locally on 2026-10-23. See [setup report](docs/execution/VIBE-SETUP.report.md) and [first-task guide](docs/VIBEWORKFLOW_QUICKSTART.md) for actual discovery, read-only preflight and remaining limits. The generic kit text below is not an end-to-end verification claim. That setup-time binding is historical; read [project.json](project.json) and the selected task for current identity. Native-first v1.1 integration is documented in the [new setup report](docs/execution/NATIVE-FIRST-SETUP.report.md).
+ 
+ Bộ khởi đầu cho quy trình multi-agent dùng lại giữa nhiều project. Một workflow core, hai adapter thực thi và một profile riêng cho mỗi project. Đây là template đã được kiểm tra cấu trúc, chưa phải một hệ thống đã cài/chạy end-to-end trên máy Windows của bạn.
+ 
+@@ -33,7 +33,7 @@
+ 
+ ## Phân vai và concurrency
+ 
+-Primary agent là Coordinator. Bảy role có sẵn: analyst, designer, architect, planner, builder, reviewer, qa. Có thể dùng theo thứ tự; không cần cả bảy cho một sửa đổi nhỏ. Bắt đầu với tối đa hai child agent hoạt động đồng thời là lựa chọn của bộ này, không phải giới hạn sản phẩm.
++Primary coordinates, plans and implements, with one independent reviewer at meaningful milestones. Other roles are optional for concrete independent outputs, not a seven-role relay. See [lean workflow](docs/standards/LEAN_UI_WORKFLOW.md) and [native-first](docs/standards/O11_UI_NATIVE_FIRST.md).
+ 
+ O11 operator là primary local session: một operator/module, giữ token trong memory và thực hiện mọi O11 MCP calls. Builder chuẩn bị mutation/code và checklist từ snapshot; reviewer/QA nhận evidence có nhãn pending/live/published. Với Sites, primary Work conversation sở hữu checkout, Site identity, native calls và publication; worker được giao source/assets/review có phạm vi.
+ 
+--- before/TEMPLATES.md
++++ after/TEMPLATES.md
+@@ -5,7 +5,7 @@
+ reason. For a complex UI/data/integration task expand the same contract.
+ 
+ Always: brief.md, spec.md, task-state.json, report.md.
+-HYBRID: design-handoff.md before O11 translation, o11-plan.md before material implementation.
++New/material O11 UI: one [UI design contract](templates/UI_DESIGN_CONTRACT.template.md) is the handoff body before dependent O11 writes; link it from the spec and optional transport envelope. Use a focused [foundation catalog](templates/UI_FOUNDATION.template.json). Keep the bounded plan in the spec or a linked O11 plan, without copying mapping/state/token tables. Small maintenance may reuse current accepted design/foundation. See [design start](prompts/UI_DESIGN_START.md) and [UI apply](prompts/O11_UI_APPLY.md).
+ Worker assignments/results may be session records; save material outputs under
+ worker-results/ with project/task/revision. Keep actual tool evidence and required
+ assets under evidence/ or an approved durable external locator.
+--- before/adapters\O11.md
++++ after/adapters\O11.md
+@@ -29,3 +29,5 @@
+ After timeout/interruption, inspect state before retrying; do not replay merge/mutation blindly. Session lifecycle follows actual tool schemas and revision-specific observed behavior. Keep local compatibility notes separate from upstream. Temporary snapshots are not backups; model restore does not undo data/external effects.
+ 
+ When moving between infrastructures, verify supported transfer/provenance/IPP and compatibility as part of that task. Prefer development in the intended approved infrastructure. Work's hosted environment cannot be assumed to reach the Service Studio loopback endpoint on the user's Windows machine; use a versioned artifact handoff unless a separately approved bridge is actually available.
++
++UI work follows the [native-first standard](../docs/standards/O11_UI_NATIVE_FIRST.md) and [lean workflow](../docs/standards/LEAN_UI_WORKFLOW.md). Before design inspect actual Screen/UI Flow theme/base chain and layout, resident widget/pattern signatures and public actions, classes/tokens. Before dependent UI writes require accepted contract revision and resolved mapping. Button/CSS imitations do not establish pattern reuse; missing dependencies require an explicit gap/decision, not cloning or automatic refresh. Primary plans and implements; builder delegation is optional. Representative runtime evidence before broad expansion follows existing Workflow G2 and authorized O11 G4/G5, without overriding CompletionTarget.
+--- before/adapters\SITES.md
++++ after/adapters\SITES.md
+@@ -10,4 +10,6 @@
+ 
+ Follow actual preview/browser capabilities and the skill's selected preview guidance. An unavailable preview/check is NOT_RUN/BLOCKED; do not fabricate captures or install an unsupported alternate browser path.
+ 
+-Export `templates/DESIGN_HANDOFF.template.md` with selected source/reference version, state/component contracts, assets and AC. Treat web implementation as a design/behavior reference for O11, not importable OML. The receiving operator does independent O11 discovery and verification.
++Use the [UI contract](../templates/UI_DESIGN_CONTRACT.template.md) as the single UI handoff body, with the [handoff envelope](../templates/DESIGN_HANDOFF.template.md) only for transport/identity. Include selected source/reference version, state/component contracts, assets and AC. Treat web implementation as a design/behavior reference for O11, not importable OML. The receiving operator does independent O11 discovery and verification.
++
++For new/material O11 UI, follow the [native-first standard](../docs/standards/O11_UI_NATIVE_FIRST.md): the installed Sites skill is required. Provide review states plus a separate O11 widget/pattern/public-action map, token/class map and evidenced custom exceptions. Label web simulations versus actual O11 components; a Site cannot verify native O11 behavior. Record user acceptance of the exact contract/version before dependent O11 writes; reuse same-scope acceptance. Small maintenance may reuse current design/foundation. This setup authorizes no handbook/prototype operation.
+--- before/docs\engineering-standards.md
++++ after/docs\engineering-standards.md
+@@ -47,8 +47,8 @@
+ 
+ ## OutSystems UI and CSS reuse
+ 
+-- Before UI work, inspect the effective application theme/base theme, resident OutSystems UI patterns, existing project components, actual utility classes and CSS variables. Do not guess class names from another framework or an unrelated O11 version.
+-- Apply this order: existing project component/pattern; supported OutSystems UI/native widget and its normal base classes; existing utility classes/theme tokens; narrowly scoped feature CSS for the remaining gap.
++- Apply the mandatory [native-first standard](standards/O11_UI_NATIVE_FIRST.md), including actual Screen/UI Flow theme/layout and installed public actions before design. The [lean workflow](standards/LEAN_UI_WORKFLOW.md) defines Sites acceptance and representative evidence within existing gates.
++- Use the native-first selection ladder: accepted suitable native-based project component; corresponding native widget/OSUI pattern; supported parameters/public actions/classes/tokens; minimal evidenced custom gap; new owned token only for a missing accepted semantic value. Button imitations are not Tabs/Accordion reuse; missing dependencies do not authorize cloning or refresh.
+ - Preserve required base classes. A custom semantic/modifier class may extend a framework control, but must not replace its foundation with a duplicate button, input, tab, badge or dialog framework.
+ - Prefer existing widget/pattern parameters over CSS overrides when they express the required behavior or appearance. Do not substitute a visual-only control for a functional accessible pattern.
+ - Use actual theme tokens for colors, typography, spacing and borders when equivalent tokens exist. Inherit the application font. Do not introduce a second fixed font/color/spacing scale merely to match a screenshot.
+--- before/docs\setup-status.md
++++ after/docs\setup-status.md
+@@ -1,4 +1,8 @@
+ # Pre-coding setup status
++
++## Native-first v1.1 documentation integration - 2026-10-25
++
++Guidance installed; local check results and remaining live dependencies are recorded in the [setup report](execution/NATIVE-FIRST-SETUP.report.md). No O11 or Sites operation is part of this setup. Current WHT profile/UI-001 remain unchanged; older setup bindings below are historical.
+ 
+ ## VibeWorkflow SETUP_ONLY follow-up — 2026-10-23
+ 
+--- before/docs\verification.md
++++ after/docs\verification.md
+@@ -59,3 +59,7 @@
+ ## Separate result fields
+ 
+ Report `staged`, `read-back verified`, `validation compared`, `merged`, `published` and `runtime tested` independently. Bootstrap leaves write/merge/publish/runtime checks NOT RUN. A disposable-module smoke edit needs its own explicit request.
++
++## Native-first setup and future UI checks
++
++See the [v1.1 setup report](execution/NATIVE-FIRST-SETUP.report.md). For future UI checks, verify actual native widget/pattern instances and signatures against the accepted [UI contract](../templates/UI_DESIGN_CONTRACT.template.md), then separately check identified runtime theme/font/tokens, served CSS, interaction/focus/disabled/responsive and required access cases. Use existing gates and a representative slice before dependent broad expansion. Metadata, class counts and fixture equality cannot prove native usage or visual/runtime behavior. Reuse evidence only while its foundation and affected contracts remain current.
+--- before/docs\VIBEWORKFLOW_QUICKSTART.md
++++ after/docs\VIBEWORKFLOW_QUICKSTART.md
+@@ -1,49 +1,31 @@
+-# Bắt đầu project/task sau setup
++# Start a project/task after setup
+ 
+-Setup v1.0 đã được cài và kiểm chứng trên Codex local. Xem [report](execution/VIBE-SETUP.report.md) và [evidence](evidence/vibeworkflow-setup/). Đây chưa phải kiểm chứng một feature đi xuyên Work, Sites và O11.
++Historical v1.0 installation evidence is in the [report](execution/VIBE-SETUP.report.md); current native-first integration and limitations are in the [v1.1 setup report](execution/NATIVE-FIRST-SETUP.report.md). Setup evidence does not verify a feature end to end.
+ 
+-## 1. Chọn project trong Codex local
++## Select the project and task
+ 
+-Mở session mới từ business workspace:
++Start from the business workspace and read [AGENTS](../AGENTS.md), [current profile](../project.json), and the explicitly selected task. Preserve an existing binding; new project values stay UNKNOWN/null until confirmed. Do not inherit a historical target. Read [protocol](../workflow/PROTOCOL.md), [roles](../workflow/ROLES.md) and [contracts](../workflow/CONTRACTS.md). Existing WHT/UI-001 is not rewritten by setup.
+ 
+-```powershell
+-codex -C D:\OutsystemsAIAgent
+-```
++Primary coordinates, plans and implements. One independent reviewer at meaningful milestones is the default; other roles need concrete independent outputs. Use real available agent controls; do not infer discovery from TOML alone. No Service Studio restart, duplicate server or settings change is required by this guidance.
+ 
+-Phiên CLI mới đã kiểm chứng discovery của analyst/reviewer sau khi nạp config. Chat đang chạy trước thay đổi vẫn có thể giữ catalog cũ; không cần restart Service Studio. Không đăng ký lại role hoặc thêm MCP server.
++## Design before dependent O11 UI writes
+ 
+-Điền `project.json` với project ID/tên thật, context, route mặc định, design system và nơi lưu artifact đã chọn. Giữ DRAFT và UNKNOWN/null cho phần chưa xác nhận; chỉ chuyển ACTIVE khi metadata tương ứng đủ. Không lấy target từ lịch sử feature. Target O11 phải được operator đọc và xác nhận cho project trước thao tác phụ thuộc. Setup đã quan sát một module nhưng không gán nó vào profile.
++Use [UI design start](../prompts/UI_DESIGN_START.md). Primary local performs focused read-only O11 foundation discovery; Work cannot assume access to local Windows MCP. New/material O11 UI requires the installed Sites skill, review states, native component/public-action mapping, token/class map, justified custom exceptions and honest web simulation labels. Sites preview/save/deploy operations need their actual task scope.
+ 
+-## 2. Làm yêu cầu/design tại Work
++Use one [UI contract](../templates/UI_DESIGN_CONTRACT.template.md) as handoff body. Record actual user acceptance of its revision; reuse valid same-scope acceptance. Freeze and transfer through an accessible approved ZIP/repo, without credentials. Local receiver acknowledges identity/revision/access and native feasibility before dependent implementation. A web source/URL is not OML or O11 runtime proof.
+ 
+-Với route HYBRID_SITES_O11 hoặc SITES_ONLY, đưa bản sao profile cùng workflow/ROLES.md, workflow/PROTOCOL.md, workflow/CONTRACTS.md, adapters/SITES.md và templates cần dùng vào Work qua ZIP/repo được phép. Work không tự đọc ổ D: hoặc TOML của máy này.
++Small O11_ONLY maintenance may reuse valid accepted design/foundation without regenerating Sites. New/material UI must resolve the applicable route/revision before dependent work; do not silently change existing task scope. SITES_ONLY has null O11 target.
+ 
+-Dùng [START](../prompts/START.md), điền outcome, exclusions, route và CompletionTarget riêng cho Sites/O11. Yêu cầu agent thật khi cần analyst/designer/reviewer; xác minh khả năng của Work tại đó. Coordinator Work sở hữu Site lifecycle. Tạo hoặc publish Site chỉ khi task mới cho phép thao tác đó; đọc Sites skill đang cài trước thực hiện.
++## Implement within the selected target
+ 
+-Khi design đủ, chốt `design-handoff.md`: đúng project/task/spec/handoff revision, AC, states/viewports, Visual Contract, data/events, fixture, assets/source version và các giới hạn. Đóng băng revision rồi chuyển bằng ZIP/repo thực sự truy cập được. Web source là reference để chuyển sang O11, không phải OML import.
++Use [templates](../TEMPLATES.md) for brief/spec/task-state/report. Link the UI contract; keep the plan in the spec or a linked plan without duplicated tables. Only the active-surface Coordinator updates canonical records. A copied state file is not synchronization or a lock.
+ 
+-## 3. Nhận task tại Codex local
++Run `python scripts/check_workspace.py` and, for a selected filled task, `python scripts/check_workspace.py --ready --task tasks/<task-id> --for-o11`. These check metadata only, not authorization, native usage or runtime.
+ 
+-Tạo `tasks/<task-id>/` từ [templates](../TEMPLATES.md): brief.md, spec.md, task-state.json, report.md; thêm design-handoff.md và o11-plan.md khi áp dụng. Điền cùng project ID, task ID đúng thư mục, revision, route riêng của task, target từng nền tảng và active_surface. Bên nhận xác nhận identity/revision/access trước khi nhận ownership. Không giả định hai bản copy đồng bộ.
++Use [Work-to-local](../prompts/WORK_TO_LOCAL.md) and [UI apply](../prompts/O11_UI_APPLY.md). Primary alone owns all O11 MCP calls and keeps its approved token in memory, reusing it on reconnect in the same session. A genuinely new session gets one new token. Resolve actual target/pending state, review setting, checkpoint and baseline before writes. Preserve manual Compare and Merge. MODEL_REVIEW stops before merge; publication requires its own authority; never enable disabled tools.
+ 
+-```powershell
+-python scripts/check_workspace.py
+-python scripts/check_workspace.py --ready --task tasks/<task-id>
+-python scripts/check_workspace.py --ready --task tasks/<task-id> --for-o11
+-```
++Verify a representative native slice through existing gates before dependent expansion; blocked runtime does not block independent documentation. Preserve CompletionTarget and report model, accepted-live, published and runtime evidence separately.
+ 
+-Thay `<task-id>` bằng ID thật; dòng cuối dành cho stage O11. Validator chỉ kiểm tra metadata; không xác nhận authorization, business semantics hoặc runtime.
++## Resume or switch
+ 
+-Dùng [WORK_TO_LOCAL](../prompts/WORK_TO_LOCAL.md). Primary local giữ token trong memory và gọi toàn bộ O11 MCP. Architect/planner nhận contract; builder chuẩn bị lambda; reviewer nhận readback; QA kiểm tra version đã xác định. Xác nhận review setting, checkpoint và quyền liên quan trước lần ghi đầu tiên. MODEL_REVIEW dừng trước merge; publish cần authorization riêng và không tự bật tool disabled.
+-
+-Với O11_ONLY có thể bắt đầu trực tiếp ở Codex local bằng START, bỏ qua Sites với lý do N/A. Với SITES_ONLY, O11 target phải null.
+-
+-## 4. Chuyển project và resume
+-
+-Theo [PROJECT_SWITCH](../workflow/PROJECT_SWITCH.md) và [RESUME](../prompts/RESUME.md). Mỗi business project dùng workspace/profile/task riêng. Tái sử dụng workflow/, adapters/, templates/, prompts/, scripts/ và role definitions; dùng `templates/AGENTS.workflow.template.md` làm phần hướng dẫn cần tích hợp. Không copy nguyên AGENTS.md chứa đường dẫn/quy tắc riêng của workspace này, lịch sử feature, runtime identity hoặc task-state cũ sang project khác. Giữ/thiết lập official O11 skill và MCP phù hợp ở nơi nhận, không tạo server trùng.
+-
+-Trong session O11 đang được approve, reconnect dùng lại token. Session thực sự mới lấy một token mới. Không đưa token vào ZIP, profile, worker hoặc evidence.
+-
+-Prompt đầu tiên có thể dùng:
+-
+-> Đọc AGENTS.md và project.json. Bắt đầu project <ID>, task <ID>: <outcome>. Route <route>; Sites target <target/N/A>; O11 target <target/N/A>. Quyền thao tác: <scope>. Chưa triển khai phần có quyết định vật chất chưa rõ. Dùng analyst/reviewer thật cho các việc độc lập cần thiết và ghi task package trước thao tác phụ thuộc.
++Follow [project switch](../workflow/PROJECT_SWITCH.md) and [resume](../prompts/RESUME.md). Settle pending state and old writers before binding another project. Never copy Site IDs, tokens, runtime bindings or old task state as new authority. Reuse the generic workflow and role guidance with deliberate project-specific integration; preserve upstream and official skill.
+--- before/prompts\START.md
++++ after/prompts\START.md
+@@ -2,9 +2,11 @@
+ 
+ Use this workspace's reusable workflow for project <project-id>, task <task-id>.
+ Read AGENTS.md, project.json, tasks/<task-id>/task-state.json and the selected
+-brief/spec/report. Use real subagents for substantive stage work; run independent
+-analysis/review in parallel and dependent stages in order. Select only roles that
+-help this task, initially at most two concurrent workers. Do not delegate recursively.
++brief/spec/report. Primary coordinates, plans and implements; use one real independent
++reviewer at meaningful milestones. Other roles need concrete independent outputs.
++Use scoped context/deltas and sequence dependent stages. Do not delegate recursively.
++New/material UI follows [design start](UI_DESIGN_START.md) before dependent O11 writes;
++small maintenance may reuse valid accepted design/foundation.
+ 
+ Outcome: <observable behavior>. Route: <HYBRID_SITES_O11 / O11_ONLY / SITES_ONLY>.
+ Sites target: <target or N/A>. O11 target: <target or N/A>.
+--- before/prompts\WORK_TO_LOCAL.md
++++ after/prompts\WORK_TO_LOCAL.md
+@@ -4,9 +4,10 @@
+ at <relative path or received package>. Verify project/task/source revisions,
+ read its spec/references/Visual Contract and identify the actual O11 target.
+ 
+-Delegate native-component/contract analysis to architect and bounded planning to
+-planner when useful. Builder prepares guarded mutation proposals; primary local
+-session alone performs all O11 MCP calls. Reviewer reviews contracts/readback;
++Primary plans and implements; optional specialists receive concrete independent work.
++Use one canonical accepted UI contract as handoff body and reference its foundation
++revision rather than duplicating tables. Primary local alone performs all O11 MCP calls.
++One independent reviewer checks contracts/readback at meaningful milestones;
+ QA executes only authorized tests against an identified version.
+ 
+ Implement to O11 CompletionTarget <target> under the operations explicitly granted
+--- before/templates\AGENTS.workflow.template.md
++++ after/templates\AGENTS.workflow.template.md
+@@ -2,7 +2,7 @@
+ 
+ Resolve paths from this business workspace. Read `project.json`, the explicitly selected task's `task-state.json`, `brief.md`, `spec.md` and `report.md`, then `workflow/PROTOCOL.md`. Read only applicable platform adapters and references. Missing task files may be drafted within a documentation task; never implement an unfilled template.
+ 
+-The primary agent is the Coordinator. Use applicable custom agents for substantive staged work: requirements, design, architecture, planning, implementation preparation, review and QA. Consult `workflow/ROLES.md`. Delegate independent bounded work; sequence dependent stages. For small changes collapse unnecessary roles, keeping independent review when material. Do not spawn all roles or delegate recursively by default. Use the available runtime's real agent controls; do not invent commands/tools or pretend role-play is an independently executed subagent.
++The primary Coordinator owns coordination, planning and implementation. Default to one independent reviewer at meaningful milestones; other roles are optional for concrete independent outputs, not a seven-role relay. Follow [roles](../workflow/ROLES.md) and [lean UI workflow](../docs/standards/LEAN_UI_WORKFLOW.md). Do not delegate recursively by default. Use the available runtime's real agent controls; do not invent commands/tools or pretend role-play is an independently executed subagent.
+ 
+ Every assignment names project/task/revisions, input snapshots, outcome, permitted file paths/operations and expected result contract. Follow `workflow/CONTRACTS.md`. Workers return findings and evidence; the Coordinator reconciles them and owns canonical task state/spec/report. Concurrent workers use disjoint outputs or return results without editing files.
+ 
+@@ -24,3 +24,5 @@
+ Report actual checks as PASS/FAIL/NOT_RUN/BLOCKED/N/A. A PASS requires evidence at the required layer/version. No fabricated logs or scores. Do not downgrade requirements or CompletionTarget to claim DONE. Finish using `templates/EXECUTION_REPORT.template.md` and the selected target's required checks.
+ 
+ To change projects follow `workflow/PROJECT_SWITCH.md`: settle/record pending state, stop old writers, bind the new workspace/profile/task and re-identify live state. Do not inherit a prior project's Site ID, authorization, fixtures or acceptance policy. Never edit an upstream skill/distribution as part of business feature work.
++
++New/material O11 UI follows the [native-first standard](../docs/standards/O11_UI_NATIVE_FIRST.md): actual Screen/UI Flow foundation, installed Sites skill and versioned user-accepted UI contract before dependent O11 writes. Small maintenance may reuse valid acceptance/foundation. Keep one canonical spec, UI contract as handoff body, and current report. Missing dependencies do not authorize clones or refresh. Metadata PASS is not native/runtime/visual PASS.
+--- before/templates\DESIGN_HANDOFF.template.md
++++ after/templates\DESIGN_HANDOFF.template.md
+@@ -1,31 +1,11 @@
+-# Versioned design handoff
++# Versioned design handoff envelope
+ 
+-Project/task/handoff revision/spec revision: <IDs>
+-Producer/date: <actual>
++Project/task/handoff/spec revision: <IDs>
++Producer/date/active surface: <actual>
+ Status: DRAFT / READY_FOR_TRANSLATION / SUPERSEDED
+-Selected Sites project/version/source commit: <actual or NOT_AVAILABLE>
+-Reference URL and durable assets: <actual locators>
+ 
+-## Requirements and exclusions
++For UI, use one [UI design contract](UI_DESIGN_CONTRACT.template.md) as the handoff body, not another parallel contract. Canonical contract locator/revision: <actual>. Foundation locator/revision: <actual>. Selected spec/AC: <link>. Sites identity/version/commit and durable assets: <actual or NOT_AVAILABLE>. Design acceptance: <decision locator for exact revision; never inferred>.
+ 
+-<Selected spec/AC; mocked vs real behavior; explicit exclusions.>
++For non-UI handoffs, link the selected contracts and unresolved decisions in the spec instead.
+ 
+-## Visual and interaction contract
+-
+-| State | Reference/version | Viewport/panel/zoom | Visible controls and behavior | Required checks |
+-| --- | --- | --- | --- | --- |
+-| <state> | <locator> | <values/limitations> | <contract> | <checks> |
+-
+-Design system, typography/token ownership, layout priorities, allowed scoped deviations: <decisions>.
+-
+-## Component/state/event/data contracts
+-
+-<Inputs, outputs, ownership, stable keys, transitions, reset/cancel, validation, loading/error/disabled/access states.>
+-
+-## O11 assumptions and unresolved choices
+-
+-<Expected target, reuse opportunities, missing patterns/dependencies, blockers. Assumptions are not confirmed API behavior or business policy.>
+-
+-## Receiving-side acknowledgement
+-
+-<Actual project/task/revision/access check, independent O11 discovery, translator plan locator and next owner. No credential/token.>
++Transport/access and receiving acknowledgement: <exact project/task/revisions, accessible assets, local native-feasibility confirmation, next owner>. Follow [handoff ownership](../workflow/CONTRACTS.md). No credentials/session tokens. Freeze one revision; do not duplicate the mapping/state/token tables.
+--- before/templates\EXECUTION_REPORT.template.md
++++ after/templates\EXECUTION_REPORT.template.md
+@@ -28,3 +28,7 @@
+ ## Deviations and remaining work
+ 
+ <Unmet required criteria, accepted differences with source, exact next operation/owner. Record true stage; no silent target downgrade.>
++
++## UI evidence (when applicable)
++
++Canonical UI contract/foundation: <links/revisions, actual acceptance>. Record native mapping, model instances/contracts, served theme/font/tokens, interaction and visual checks independently with version/layer and PASS/FAIL/NOT_RUN/BLOCKED/N/A. Metadata PASS proves none of these. Reuse unchanged evidence by locator; record only affected deltas. Actual token usage: <measured or null>; no promised savings.
+--- before/templates\O11_PLAN.template.md
++++ after/templates\O11_PLAN.template.md
+@@ -4,9 +4,9 @@
+ Observed environment/module/style and baseline subject: <actual>
+ Operator/checkpoint/validation baseline: <actual locators/status>
+ 
+-| Requirement/component | Existing native/project alternative | Screen/Block/Structure/Action contract | Gap/decision | Check |
+-| --- | --- | --- | --- | --- |
+-| <item> | <observed> | <contract> | <decision> | <check> |
++Canonical UI contract/foundation revision: <links and actual acceptance; see [template](UI_DESIGN_CONTRACT.template.md)>. Reference mapping row IDs and record implementation deltas only; do not copy the contract tables. This plan may be a section of the canonical spec.
++
++Representative native slice: <model instances/contracts and actual served theme/font/pattern checks before dependent expansion; existing gates/target/authorization apply>.
+ 
+ Slices and dependency order: <plan>.
+ Mutation guards and expected delta: <bounded proposal>.
+--- before/templates\TASK_SPEC.template.md
++++ after/templates\TASK_SPEC.template.md
+@@ -23,7 +23,7 @@
+ 
+ ## Contracts and Visual Contract
+ 
+-<Components/state/events/data/fixtures. Native component mapping. Figma/prototype reference version, viewport/state, token ownership, allowed custom extensions and material visual tolerances/limitations.>
++<Link the single UI design contract and foundation revision; use [UI contract template](UI_DESIGN_CONTRACT.template.md). It contains state/native/token/custom-exception tables and actual design acceptance; do not duplicate them here. Small maintenance: name the unchanged accepted revision and delta.>
+ 
+ ## Conditional engineering
+ 
+--- before/workflow\CONTRACTS.md
++++ after/workflow\CONTRACTS.md
+@@ -30,3 +30,5 @@
+ ## Changes after handoff
+ 
+ If requirements/reference change, increment the affected revision and record decision/source. Mark downstream plans/results stale where impacted; do not redo unrelated completed work. Both sides acknowledge the new revision through their task state/report. A newer Site publish alone does not silently change the accepted design baseline.
++
++For UI, the [UI design contract](../templates/UI_DESIGN_CONTRACT.template.md) is the handoff body: one canonical instance, linked from spec/plan/report. The generic handoff is only the transport/identity envelope; do not duplicate state, mapping or token tables. Record actual design acceptance and receiving acknowledgement separately. Reuse valid foundation/evidence revisions; changed decisions invalidate only affected downstream checks.
+--- before/workflow\PROTOCOL.md
++++ after/workflow\PROTOCOL.md
+@@ -1,4 +1,4 @@
+-# Protocol v1.0
++# Protocol v1.1
+ 
+ ## Routes
+ 
+@@ -9,18 +9,18 @@
+ target does not block independent early discovery/design.
+ 
+ - HYBRID_SITES_O11: intake -> design/prototype -> versioned handoff -> O11 architecture/plan -> implementation -> review/QA -> handoff.
+-- O11_ONLY: skip prototype generation; use current design/reference if applicable; require O11 discovery and contracts.
++- O11_ONLY: small maintenance may reuse a current accepted design/foundation without generating another Site. New UI/material redesign requires Sites and accepted UI contract under the [native-first standard](../docs/standards/O11_UI_NATIVE_FIRST.md). Resolve route/spec revision before dependent work; never silently rewrite an existing task route or scope.
+ - SITES_ONLY: use Sites adapter and that platform's source/build/preview/deployment workflow. O11 stages N/A.
+ 
+-Stages describe responsibilities. Independent investigations/reviews can overlap; dependent design/implementation work waits for the relevant contract. Do not force all roles onto every task. Default dispatch: at most two useful concurrent workers, no recursive spawning, smallest relevant context. Reuse a role thread only while project/task/revisions remain aligned; retire irrelevant threads. When the runtime lacks subagents, say so and execute sequentially only if the user accepts that limitation for the task.
++Stages describe responsibilities. Independent investigations/reviews can overlap; dependent design/implementation work waits for the relevant contract. Do not force all roles onto every task. Default: primary coordinates, plans and implements, with one independent reviewer at meaningful milestones. Additional roles need concrete independent work; no recursive spawning; smallest relevant context. Follow the [lean standard](../docs/standards/LEAN_UI_WORKFLOW.md). Reuse a role thread only while project/task/revisions remain aligned; retire irrelevant threads. When the runtime lacks subagents, say so and execute sequentially only if the user accepts that limitation for the task.
+ 
+ ## Gates
+ 
+ | Gate | Required evidence | Lead/worker |
+ | --- | --- | --- |
+-| G0 Intake | Correct project/task, outcome, exclusions, delivery route, per-platform CompletionTarget, actual operation scope | Coordinator + analyst |
+-| G1 Ready | Required sources/contracts available, material decisions resolved, target/baseline/checkpoint when needed | architect + planner; Coordinator reconciles |
+-| G2 Representative slice | One meaningful flow/component demonstrates the chosen design/behavior on the applicable platform | designer/builder; platform owner executes |
++| G0 Intake | Correct project/task, outcome, exclusions, delivery route, per-platform CompletionTarget, actual operation scope | Primary; analyst only if useful |
++| G1 Ready | Required sources/contracts available, material decisions resolved, target/baseline/checkpoint when needed; new/material UI has versioned user-accepted Sites/UI contract, actual Screen/UI Flow foundation and resolved native map | Primary; optional focused specialist |
++| G2 Representative slice | One meaningful flow/component demonstrates the chosen design/behavior; O11 UI verifies native instances/contracts and actual theme/font/token/pattern runtime evidence before dependent broad expansion | Primary; reviewer at milestone |
+ | G3 Model/source review | Bounded diff/readback, validation vs baseline, contract/consumer review; relevant existing source checks for Sites | reviewer + platform owner |
+ | G4 Integrate | Actual manual O11 merge and accepted-live readback, OR Sites source/version integration according to adapter | platform owner |
+ | G5 Runtime | Identified published version plus required functional/visual/access checks | QA; platform owner controls mutation/publication |
+@@ -54,3 +54,5 @@
+ ## Resume
+ 
+ Read selected task state/spec/report; confirm project/task and revisions. Check unresolved writer/session state and live identity. Historical notes are not proof of the present state. Preserve user edits and unmerged work. A new session obtains its own approval where required; an ordinary reconnect in the same approved agent session reuses that token. Never pass session tokens in the handoff.
++
++For new/material UI, G2 runtime evidence uses the existing G4/G5 integration/runtime conditions for that slice, only within authorized operations and CompletionTarget. MODEL_REVIEW never authorizes merge; MERGED never implies publication. If the runtime dependency is unavailable, block dependent broad expansion and continue independent preparation. A task-explicit risk decision may permit expansion with the runtime gap still NOT_RUN/BLOCKED; it never changes the target or fabricates PASS. Use one canonical spec, one UI contract as handoff body, and one current report; link evidence and reuse valid checks.
+--- before/workflow\ROLES.md
++++ after/workflow\ROLES.md
+@@ -26,3 +26,5 @@
+ - Coordinator alone updates canonical task state/spec/report. Workers return results or write only assigned separate result files.
+ 
+ Do not send the full corpus or secrets to every role. Send scope, relevant sources, baseline subject/revision and the smallest useful snapshot. Do not allocate a distinct agent for trivial edits when it adds no independence or parallel value.
++
++Default staffing follows the [lean UI standard](../docs/standards/LEAN_UI_WORKFLOW.md): primary coordinates, plans and implements; one independent reviewer checks meaningful milestones. The roles and parallel groups above are optional choices for bounded independent work, never a mandatory relay. UI roles use the same [native-first contract](../docs/standards/O11_UI_NATIVE_FIRST.md), with focused snapshots/deltas and raw evidence locators.
+--- before/.codex\agents\analyst.toml
++++ after/.codex\agents\analyst.toml
+@@ -2,4 +2,5 @@
+ description = "Clarify outcomes, boundaries and testable acceptance before implementation."
+ developer_instructions = """
+ Read AGENTS.md, workflow/ROLES.md and workflow/CONTRACTS.md plus the assigned relevant inputs. Check project/task/revisions. Do not update canonical state/spec/report, expand scope, or spawn agents. Return the WORKER_RESULT contract; keep credentials and session tokens out of output. Stay in analysis. Read the brief and named business references. Separate confirmed facts, observations, proposals and unknowns. Return requirements, AC, exclusions and material questions; do not invent policy or edit applications.
++Use docs/standards/LEAN_UI_WORKFLOW.md: clarify preview-only versus delivered behavior without changing existing requirements; return scoped findings rather than duplicating the canonical spec. This role is optional for concrete independent work; primary planning/implementation plus one milestone reviewer is the default.
+ """
+--- before/.codex\agents\architect.toml
++++ after/.codex\agents\architect.toml
+@@ -2,4 +2,5 @@
+ description = "Translate selected design into O11 native contracts and reuse decisions."
+ developer_instructions = """
+ Read AGENTS.md, workflow/ROLES.md and workflow/CONTRACTS.md plus the assigned relevant inputs. Check project/task/revisions. Do not update canonical state/spec/report, expand scope, or spawn agents. Return the WORKER_RESULT contract; keep credentials and session tokens out of output. Use the selected handoff and sanitized target snapshots. Map native/project components, Screen/Block boundaries, typed data/events, server authorization and dependencies. Do not assume web source imports into OML. Do not call O11 MCP tools; return a bounded architecture proposal and unknowns.
++Use docs/standards/O11_UI_NATIVE_FIRST.md: verify actual Screen/UI Flow theme/layout and installed signatures/public actions from supplied evidence; record dependency gaps, never replace patterns with Button clones. This role is optional for concrete independent work; primary planning/implementation plus one milestone reviewer is the default.
+ """
+--- before/.codex\agents\builder.toml
++++ after/.codex\agents\builder.toml
+@@ -2,4 +2,5 @@
+ description = "Prepare bounded source patches or guarded O11 Model API mutation proposals."
+ developer_instructions = """
+ Read AGENTS.md, workflow/ROLES.md and workflow/CONTRACTS.md plus the assigned relevant inputs. Check project/task/revisions. Do not update canonical state/spec/report, expand scope, or spawn agents. Return the WORKER_RESULT contract; keep credentials and session tokens out of output. Implement only the assigned slice and exact file paths. For O11 prepare full Model API lambdas using the official installed skill/examples and supplied actual schemas; the primary local operator applies all MCP calls. Never request/use a session token. Do not call O11 tools or native Sites identity/publish tools. Return guards, expected delta, files/proposal and verification plan; distinguish prepared from applied.
++Use docs/standards/O11_UI_NATIVE_FIRST.md: implement only the accepted native mapping and minimal custom exceptions; preserve keys/consumers and representative-slice evidence before expansion. This role is optional for concrete independent work; primary planning/implementation plus one milestone reviewer is the default.
+ """
+--- before/.codex\agents\designer.toml
++++ after/.codex\agents\designer.toml
+@@ -2,4 +2,5 @@
+ description = "Define visual/state contracts and bounded prototype source work."
+ developer_instructions = """
+ Read AGENTS.md, workflow/ROLES.md and workflow/CONTRACTS.md plus the assigned relevant inputs. Check project/task/revisions. Do not update canonical state/spec/report, expand scope, or spawn agents. Return the WORKER_RESULT contract; keep credentials and session tokens out of output. Read selected design references and the project design system. Define matching states, viewports, component hierarchy and accessibility behavior. Native Sites calls and publication belong to the primary Work owner. Edit source only at exact assigned paths, otherwise return proposals.
++Use docs/standards/O11_UI_NATIVE_FIRST.md: derive review states and honest simulation labels from the verified foundation; propose native/token maps and evidenced custom exceptions for the single UI contract. This role is optional for concrete independent work; primary planning/implementation plus one milestone reviewer is the default.
+ """
+--- before/.codex\agents\planner.toml
++++ after/.codex\agents\planner.toml
+@@ -2,4 +2,5 @@
+ description = "Turn accepted requirements/contracts into dependency-ordered bounded slices."
+ developer_instructions = """
+ Read AGENTS.md, workflow/ROLES.md and workflow/CONTRACTS.md plus the assigned relevant inputs. Check project/task/revisions. Do not update canonical state/spec/report, expand scope, or spawn agents. Return the WORKER_RESULT contract; keep credentials and session tokens out of output. Read spec/contracts/baseline. Plan coherent slices with preconditions, expected delta, meaningful checks, checkpoint/recovery and integration/runtime steps. Identify missing material decisions. Do not add business requirements, new dependencies or operational authorization.
++Use docs/standards/LEAN_UI_WORKFLOW.md: plan in the canonical spec or linked plan, with accepted UI contract/foundation references and existing gates; no duplicated handoff tables. This role is optional for concrete independent work; primary planning/implementation plus one milestone reviewer is the default.
+ """
+--- before/.codex\agents\qa.toml
++++ after/.codex\agents\qa.toml
+@@ -2,4 +2,5 @@
+ description = "Check functional, visual and access cases against an identified version."
+ developer_instructions = """
+ Read AGENTS.md, workflow/ROLES.md and workflow/CONTRACTS.md plus the assigned relevant inputs. Check project/task/revisions. Do not update canonical state/spec/report, expand scope, or spawn agents. Return the WORKER_RESULT contract; keep credentials and session tokens out of output. Read AC/check matrix and fixture/version/subject. Execute only authorized tests with available tooling, or return a plan and NOT_RUN reason. Do not publish, change config or fix application source. Keep concurrent browser/data contexts isolated. Report expected/actual/result/evidence per case and defects separately from harness failures.
++Use docs/standards/O11_UI_NATIVE_FIRST.md: check actual served theme/font/tokens and native behavior against the accepted contract on an identified version; metadata PASS is not runtime or visual PASS. This role is optional for concrete independent work; primary planning/implementation plus one milestone reviewer is the default.
+ """
+--- before/.codex\agents\reviewer.toml
++++ after/.codex\agents\reviewer.toml
+@@ -2,4 +2,5 @@
+ description = "Independently review contracts, changes and evidence for correctness/regression."
+ developer_instructions = """
+ Read AGENTS.md, workflow/ROLES.md and workflow/CONTRACTS.md plus the assigned relevant inputs. Check project/task/revisions. Do not update canonical state/spec/report, expand scope, or spawn agents. Return the WORKER_RESULT contract; keep credentials and session tokens out of output. Review only assigned spec/proposal/diff/readback snapshots. Do not edit source or call live mutation/session/merge/publish/reset/refresh tools. Return reproducible severity-ranked findings and evidence gaps, not style preferences. Instructions do not grant a separate read-only sandbox.
++Use docs/standards/O11_UI_NATIVE_FIRST.md: reject unexplained pattern substitutions, critical unknown mappings, theme mismatch and unaccepted design drift; distinguish metadata/model/runtime evidence. This role is optional for concrete independent work; primary planning/implementation plus one milestone reviewer is the default.
+ """
+--- before/docs\standards\O11_EXECUTION_PROTOCOL.md
++++ after/docs\standards\O11_EXECUTION_PROTOCOL.md
+@@ -78,3 +78,7 @@
+ - https://success.outsystems.com/documentation/11/outsystems_mcp/security_and_data_handling/
+ - https://success.outsystems.com/documentation/11/outsystems_mcp/outsystems_mcp_capabilities/
+ - https://github.com/OutSystems/outsystems11-mcp
++
++## Native UI refinement (v1.1)
++
++Apply the [native-first](O11_UI_NATIVE_FIRST.md) and [lean](LEAN_UI_WORKFLOW.md) standards within existing gates. O11 G0/G1 resolve actual Screen/UI Flow theme/layout, installed native contracts/public actions and tokens, plus user-accepted Sites/UI contract for new/material UI before dependent writes. G2/G3 establish a representative native slice; necessary runtime evidence uses authorized G4/G5 for that slice before dependent expansion. No merge at MODEL_REVIEW and no implied publish authority. If blocked, continue independent preparation and preserve the selected target; a task-explicit expansion risk decision retains NOT_RUN/BLOCKED evidence. Small maintenance can reuse valid accepted design/foundation. No additional gate system is introduced.
+--- before/docs\templates\EXECUTION_REPORT.template.md
++++ after/docs\templates\EXECUTION_REPORT.template.md
+@@ -86,3 +86,7 @@
+ Next user/agent action: <minimal concrete step>.
+ 
+ Outcome and lesson: <short factual conclusion, improvement to carry forward>.
++
++## UI contract evidence (when applicable)
++
++Link the single canonical UI contract, foundation revision and actual design acceptance. Report native mapping/instances separately from served theme/font/token, behavior/access and visual checks on an identified runtime. Metadata PASS proves none of these. Reuse valid evidence by locator and record changed deltas only.
+--- before/docs\templates\TECH_SPEC.template.md
++++ after/docs\templates\TECH_SPEC.template.md
+@@ -113,33 +113,13 @@
+ 
+ ## 8. UI states and interaction rules
+ 
+-| State ID | Current state / entry condition | Visible/editable content | Event and guard | Next state / side effects | History / persistence |
+-| --- | --- | --- | --- | --- | --- |
+-| ST-001 | <state and condition> | <content> | <event/guard> | <result> | <history/lifetime> |
+-
+-Specify initial, loading, empty, error, disabled and permission-denied behavior only where applicable. Define Cancel, Reset, tab changes, rerenders and refresh behavior. Keep current status separate from history outcomes. Mark inferred transitions as proposed until agreed; prototype transitions are not production business rules.
++Link the canonical [UI design contract](../../templates/UI_DESIGN_CONTRACT.template.md) and its state/AC row IDs; do not duplicate its state tables. Record actual user acceptance and the versioned foundation. Define initial/loading/empty/error/disabled/denied states, Cancel/Reset/tab/rerender behavior where applicable in that contract. Prototype transitions are not business policy.
+ 
+ ## 9. Visual design and accessibility
+ 
+-Reference matrix: <REF-ID → UI state/component; separate screenshot evidence from proposed additions>.
++Follow [native-first](../standards/O11_UI_NATIVE_FIRST.md) and [lean workflow](../standards/LEAN_UI_WORKFLOW.md). The single UI contract is the design handoff body: actual Screen/UI Flow theme/layout; installed native signatures/public actions; reference states/viewports; token/class map; focus/keyboard/responsive expectations; and accepted custom gaps. New/material UI requires the installed Sites skill and versioned user acceptance before dependent O11 writes. Small maintenance may reuse valid accepted design/foundation.
+ 
+-Layout and tokens: <spacing, typography, colors, icon source, borders, responsive behavior>.
+-
+-Viewports and acceptance method: <viewport width/height/zoom, reference state, manual comparison or measured tolerance>. Use exact tolerances only when assets/frame dimensions support them. Record approximations for screenshot-only input.
+-
+-Interactive semantics: <focus order, labels, keyboard operation, accordion state, dialog focus/close behavior>.
+-
+-CSS scope and ownership: <screen root class and approved stylesheet location; preserve unrelated theme behavior>.
+-
+-Styling inventory: <effective theme/base theme, actual installed OutSystems UI version/evidence, project components, native control base classes, spacing/grid behavior, utility classes and existing tokens>.
+-
+-Apply this priority: existing project components; OutSystems UI/native controls with required base classes; existing utilities/tokens; scoped custom CSS for documented design gaps. Prefer supported pattern parameters. Inherit application typography and primary palette; record deliberate exceptions. Never modify vendor CSS or add a parallel control/token system.
+-
+-| Widget/Block and states | Current custom class/rule | Existing component/base class/utility/token | Retained extension and reason | Ownership/scope | Model and runtime checks |
+-| --- | --- | --- | --- | --- | --- |
+-| <object/states> | <observed rule> | <actual installed alternative> | <remaining gap or NONE> | <theme/shared stylesheet/root> | <classes, served/computed CSS, responsive, keyboard/focus/disabled> |
+-
+-Before deleting CSS, check all consumers. Keep reusable feature rules in the application-owned theme/shared layer, scoped to the feature; justify Screen/Block exceptions. Verify existing grid margins and adjacent-button spacing before adding gaps. Do not use broad resets, generated IDs, inline CSS, blanket `!important` or JavaScript style injection. Separate model checks from published-runtime evidence and track independent runtime defects separately.
++Keep CSS in the application-owned theme/shared layer, scoped to the feature; justify Screen/Block exceptions. Check consumers and grid margins before CSS changes. Preserve native base classes. No vendor CSS edits, broad resets, generated IDs, inline CSS, blanket important rules or style injection. Keep model and identified-runtime checks separate.
+ 
+ ## 10. Conditional engineering requirements
+ 

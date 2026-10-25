@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "An error occurred invoking 'applyModelApiCode': 'code' is not valid C#: Syntax error, ',' expected"
+    }
+  ],
+  "isError": true
+}

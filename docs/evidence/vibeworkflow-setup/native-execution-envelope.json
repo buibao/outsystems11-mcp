@@ -1,0 +1,17 @@
+{
+  "subject": "Fresh CLI docs-only discovery supervisor",
+  "thread_id": "01a169ac-d0df-7fa1-9306-0f38f4867e49",
+  "outer_powershell_command_exit_code": 1,
+  "native_codex_exit_code": null,
+  "native_exit_code_reason": "The invocation did not separately capture LASTEXITCODE; do not equate the enclosing PowerShell status with a separately observed Codex exit status.",
+  "json_event_turn_completed": true,
+  "json_event_turn_failed": false,
+  "last_message_file_written": true,
+  "worker_results": "Two contract-shaped completed results retained in native-worker-results.md",
+  "stderr_observed": [
+    "Shell snapshot not supported yet for PowerShell",
+    "PowerShell NativeCommandError wrapping the native stderr warning",
+    "MCP credential storage fallback warnings: secure entry missing, outcome not_found"
+  ],
+  "disposition": "Native discovery, instruction loading and worker results verified independently from traces. Clean process exit NOT_CONFIRMED. No credential, tool restriction or shell setting changed to suppress warnings; no costly worker rerun performed solely for a clean wrapper exit."
+}

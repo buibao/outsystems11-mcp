@@ -1,0 +1,38 @@
+{
+  "workflow_version": "1.0",
+  "profile_status": "DRAFT",
+  "project_id": "UNKNOWN",
+  "display_name": "UNKNOWN",
+  "business_context": "UNKNOWN",
+  "design_system": {
+    "source": "UNKNOWN",
+    "visual_priority": "UNKNOWN",
+    "allowed_scoped_exceptions": []
+  },
+  "boundaries": {
+    "in_scope": [],
+    "out_of_scope": [],
+    "protected_behavior": []
+  },
+  "sites": {
+    "project_id": null,
+    "audience": null,
+    "source_locator": null,
+    "selected_reference_version": null
+  },
+  "o11": {
+    "environment": null,
+    "application": null,
+    "module": null,
+    "module_style": null,
+    "platform_version": null,
+    "theme_version": null,
+    "official_skill_path": null,
+    "skill_revision": null
+  },
+  "durable_artifact_location": "UNKNOWN",
+  "task_root": "tasks",
+  "active_task": null,
+  "notes": "Draft context only. No business identity/target selected. SETUP_ONLY observations are in docs/execution/VIBE-SETUP.report.md; they do not bind this profile. Never store credentials or tokens.",
+  "default_delivery_route": "HYBRID_SITES_O11"
+}

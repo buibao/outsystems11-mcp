@@ -1,0 +1,79 @@
+{
+  "observed_at": "2026-10-23 16:54:04 UTC",
+  "subject": "MCP current snapshot/pending-copy view; not proof of accepted live or published runtime",
+  "module_from_listApps": {
+    "key": "3ce50cd4-a432-4693-98a1-e5e34402cafd",
+    "name": "MyApp",
+    "kind": "eSpace",
+    "version": "0",
+    "isOpen": true,
+    "isReference": false,
+    "moduleType": "Reactive"
+  },
+  "environment": {
+    "label": "Development - personal-g4et6y1o.outsystemscloud.com",
+    "method": "Windows UI Automation read of Service Studio descendant name",
+    "organizational_authority": "UNKNOWN"
+  },
+  "validation": [
+    {
+      "ownerPath": "/Common/InvalidPermissions",
+      "ownerType": "IMobileScreen",
+      "id": "AnonymousAccess_NoPermissionsNoRoles",
+      "type": "Warning",
+      "message": "Missing roles",
+      "detail": "Screen 'InvalidPermissions' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+      "ownerKey": "5nVIK0JIkEq75V4SgIpFYw"
+    },
+    {
+      "ownerPath": "/Common/Login",
+      "ownerType": "IMobileScreen",
+      "id": "AnonymousAccess_NoPermissionsNoRoles",
+      "type": "Warning",
+      "message": "Missing roles",
+      "detail": "Screen 'Login' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+      "ownerKey": "dazwmfzUG0aXr0zvksbeWA"
+    },
+    {
+      "ownerPath": "/MainFlow/TaxDocumentsPreview",
+      "ownerType": "IMobileScreen",
+      "id": "AnonymousAccess_NoPermissionsNoRoles",
+      "type": "Warning",
+      "message": "Missing roles",
+      "detail": "Screen 'TaxDocumentsPreview' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+      "ownerKey": "YKggOxuT+UOrYZcKwyg5uw"
+    },
+    {
+      "ownerPath": "/MainFlow/TaxDocumentsPreview/OnReady",
+      "ownerType": "IScreenAction",
+      "id": "UnusedAction",
+      "type": "Warning",
+      "message": "Unused Action",
+      "detail": "'OnReady' action is never used in TaxDocumentsPreview. Consider deleting it.",
+      "ownerKey": "N2+iFxViLUqkk561l2WcfA"
+    }
+  ],
+  "counts": {
+    "error": 0,
+    "warning": 4,
+    "info": 0
+  },
+  "restrictions": {
+    "sessionToken": "Approved once and retained only in primary operator memory; no token in artifacts or workers",
+    "omlPublish": "excluded in CLI config and active tool catalog",
+    "manual_review": "UNKNOWN for this session; not changed; verify before any future write",
+    "pending_copy": "UNKNOWN; no write/session reset performed",
+    "model_mutation": "NOT_RUN",
+    "merge": "NOT_RUN",
+    "publish": "NOT_RUN",
+    "refresh": "NOT_RUN",
+    "reset_discard": "NOT_RUN",
+    "runtime": "NOT_RUN"
+  },
+  "tool_calls": [
+    "createSessionToken (one approval)",
+    "listApps",
+    "getValidationMessages(filter=[])"
+  ],
+  "no_business_binding": "Observation only. project.json remains unbound."
+}

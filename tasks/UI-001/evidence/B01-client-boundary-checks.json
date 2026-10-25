@@ -1,0 +1,48 @@
+{
+  "subject": "B01 seven pending model readbacks",
+  "checks": [
+    {
+      "object": "screen",
+      "serverNodes": 0,
+      "aggregates": 0,
+      "status": "PASS"
+    },
+    {
+      "object": "PrototypeDocumentHeader",
+      "serverNodes": 0,
+      "aggregates": 0,
+      "status": "PASS"
+    },
+    {
+      "object": "PrototypeYearCard",
+      "serverNodes": 0,
+      "aggregates": 0,
+      "status": "PASS"
+    },
+    {
+      "object": "PrototypeUpload",
+      "serverNodes": 0,
+      "aggregates": 0,
+      "status": "PASS"
+    },
+    {
+      "object": "PrototypeFileRow",
+      "serverNodes": 0,
+      "aggregates": 0,
+      "status": "PASS"
+    },
+    {
+      "object": "PrototypeTracking",
+      "serverNodes": 0,
+      "aggregates": 0,
+      "status": "PASS"
+    },
+    {
+      "object": "PrototypeDialogs",
+      "serverNodes": 0,
+      "aggregates": 0,
+      "status": "PASS"
+    }
+  ],
+  "limit": "Does not establish runtime network behavior; authenticated platform traffic requires separate QA."
+}

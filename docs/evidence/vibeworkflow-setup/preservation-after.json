@@ -1,0 +1,23 @@
+{
+  "observed_at": "2026-10-24T00:01:44.006878+07:00",
+  "checks": {
+    "upstream_files_identical": true,
+    "official_skill_files_identical": true,
+    "upstream_index_identical": true,
+    "upstream_status_identical": true,
+    "original_AGENTS_bytes_preserved_as_prefix": true,
+    "user_config_only_authorized_trust_change": true,
+    "unrelated_workspace_files_preserved": true,
+    "profile_unbound": true
+  },
+  "upstream_file_count": 367,
+  "official_skill_file_count": 169,
+  "upstream_status": " M .gitignore\n",
+  "existing_workspace_files_changed": [
+    "AGENTS.md",
+    "docs/project-context.md",
+    "docs/setup-status.md",
+    "docs/verification.md"
+  ],
+  "existing_workspace_files_missing": []
+}

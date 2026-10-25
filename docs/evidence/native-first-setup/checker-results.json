@@ -1,0 +1,20 @@
+[
+  {
+    "check": "current-metadata",
+    "exit_code": 0,
+    "stdout": "NOTE: Checks cover package/metadata only: not role discovery, authorization, source semantics, evidence truth, or platform behavior.\nPACKAGE/METADATA: PASS\n",
+    "stderr": ""
+  },
+  {
+    "check": "direct-legacy-suite",
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"D:\\OutsystemsAIAgent\\scripts\\verify_workflow_setup.py\", line 69, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"D:\\OutsystemsAIAgent\\scripts\\verify_workflow_setup.py\", line 34, in main\n    profile = json.loads((target / 'project.json').read_text(encoding='utf-8'))\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\buiba\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\json\\__init__.py\", line 335, in loads\n    raise JSONDecodeError(\"Unexpected UTF-8 BOM (decode using utf-8-sig)\",\njson.decoder.JSONDecodeError: Unexpected UTF-8 BOM (decode using utf-8-sig): line 1 column 1 (char 0)\n"
+  },
+  {
+    "check": "draft-fixture-suite",
+    "exit_code": 0,
+    "stdout": "{\n  \"subject\": \"Package and disposable metadata fixtures; no role discovery/platform behavior\",\n  \"cases\": [\n    {\n      \"case\": \"Installed package and draft metadata\",\n      \"result\": \"PASS\",\n      \"observed\": []\n    },\n    {\n      \"case\": \"Draft cannot be ready\",\n      \"result\": \"PASS\",\n      \"observed\": [\n        \"profile_status must be ACTIVE for metadata readiness\",\n        \"--ready requires --task tasks/<task-id>\"\n      ]\n    },\n    {\n      \"case\": \"Hybrid profile permits O11-only task metadata\",\n      \"result\": \"PASS\",\n      \"observed\": []\n    },\n    {\n      \"case\": \"Cross-project task rejected\",\n      \"result\": \"PASS\",\n      \"observed\": [\n        \"Task project_id does not match the filled project profile\"\n      ]\n    },\n    {\n      \"case\": \"Invalid target rejected\",\n      \"result\": \"PASS\",\n      \"observed\": [\n        \"Invalid O11 target\"\n      ]\n    },\n    {\n      \"case\": \"O11 implementation requires target\",\n      \"result\": \"PASS\",\n      \"observed\": [\n        \"Valid O11 target is required for O11 implementation metadata\"\n      ]\n    },\n    {\n      \"case\": \"O11-only task rejects Sites target\",\n      \"result\": \"PASS\",\n      \"observed\": [\n        \"Sites target must be null for O11_ONLY\"\n      ]\n    },\n    {\n      \"case\": \"Task path outside tasks rejected\",\n      \"result\": \"PASS\",\n      \"observed\": [\n        \"Task path must be inside this workspace's tasks directory\"\n      ]\n    },\n    {\n      \"case\": \"Duplicate role rejected\",\n      \"result\": \"PASS\",\n      \"observed\": [\n        \"Duplicate role: analyst\"\n      ]\n    }\n  ]\n}\n",
+    "stderr": ""
+  }
+]

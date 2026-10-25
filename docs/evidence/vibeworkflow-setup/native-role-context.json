@@ -1,0 +1,36 @@
+[
+  {
+    "role": "analyst",
+    "thread_id": "01a169ad-3cd6-7041-9a89-40316a41e8ea",
+    "agent_path": "/root/analyst_setup_docs",
+    "parent_thread": "01a169ac-d0df-7fa1-9306-0f38f4867e49",
+    "role_instructions_exact_match_in_developer_context": true,
+    "expected_instructions_sha256": "00da1800e4c265b9cbb6d883dc939732aa8cb798f29f3db1396d5a952830ff8a",
+    "developer_message_count": 8,
+    "tool_names": [
+      "exec"
+    ],
+    "source_session": "C:\\Users\\buiba\\.codex\\sessions\\2026\\10\\23\\rollout-2026-10-23T23-52-03-01a169ad-3cd6-7041-9a89-40316a41e8ea.jsonl",
+    "nested_tool_names": [
+      "exec_command"
+    ],
+    "nested_platform_calls_absent": true
+  },
+  {
+    "role": "reviewer",
+    "thread_id": "01a169ad-5432-7941-ad11-582908277949",
+    "agent_path": "/root/reviewer_setup_docs",
+    "parent_thread": "01a169ac-d0df-7fa1-9306-0f38f4867e49",
+    "role_instructions_exact_match_in_developer_context": true,
+    "expected_instructions_sha256": "16554d8586b7392c83b80c7e5ac4aecf32ab9471ec165ca5880f480fe577a8ff",
+    "developer_message_count": 8,
+    "tool_names": [
+      "exec"
+    ],
+    "source_session": "C:\\Users\\buiba\\.codex\\sessions\\2026\\10\\23\\rollout-2026-10-23T23-52-09-01a169ad-5432-7941-ad11-582908277949.jsonl",
+    "nested_tool_names": [
+      "exec_command"
+    ],
+    "nested_platform_calls_absent": true
+  }
+]

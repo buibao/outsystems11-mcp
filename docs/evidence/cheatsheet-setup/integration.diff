@@ -1,0 +1,156 @@
+--- before/adapters\SITES.md
++++ after/adapters\SITES.md
+@@ -13,3 +13,5 @@
+ Use the [UI contract](../templates/UI_DESIGN_CONTRACT.template.md) as the single UI handoff body, with the [handoff envelope](../templates/DESIGN_HANDOFF.template.md) only for transport/identity. Include selected source/reference version, state/component contracts, assets and AC. Treat web implementation as a design/behavior reference for O11, not importable OML. The receiving operator does independent O11 discovery and verification.
+ 
+ For new/material O11 UI, follow the [native-first standard](../docs/standards/O11_UI_NATIVE_FIRST.md): the installed Sites skill is required. Provide review states plus a separate O11 widget/pattern/public-action map, token/class map and evidenced custom exceptions. Label web simulations versus actual O11 components; a Site cannot verify native O11 behavior. Record user acceptance of the exact contract/version before dependent O11 writes; reuse same-scope acceptance. Small maintenance may reuse current design/foundation. This setup authorizes no handbook/prototype operation.
++
++The [canonical mapping contract](../templates/UI_DESIGN_CONTRACT.template.md) owns all component rows and linked token/exception decisions. Provide App view plus Review view covering each UI region, with stable UI-ID navigation/highlight between views. Review view uses/references this single source; generated projections pin source revision/hash and are checked for missing/extra IDs and field drift. Apply the five classifications from the contract to proposed O11 implementation; label Sites web simulation separately. Critical Unverified blocks dependent O11 writes. Use [reference index](../docs/references/cheatsheets/README.md) only for candidates; primary local verifies installed contracts read-only.
+--- before/prompts\O11_UI_APPLY.md
++++ after/prompts\O11_UI_APPLY.md
+@@ -11,3 +11,7 @@
+ Implement one native representative slice, read it back, compare validation with baseline and verify actual served theme/font/pattern behavior using an identified authorized published version before broad expansion. If blocked, report it and continue independent work; don't claim runtime PASS or enable publishing. Existing manual Compare and Merge and operation-specific authorization rules remain unchanged.
+ 
+ Track design/native mapping/model/merge/publish/runtime independently. Update one canonical report with actual evidence, gaps, next action and actual usage if available. No fabricated token counts or savings.
++
++Use the [CheatSheet source index](../docs/references/cheatsheets/README.md) for scoped candidates: Developer PDF for concepts/widgets, UI CheatSheet for patterns/classes/tokens. Primary local verifies relevant installed signatures/public actions/utilities/tokens read-only; reuse valid foundation revision. Do not distribute full PDF/site/theme dumps to each worker.
++
++Use the [canonical component map](../templates/UI_DESIGN_CONTRACT.template.md) with UI ID, UI region, five-way classification, O11 widget/pattern/module, availability/version evidence, inputs/events/public actions, classes/tokens, custom gap, rationale and acceptance status. Sites App and Review views identify the same UI IDs; Review view reads/references this source and its token/exception sections. Generated projections pin revision/hash and check missing/extra IDs and field drift. Label web simulations. Reviewer detects Button/Container substitutions without justification, duplicate custom CSS/utilities/tokens, missing evidence and mapping/prototype drift. Resolve critical Unverified before dependent O11 writes; keep existing scope, acceptance reuse, ownership and gates.
+--- before/prompts\UI_DESIGN_START.md
++++ after/prompts\UI_DESIGN_START.md
+@@ -9,3 +9,7 @@
+ Produce UI design contract from templates/UI_DESIGN_CONTRACT.template.md with actual version/commit, all reference states/AC, Block inputs/events/state ownership and token/class map. Native parameters/actions/utilities before custom CSS; new token only if missing approved semantic value. Do not add fixture switcher/business simulator to the delivered O11 requirements unless explicitly requested.
+ 
+ Default primary + one focused reviewer. No seven-role relay. Return the reviewable prototype, contract and exact material decisions. Wait for design acceptance before dependent O11 writes; continue independent documentation. Do not invent acceptance, native feasibility, O11 runtime PASS or publication authority.
++
++Use the [CheatSheet source index](../docs/references/cheatsheets/README.md) for scoped candidates: Developer PDF for concepts/widgets, UI CheatSheet for patterns/classes/tokens. Primary local verifies relevant installed signatures/public actions/utilities/tokens read-only; reuse valid foundation revision. Do not distribute full PDF/site/theme dumps to each worker.
++
++Use the [canonical component map](../templates/UI_DESIGN_CONTRACT.template.md) with UI ID, UI region, five-way classification, O11 widget/pattern/module, availability/version evidence, inputs/events/public actions, classes/tokens, custom gap, rationale and acceptance status. Sites App and Review views identify the same UI IDs; Review view reads/references this source and its token/exception sections. Generated projections pin revision/hash and check missing/extra IDs and field drift. Label web simulations. Reviewer detects Button/Container substitutions without justification, duplicate custom CSS/utilities/tokens, missing evidence and mapping/prototype drift. Resolve critical Unverified before dependent O11 writes; keep existing scope, acceptance reuse, ownership and gates.
+--- before/templates\UI_DESIGN_CONTRACT.template.md
++++ after/templates\UI_DESIGN_CONTRACT.template.md
+@@ -11,17 +11,23 @@
+ 
+ <One observable outcome; reused/changed objects; exclusions. Separate UI state, mocked transitions and real operations.>
+ 
+-## Native component map
++## Canonical native component map
+ 
+-| UI ID / responsibility | Chosen widget/pattern + module | Availability/signature evidence | Parameters/events/public actions | Classes/tokens | Custom gap + acceptance |
+-| --- | --- | --- | --- | --- | --- |
+-| <stable ID> | <exact verified candidate> | <resident/addition/unknown + locator> | <supported contracts> | <observed names> | <none or explicit exception> |
++Canonical source: <this contract path/revision/hash>. Sites Review view: <consumer/projection locator and exact source revision>. App-to-Review UI-ID navigation: <overlay/highlight/anchor mechanism including conditional states>. Candidate sources: <DEV-CS page / UI-CS section from [source index](../docs/references/cheatsheets/README.md)>.
++
++| UI ID | UI region / responsibility | Classification | O11 widget/pattern + module | Availability / version evidence | Inputs / events / public actions | Classes / tokens (IDs) | Custom gap (exception ID) | Rationale | Acceptance status / decision | Candidate source / installed signature locator | Critical / resolution |
++| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
++| <stable ID> | <region and relevant states> | Unverified | <exact candidate or none/unknown> | <resident/available-not-referenced/unavailable/unknown; version evidence> | <supported contracts or unknown> | <observed names / token IDs> | <none or exception ID> | <why chosen; alternatives inspected> | <pending/accepted/rejected + revision/decision> | <reference provenance separate from installed evidence> | <yes/no; evidence/owner> |
++
++Allowed classification: Native / Native + custom CSS / Native + custom behavior / Fully custom / Unverified. Combined CSS/behavior extensions use Native + custom behavior and describe both. Classification describes the proposed O11 implementation; Sites rendering remains explicitly labeled web simulation. Fully custom requires an accepted evidenced gap. Critical Unverified must be resolved before dependent O11 writes; user design acceptance alone is not installed evidence.
++
++This is the only editable component map. Sites Review view uses or references these rows and the token/exception sections below; no independently maintained mapping tables. Generated projections record source revision/hash and check missing/extra IDs plus field drift after regeneration. Prototype, acceptance and handoff must identify the same revision.
+ 
+ Calling a Button “tabs” does not satisfy a Tabs pattern decision. A CSS selector is not a pattern instance. Resolve critical UNKNOWN before dependent writes; do not invent signatures from web documentation.
+ 
+ ## Token and style map
+ 
+-| Semantic purpose | Existing utility/variable | Observed value/source | Prototype use | O11 application | Accepted deviation |
++| Token ID / semantic purpose | Existing utility/variable | Observed value/source | Prototype use | O11 application | Accepted deviation |
+ | --- | --- | --- | --- | --- | --- |
+ | <e.g. error surface> | <actual variable> | <foundation locator> | <exact/simulated> | <theme/class/parameter> | <none or decision> |
+ 
+@@ -40,7 +46,7 @@
+ 
+ ## Custom exceptions
+ 
+-| ID | Native alternative inspected | Exact unsupported gap and evidence | Proposed minimal extension | CSS/token/JS ownership | Acceptance |
++| Exception ID / UI IDs | Native alternative inspected | Exact unsupported gap and evidence | Proposed minimal extension | CSS/token/JS ownership | Acceptance |
+ | --- | --- | --- | --- | --- | --- |
+ | <ID> | <parameters/actions included> | <not just initial parameter limits> | <scope> | <owner> | <actual or pending> |
+ 
+--- before/templates\UI_FOUNDATION.template.json
++++ after/templates\UI_FOUNDATION.template.json
+@@ -42,7 +42,10 @@
+       "events",
+       "public_actions",
+       "side_effects",
+-      "verified_revision"
++      "verified_revision",
++      "candidate_source_ids",
++      "installed_signature_evidence",
++      "version_evidence"
+     ],
+     "utility": [
+       "class_name",
+@@ -67,6 +70,14 @@
+     "evidence contradicts catalog"
+   ],
+   "limitations": [
+-    "Template only; null and empty entries are not evidence. No credentials."
++    "Template only; null and empty entries are not evidence. No credentials.",
++    "CheatSheet candidates are not installed evidence. Feature mapping is canonical in the UI design contract; this catalog only stores reusable foundation evidence."
++  ],
++  "reference_sources": [],
++  "reference_source_contract": [
++    "source_id",
++    "page_or_section",
++    "candidate_only",
++    "locator"
+   ]
+ }
+--- before/.codex\agents\architect.toml
++++ after/.codex\agents\architect.toml
+@@ -3,4 +3,5 @@
+ developer_instructions = """
+ Read AGENTS.md, workflow/ROLES.md and workflow/CONTRACTS.md plus the assigned relevant inputs. Check project/task/revisions. Do not update canonical state/spec/report, expand scope, or spawn agents. Return the WORKER_RESULT contract; keep credentials and session tokens out of output. Use the selected handoff and sanitized target snapshots. Map native/project components, Screen/Block boundaries, typed data/events, server authorization and dependencies. Do not assume web source imports into OML. Do not call O11 MCP tools; return a bounded architecture proposal and unknowns.
+ Use docs/standards/O11_UI_NATIVE_FIRST.md: verify actual Screen/UI Flow theme/layout and installed signatures/public actions from supplied evidence; record dependency gaps, never replace patterns with Button clones. This role is optional for concrete independent work; primary planning/implementation plus one milestone reviewer is the default.
++Separate CheatSheet candidate provenance from installed signatures/public actions/utilities/tokens in supplied foundation evidence. Return scoped mapping deltas with all canonical fields; critical Unverified blocks dependent O11 writes. Never run independent MCP calls.
+ """
+--- before/.codex\agents\builder.toml
++++ after/.codex\agents\builder.toml
+@@ -3,4 +3,5 @@
+ developer_instructions = """
+ Read AGENTS.md, workflow/ROLES.md and workflow/CONTRACTS.md plus the assigned relevant inputs. Check project/task/revisions. Do not update canonical state/spec/report, expand scope, or spawn agents. Return the WORKER_RESULT contract; keep credentials and session tokens out of output. Implement only the assigned slice and exact file paths. For O11 prepare full Model API lambdas using the official installed skill/examples and supplied actual schemas; the primary local operator applies all MCP calls. Never request/use a session token. Do not call O11 tools or native Sites identity/publish tools. Return guards, expected delta, files/proposal and verification plan; distinguish prepared from applied.
+ Use docs/standards/O11_UI_NATIVE_FIRST.md: implement only the accepted native mapping and minimal custom exceptions; preserve keys/consumers and representative-slice evidence before expansion. This role is optional for concrete independent work; primary planning/implementation plus one milestone reviewer is the default.
++Consume the accepted canonical UI map/foundation revision; do not create a parallel mapping table. Honor UI IDs, native contracts and accepted exceptions; critical Unverified blocks dependent O11 writes. Sites projections use the same source revision/hash.
+ """
+--- before/.codex\agents\designer.toml
++++ after/.codex\agents\designer.toml
+@@ -3,4 +3,5 @@
+ developer_instructions = """
+ Read AGENTS.md, workflow/ROLES.md and workflow/CONTRACTS.md plus the assigned relevant inputs. Check project/task/revisions. Do not update canonical state/spec/report, expand scope, or spawn agents. Return the WORKER_RESULT contract; keep credentials and session tokens out of output. Read selected design references and the project design system. Define matching states, viewports, component hierarchy and accessibility behavior. Native Sites calls and publication belong to the primary Work owner. Edit source only at exact assigned paths, otherwise return proposals.
+ Use docs/standards/O11_UI_NATIVE_FIRST.md: derive review states and honest simulation labels from the verified foundation; propose native/token maps and evidenced custom exceptions for the single UI contract. This role is optional for concrete independent work; primary planning/implementation plus one milestone reviewer is the default.
++Use docs/references/cheatsheets/README.md for scoped candidates. The UI contract owns the only component map, with UI region and five-way classification. Sites App/Review views must identify the same UI IDs and reference that map/token/exceptions; label web simulation and pin projection source revision/hash.
+ """
+--- before/.codex\agents\reviewer.toml
++++ after/.codex\agents\reviewer.toml
+@@ -3,4 +3,5 @@
+ developer_instructions = """
+ Read AGENTS.md, workflow/ROLES.md and workflow/CONTRACTS.md plus the assigned relevant inputs. Check project/task/revisions. Do not update canonical state/spec/report, expand scope, or spawn agents. Return the WORKER_RESULT contract; keep credentials and session tokens out of output. Review only assigned spec/proposal/diff/readback snapshots. Do not edit source or call live mutation/session/merge/publish/reset/refresh tools. Return reproducible severity-ranked findings and evidence gaps, not style preferences. Instructions do not grant a separate read-only sandbox.
+ Use docs/standards/O11_UI_NATIVE_FIRST.md: reject unexplained pattern substitutions, critical unknown mappings, theme mismatch and unaccepted design drift; distinguish metadata/model/runtime evidence. This role is optional for concrete independent work; primary planning/implementation plus one milestone reviewer is the default.
++Compare Sites App/Review UI regions and UI IDs against the single canonical map and its source revision/hash; reject unexplained Button/Container pattern substitutions, custom CSS duplicating utilities/tokens, missing installed evidence and mapping/prototype drift. Check all five classifications, required fields, simulation labels and critical Unverified before dependent O11 writes.
+ """
+--- before/docs\catalogs\README.md
++++ after/docs\catalogs\README.md
+@@ -2,6 +2,6 @@
+ 
+ One focused catalog per verified target foundation. Start from `templates/UI_FOUNDATION.template.json`. It is project-specific evidence, not an exhaustive dump or universal platform schema. Actual module/Screen/UI Flow theme, installed dependency contracts and relevant source hashes determine reuse.
+ 
+-Use official Cheat Sheet for discovery: https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet . Verify classes, tokens and public actions against the installed O11 version. The general Developer Cheat Sheet PDF is learning material, not a UI token/signature registry.
++Use the [CheatSheet source index](../references/cheatsheets/README.md) for the stored Developer PDF (general concepts) and UI reference (pattern/class/token candidates). Record candidate source separately from installed evidence. Use official Cheat Sheet for discovery: https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet . Verify classes, tokens and public actions against the installed O11 version. The general Developer Cheat Sheet PDF is learning material, not a UI token/signature registry.
+ 
+ No generated catalog is supplied for WHT: uploaded snapshots are historical and this review has no live Model API access. Populate actual contracts with the primary local operator, read-only.
+--- before/docs\standards\O11_UI_NATIVE_FIRST.md
++++ after/docs\standards\O11_UI_NATIVE_FIRST.md
+@@ -47,3 +47,13 @@
+ Native is not automatically bug-free or accessible for every version. Add a bounded behavior fix only for an observed failure or applicable version-specific official guidance, with relevant verification; do not preemptively build a second focus/keyboard/tooltip framework.
+ 
+ Reviewer blocks unexplained pattern substitutions, copied default styling, unresolved critical mappings and design drift even when compilation succeeds. Model/readback, manual merge, published version and runtime each retain their existing evidence rules. No new automatic enforcement mechanism is claimed.
++
++## Reference provenance and canonical component mapping
++
++Use the [CheatSheet source index](../references/cheatsheets/README.md): Developer Cheat Sheet supplies general IDE/language/widget candidates; UI CheatSheet supplies UI pattern/class/token candidates. Neither proves installed contracts. Primary local verifies only relevant signatures, public actions, utilities and tokens through read-only O11 discovery, using current foundation revision and evidence locators. Workers receive scoped source sections/excerpts and deltas, not repeated full PDF/site/theme dumps.
++
++The native component map in the single UI design contract is the canonical mapping source. Every component row must contain: stable UI ID; UI region; classification; exact O11 widget/pattern and module (or explicit none/unknown); availability/version evidence; inputs/events/public actions; classes/tokens; custom gap; rationale; acceptance status with decision locator. Keep candidate provenance and installed evidence distinct. Use exactly Native / Native + custom CSS / Native + custom behavior / Fully custom / Unverified. These classify the proposed O11 implementation, never prove that a Sites web simulation is native. If both CSS and behavior extensions exist, classify Native + custom behavior and describe both. Fully custom requires evidenced alternatives/gap and explicit acceptance; it does not waive native-first. Missing material foundation/contract evidence is Unverified, regardless of visual similarity or design acceptance.
++
++Sites must provide an App view for UI review and a Review view matching every UI region to its canonical UI ID, classification, component contract, tokens and exceptions. Use a review overlay/selection highlight, anchor or equivalent stable UI-ID navigation between the views, including conditional states. Keep normal App view clean. Label web simulations explicitly. The Review view reads or references the canonical contract map and its linked token/exception sections; do not maintain a second editable table. A generated projection must identify the source path/revision/hash, be regenerated after changes and be checked for missing/extra IDs and field drift before review. Freeze the same revision for prototype, contract acceptance and handoff.
++
++Reviewer compares prototype regions/states and IDs with the canonical mapping, checks source revision and token/exception links, and flags unexplained Button/Container pattern substitutions, CSS duplicating existing utilities/tokens, missing installed evidence and prototype/mapping drift. Critical Unverified entries block dependent O11 writes until resolved with evidence; continue independent discovery/documentation. These conditions refine existing G1-G3, not a new gate system. Primary plus one milestone reviewer remains the default.

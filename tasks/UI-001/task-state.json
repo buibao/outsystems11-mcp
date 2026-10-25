@@ -1,0 +1,37 @@
+﻿{
+    "project_id":  "wht",
+    "task_id":  "UI-001",
+    "spec_revision":  "0.2",
+    "design_handoff_revision":  "R1",
+    "delivery_route":  "O11_ONLY",
+    "delivery_mode":  "UI_PROTOTYPE",
+    "active_surface":  "LOCAL",
+    "sites_target":  null,
+    "o11_target":  "RUNTIME_VERIFIED",
+    "stage":  "ACCEPTED_LIVE_VERIFIED_AWAITING_MANUAL_PUBLISH",
+    "status":  "IN_PROGRESS",
+    "last_observed_target":  {
+                                 "subject":  "Fresh accepted-live model after authorized session closure",
+                                 "identity":  "WHT_Request / Reactive / 50e8e182-1c94-4c32-bf3b-f4e609f48bda",
+                                 "version":  null,
+                                 "environment":  "Development - personal-g4et6y1o.outsystemscloud.com"
+                             },
+    "pending_disposition":  "No unmerged feature changes; merge accepted and fresh live verified; edit session ended with explicit permission; checkpoints retained",
+    "platform_owners":  {
+                            "sites_owner":  null,
+                            "o11_operator":  "primary-local"
+                        },
+    "active_assignments":  [
+
+                           ],
+    "blockers":  [
+                     "User manual DEV publication and identified version required for runtime QA"
+                 ],
+    "evidence_index":  [
+                           "evidence/validation-baseline.json",
+                           "evidence/data-model.json",
+                           "workers/A01-requirements.md",
+                           "workers/D01-visual.md"
+                       ],
+    "next_action":  "User manually publishes WHT_Request to DEV; identify published version and runtime URL, then execute QA"
+}

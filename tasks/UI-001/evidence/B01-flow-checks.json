@@ -1,0 +1,180 @@
+{
+  "subject": "B01 pending model, read-only flow probe",
+  "checks": [
+    {
+      "action": "UpdateCOR2025",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "UpdatePEL2024",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "UpdatePEL2028",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "UpdatePEL2027",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "UpdatePEL2029",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "UpdateCOR2024",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "UpdateCOR2027",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "UpdatePEL2026",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "UpdateCOR2028",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "HeaderCommand",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "UpdateCOR2029",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "UpdateCOR2026",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "LoadRepresentative",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "UpdatePEL2025",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "Unavailable",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "SelectCOR",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "SelectPEL",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "Specimen",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "FileSelected",
+      "nodes": 5,
+      "status": "PASS"
+    },
+    {
+      "action": "ResetSelection",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "FileCommand",
+      "nodes": 4,
+      "status": "PASS"
+    },
+    {
+      "action": "ToggleTracking",
+      "nodes": 4,
+      "status": "PASS"
+    },
+    {
+      "action": "Submit",
+      "nodes": 4,
+      "status": "PASS"
+    },
+    {
+      "action": "ToggleYear",
+      "nodes": 4,
+      "status": "PASS"
+    },
+    {
+      "action": "ClearAll",
+      "nodes": 4,
+      "status": "PASS"
+    },
+    {
+      "action": "AcceptFile",
+      "nodes": 4,
+      "status": "PASS"
+    },
+    {
+      "action": "OpenCoverage",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "CancelCoverage",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "ConfirmCoverage",
+      "nodes": 4,
+      "status": "PASS"
+    },
+    {
+      "action": "RemoveFile",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "OpenFile",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "ToggleTracking",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "ConfirmChoices",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "CancelChoices",
+      "nodes": 3,
+      "status": "PASS"
+    },
+    {
+      "action": "InitializeDraft",
+      "nodes": 3,
+      "status": "PASS"
+    }
+  ]
+}

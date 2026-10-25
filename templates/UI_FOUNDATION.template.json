@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.1",
+  "foundation_id": null,
+  "revision": null,
+  "status": "DRAFT",
+  "observed_at": null,
+  "source_snapshot": null,
+  "target": {
+    "environment": null,
+    "module_name": null,
+    "module_key": null,
+    "module_style": null,
+    "screen": null,
+    "ui_flow": null
+  },
+  "theme": {
+    "module_default": null,
+    "screen_or_flow_actual": null,
+    "base_chain": [],
+    "layout_block": null,
+    "evidence": []
+  },
+  "versions": {
+    "outsystems_ui_package": null,
+    "css_header_observation": null,
+    "skill_revision": null,
+    "evidence": []
+  },
+  "components": [],
+  "utility_classes": [],
+  "tokens": [],
+  "entry_contracts": {
+    "component": [
+      "ui_responsibility",
+      "module",
+      "flow",
+      "name",
+      "kind",
+      "availability",
+      "signature_locator",
+      "inputs",
+      "events",
+      "public_actions",
+      "side_effects",
+      "verified_revision",
+      "candidate_source_ids",
+      "installed_signature_evidence",
+      "version_evidence"
+    ],
+    "utility": [
+      "class_name",
+      "purpose",
+      "source_locator",
+      "verified_revision"
+    ],
+    "token": [
+      "name",
+      "value",
+      "semantic_purpose",
+      "owner",
+      "source_locator",
+      "verified_revision"
+    ]
+  },
+  "invalidated_by": [
+    "target/environment change",
+    "actual theme/layout change",
+    "dependency/skill revision change",
+    "relevant signature or consumer behavior change",
+    "evidence contradicts catalog"
+  ],
+  "limitations": [
+    "Template only; null and empty entries are not evidence. No credentials.",
+    "CheatSheet candidates are not installed evidence. Feature mapping is canonical in the UI design contract; this catalog only stores reusable foundation evidence."
+  ],
+  "reference_sources": [],
+  "reference_source_contract": [
+    "source_id",
+    "page_or_section",
+    "candidate_only",
+    "locator"
+  ]
+}

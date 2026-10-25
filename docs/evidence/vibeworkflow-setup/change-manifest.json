@@ -1,0 +1,383 @@
+{
+  "subject": "Final workspace file changes; manifest excludes itself. Upstream/official skill separately preserved.",
+  "files": [
+    {
+      "path": ".codex/agents/analyst.toml",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "54a5ce021b595a44de66ec90ddaa231b93f1841563fa90442444579a51201e07"
+    },
+    {
+      "path": ".codex/agents/architect.toml",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "c96d3a03e428a8582a879023b282ff50b39e094e5215a3c2bae0a6ef968c598c"
+    },
+    {
+      "path": ".codex/agents/builder.toml",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "cf34425cb0d8537fc11841b2b101b1ccc31d6619435593887a05356ac94c4284"
+    },
+    {
+      "path": ".codex/agents/designer.toml",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "a315717251a03cd10a79aa9a66f4f24de67c869143e6b6fe5e7b6937c90aa7f9"
+    },
+    {
+      "path": ".codex/agents/planner.toml",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "a06ae6dc5404b2a2bba83ecbb532507ed6b18c4b94e4c9a6e008400bb5d7a1db"
+    },
+    {
+      "path": ".codex/agents/qa.toml",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "0e4e8293a897ee5e7817c6721134a56af858185fe27c48bf8188680686dee596"
+    },
+    {
+      "path": ".codex/agents/reviewer.toml",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "a001cd24b941dfa1f55122ae6cc7e9eb95aba9b24b6b6a7a1006ef789f6fab05"
+    },
+    {
+      "path": ".codex/config.example.toml",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "37b2be89fbc41bbfb418d4952cb7d3587dc71bdfdf0e7d9b40ce2f1c4dd2563e"
+    },
+    {
+      "path": ".codex/config.toml",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "b3cfb3c48c5ee196c3afe5aad37d168d0ddc8ba8e04370208c95c289137f5d1c"
+    },
+    {
+      "path": ".gitignore",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "96258a8e179d7dc4be4e3fa794705978705abe55f5fe7691052ab4dd9e817ac9"
+    },
+    {
+      "path": "AGENTS.md",
+      "action": "UPDATE",
+      "before_sha256": "7882fb2d93935611392c83ce51b41f0e0f3a0a18788fa1075f5af969062be593",
+      "after_sha256": "c045f0d297c2af183e8a923fe15cbb21382cce0c04d8ca520cd58867f0aa6c10"
+    },
+    {
+      "path": "README.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "27324f99c5144b51c3c0d47401c0457147e8f7e569fef252847fb25e54f23c82"
+    },
+    {
+      "path": "SETUP.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "b02f541da2a53a9ec39e474dfb34b7f8aabd7ad61209f29d7e9edbbec1c9a6b5"
+    },
+    {
+      "path": "TEMPLATES.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "884d2a6c817b9fd661376faf516f27d4f516f9e6547e7343cce746064234a137"
+    },
+    {
+      "path": "VERIFICATION.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "19fa371f12cd1562f28ae579adea934a5d9dddc365f6e48b94d95095f5a7e3b2"
+    },
+    {
+      "path": "adapters/O11.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "1d36b90c92bea1e14a313976cd4963fe551ee5b5e7bb72f8a994686165ce5efc"
+    },
+    {
+      "path": "adapters/SITES.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "7ddcda673da4e3e4308b1d0a821618ca10773660f03ae4b00a6a07aa8e6682f6"
+    },
+    {
+      "path": "docs/VIBEWORKFLOW_QUICKSTART.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "75023caa423d7a52f00871a54773fe9c66ff1d67021578bf619664646d417c76"
+    },
+    {
+      "path": "docs/evidence/vibeworkflow-setup/AGENTS.before.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "7882fb2d93935611392c83ce51b41f0e0f3a0a18788fa1075f5af969062be593"
+    },
+    {
+      "path": "docs/evidence/vibeworkflow-setup/analyst-assignment.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "46522aa557ac0b8dccd0271fdf16465b43e40d5d8272231ea73faabe0097ae81"
+    },
+    {
+      "path": "docs/evidence/vibeworkflow-setup/client-checks.json",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "c20798c0d69445b7560b064e670965a263bf7be081ee6736a3dd804c3513430c"
+    },
+    {
+      "path": "docs/evidence/vibeworkflow-setup/document-links.json",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "6139dfddec85984e4496661c8404eac665fcf967f335a367b342c6ff708bbc01"
+    },
+    {
+      "path": "docs/evidence/vibeworkflow-setup/effective-config.jsonl",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "495cc37c11f84ba0ad8f75e0dcc52a1759c9c80c0db17a5e032599060ac661c1"
+    },
+    {
+      "path": "docs/evidence/vibeworkflow-setup/integration-plan.json",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "6edb58f85b46b06dfca1d935748baf513cf9088579e0b2f96c5f128bfa82beaa"
+    },
+    {
+      "path": "docs/evidence/vibeworkflow-setup/native-discovery-prompt.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "542642dc287bc79315f9a4506d783b6deb6166f6adf0170cd047a6526b01c2bd"
+    },
+    {
+      "path": "docs/evidence/vibeworkflow-setup/native-execution-envelope.json",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "6aa5e864baacf0c0b5dc581a85a3e1fe014764904997fffa927c47d06cb3494a"
+    },
+    {
+      "path": "docs/evidence/vibeworkflow-setup/native-role-context.json",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "32c544a6be90a4d057897cfd1349c8d4b08bd3dd9702905085f1526a0d2c9257"
+    },
+    {
+      "path": "docs/evidence/vibeworkflow-setup/native-role-spawns.json",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "f698f2064b09ddbda0a9555a66bd0cc6c046a35c6bd21368ee3163430040b570"
+    },
+    {
+      "path": "docs/evidence/vibeworkflow-setup/native-worker-results.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "23dbcadedfb4ef60a8701a62b60c92a0e0e2aceca2cd8e796cf642d6b9b6b5cb"
+    },
+    {
+      "path": "docs/evidence/vibeworkflow-setup/o11-preflight.json",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "ecd05421ca664add73f1d8a9d4d0e76b6a0c58801e599e9d4074cbd11b4bd379"
+    },
+    {
+      "path": "docs/evidence/vibeworkflow-setup/preservation-after.json",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "cde4db072684f1da6c57aa69368a561740f3069f36b522129414d3bb6ab23309"
+    },
+    {
+      "path": "docs/evidence/vibeworkflow-setup/preservation-before.json",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "48218898301aee524b10534e6da4a6b3ae75ccde661b0b29731f685f26561504"
+    },
+    {
+      "path": "docs/evidence/vibeworkflow-setup/reviewer-assignment.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "340c281412e46c77e3c53d398c43dd1d3219d22a4179b2b1ed474f75c2d89c4d"
+    },
+    {
+      "path": "docs/evidence/vibeworkflow-setup/source-package-check-results.json",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "ddf5f859088b7abc99ab500eda3cb367eb70fc0558ba2cdd336daed5257662d1"
+    },
+    {
+      "path": "docs/evidence/vibeworkflow-setup/source-provenance.json",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "6f4baba3130701bfc3df2d7e0221abf5dd58cbebd9ba85bc6d4b7b08e7ff2ab3"
+    },
+    {
+      "path": "docs/evidence/vibeworkflow-setup/validator-cases.json",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "d9239d02e006c02dd241970b23af04af81730c1b2a09bf13718f0a6aced90479"
+    },
+    {
+      "path": "docs/evidence/vibeworkflow-setup/worker-contract-checks.json",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "1b1c516cd906dd4f5819437988102289c2ef02e2285b1eebc80ef1f2b2c3a71b"
+    },
+    {
+      "path": "docs/execution/VIBE-SETUP.report.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "f8c135a305149b34cc363c950ef6950b48afba3e1036e75f8d2bedb2819bd703"
+    },
+    {
+      "path": "docs/project-context.md",
+      "action": "UPDATE",
+      "before_sha256": "2f1bd5d9ba2b6f7514bbcc1d9fc439ae8c192c8d874544d2b9115faa33acf923",
+      "after_sha256": "5317927fa8cf733d759ca283218b4b7a1ac655c686f7f270180044c91d0719d3"
+    },
+    {
+      "path": "docs/setup-status.md",
+      "action": "UPDATE",
+      "before_sha256": "6a98ae4834a65d9abcbbd3bc05da92e551256b2d475842691f444d80da5f8ab1",
+      "after_sha256": "a60e0982805d59059a8b2fe092de542c83c6dd0b5107e0eee1290d47ea10630a"
+    },
+    {
+      "path": "docs/verification.md",
+      "action": "UPDATE",
+      "before_sha256": "91fbdbe878c2e11c6933200fb48a4937bcfd7640951379907ce0044bd7304943",
+      "after_sha256": "ab963ed810f41e0e685c666753fc0c64bc7c90f570ca039b75c21be9c4219179"
+    },
+    {
+      "path": "project.json",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "1b289eda2bd0a987d9178a51eca1d91840e09ac5fdce023b602129d769e6137d"
+    },
+    {
+      "path": "prompts/RESUME.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "2d66f62f9299393386be9c540a7b409a7dd98751ca61a94214e1edad61fb5ae0"
+    },
+    {
+      "path": "prompts/START.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "be0393aa18e7bedd6b094db841ada7d3dd3eec10221cc6e167d77e2a1dcb8a67"
+    },
+    {
+      "path": "prompts/WORK_TO_LOCAL.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "7492a2eaa9bd5297717fffc823c88314ad097f7452ba70d22ec010438e4b879d"
+    },
+    {
+      "path": "scripts/check_workspace.py",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "67a0fea9beddf4a2cf38333f33bd9c094faa5f7659f183a4c9c522631388612d"
+    },
+    {
+      "path": "scripts/verify_workflow_setup.py",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "305f0c81c3b9108b619b6fd2d94bd9561eb77bd1e96d05664bafe8939f7285fa"
+    },
+    {
+      "path": "tasks/README.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "9e9c081466500bb9a5d6f4de6a26da0e3a58a9d120867232698a8ce4b8ca0060"
+    },
+    {
+      "path": "templates/AGENTS.workflow.template.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "dc8c8ce8e27eb9beb6b6862736063fce6b1c7351b9d5599180bf67d35c2ce783"
+    },
+    {
+      "path": "templates/BRIEF.template.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "8b8b3ee9ae52c9941ef25c7ee4444f3cf143e476224e47bbf23e48f7fcd6fcfd"
+    },
+    {
+      "path": "templates/DESIGN_HANDOFF.template.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "307c2a0a8dec633e1f0a97e30af6ea1a19ae5f3ab436280a2f025990bff69dcf"
+    },
+    {
+      "path": "templates/EXECUTION_REPORT.template.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "18dfa4096598a2b1acb27020236e65d4490e099b17f4a217e4342b9f3a8ed563"
+    },
+    {
+      "path": "templates/O11_PLAN.template.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "ee6ff510742b614584d026a8898e99a85e8d5ee31b2496d7d6b795c1b5a4cea6"
+    },
+    {
+      "path": "templates/PROJECT_PROFILE.template.json",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "1b289eda2bd0a987d9178a51eca1d91840e09ac5fdce023b602129d769e6137d"
+    },
+    {
+      "path": "templates/TASK_SPEC.template.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "1fa6d31c1521c812e4a8d7fb009634b36a52f3a17669cc37df7c9fe2886cd87d"
+    },
+    {
+      "path": "templates/TASK_STATE.template.json",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "fbb45d097fc06162a6778302d23f02f7e14f48fbed7150796a6e5063935384bc"
+    },
+    {
+      "path": "templates/WORKER_ASSIGNMENT.template.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "f25a226bfaa7190b80ad34a1c5a86c16ebfb364eb387a68cbfd2c8b20663f878"
+    },
+    {
+      "path": "templates/WORKER_RESULT.template.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "37ed10f31a3c24b7ee3917184635d956ffe6827c6592f746ffd6e5f6c8227858"
+    },
+    {
+      "path": "workflow/CONTRACTS.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "b5f1a0fd1a20da2291f8be5a60ed5d3cbfefe5728a7054e1c577e8b4be48f2aa"
+    },
+    {
+      "path": "workflow/PROJECT_SWITCH.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "16a9e737f9d6dcad216578c0acbc09f29022befffad874450284ea4c2867f55e"
+    },
+    {
+      "path": "workflow/PROTOCOL.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "715105b03d3f3355816ff5d47fcc87c0503ce6bb43c07bc6dbe778c2e6f8a270"
+    },
+    {
+      "path": "workflow/ROLES.md",
+      "action": "CREATE",
+      "before_sha256": null,
+      "after_sha256": "87dccfe8d4ec3af63c40a63c8c5e434715e62dde98f773b03a05f5e8235c35ca"
+    }
+  ],
+  "external_change": {
+    "path": "C:\\Users\\buiba\\.codex\\config.toml",
+    "action": "UPDATE_ONLY_AUTHORIZED_TRUST",
+    "backup": "C:\\Users\\buiba\\.codex\\config.toml.vibeworkflow-before-trust-20261023T235134.bak",
+    "other_settings_unchanged": true
+  }
+}

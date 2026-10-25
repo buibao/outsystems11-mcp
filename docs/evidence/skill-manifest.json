@@ -1,0 +1,705 @@
+{
+  "sourceRepository": "https://github.com/OutSystems/outsystems11-mcp",
+  "repositoryCommit": "80263e4948493847249a62a80b09455889c7b2f0",
+  "projectSkillPath": "D:\\OutsystemsAIAgent\\.agents\\skills\\servicestudio-mcp-oml",
+  "fileCount": 169,
+  "byteForByteMatchesGitCommit": true,
+  "upstreamSkillModified": false,
+  "requiredReferencePathsExist": [
+    "lambda-contract.md",
+    "verb-reference.md",
+    "mcp-session-pointer.md",
+    "patterns-by-element.md",
+    "logic-and-integrations.md",
+    "reactive-ui-creation.md",
+    "reactive-widget-api.md",
+    "osui-verified-blocks.md",
+    "module-style-support.md",
+    "traditional-ui-creation.md"
+  ],
+  "bootstrapSpecPath": "D:\\Downloads\\O11_Codex_PreCoding_Setup.md",
+  "bootstrapSpecSha256": "26ca908970c42a8920781d7332ec0812d1c2de8b28347b5dad6b9367c1e507cf",
+  "vendorCheckoutPreserved": {
+    "indexSha256": "5893f2327af823e77de95e9d1e89c62bf4d65e98ddc19af1ef5b55ca430f0e94",
+    "statusSha256": "973ddffeff989ed29ca804f2b19cbc4018ba0c6f8afdafa1706d128ef2abfd8a",
+    "existingStagedAddedFiles": 169
+  },
+  "files": {
+    "effectiveness.yml": {
+      "gitBlobSha1": "350bb73670faee08224f5583f071dc01c119e065",
+      "sha256": "0eec8b9ef90c6b97718bc2363deb3708fbcc4ca86ac71d72333b5fa033260864"
+    },
+    "SKILL.md": {
+      "gitBlobSha1": "bd6df0c60c5a63eaa1d73a9f0bc1daca991eb373",
+      "sha256": "050de3b99e6b85e374c99a9efe97086bc475a9f7e7fc2aac617836f525cee407"
+    },
+    "docs/BuiltinFunctions.Generated.json": {
+      "gitBlobSha1": "c0fc1c29c61cbee2b28776835c78ff61bd7cf872",
+      "sha256": "165668b057c2a755ab462325fc8ce2843c593de0f105c8f1433213b5ac28e969"
+    },
+    "docs/Loader.Generated.cs": {
+      "gitBlobSha1": "044d72b001c5ee9356e4c8fa01ac35c16df20b25",
+      "sha256": "304306e0377a550f527be1081fbee508ab9ee7b546ccb54aaceb0e119cdbe8dc"
+    },
+    "docs/OutSystems.Model.Applications.Generated.cs": {
+      "gitBlobSha1": "2297547f667d2ff433d466404aa53f59cc2dbdb9",
+      "sha256": "c2fe9e4a3015131f6cd8d5b4a91a6ee23bb18647b8e31ec036e53d35b9079a83"
+    },
+    "docs/OutSystems.Model.BusinessProcesses.Generated.cs": {
+      "gitBlobSha1": "612bc4c4436ffc36a38ce73f2ec56238e3200b89",
+      "sha256": "7e83a99ad521076b53ce686084df2b522c679c444a61c899c36ea0e85fea32f9"
+    },
+    "docs/OutSystems.Model.BusinessProcesses.Nodes.Generated.cs": {
+      "gitBlobSha1": "a38dd6d56a0995c9db19b4c4f3e58def6770edf4",
+      "sha256": "860de5fe36312d8bdaa403eb4c3538366551ebd15193b3e57d96abfd39c3e5f4"
+    },
+    "docs/OutSystems.Model.Data.ChunkingMethods.Generated.cs": {
+      "gitBlobSha1": "d3d9b6fbe428a5b3e49db1f9fa3ba0e775fda621",
+      "sha256": "9965acdc684972815cc461a47b39b43aaeb690c728c3defcfc87f4074fee6f16"
+    },
+    "docs/OutSystems.Model.Data.Generated.cs": {
+      "gitBlobSha1": "482fb35178d2bc70819d6ca384b35ab9cbc2966c",
+      "sha256": "1abcebd789443b25c61d5eafae23a9eacd8a159611ff560576cc1deb3e311a6f"
+    },
+    "docs/OutSystems.Model.Data.Nodes.Generated.cs": {
+      "gitBlobSha1": "60e80783e1495d59b5dbeea171e2a0bd58231f6f",
+      "sha256": "578050bfc4ea206a5824a8bb6cd2094dde9d740e58106a4db3c0cbd88ab84a09"
+    },
+    "docs/OutSystems.Model.Enumerations.Generated.cs": {
+      "gitBlobSha1": "214c78a89020fbb64c203d10d208595bea1030d4",
+      "sha256": "c6efdc0c71d79300f96aa32135c2ce116f4164eecf66a354138f568e58d391e5"
+    },
+    "docs/OutSystems.Model.Enumerations.ModelPlugins.Generated.cs": {
+      "gitBlobSha1": "736aff5e314e065f19579f5211e3d298149aced3",
+      "sha256": "4e8dd6c2395390d8cd93c4e7e86749f73a820de95736d362e61655cbfd9b1bfd"
+    },
+    "docs/OutSystems.Model.Expressions.Generated.cs": {
+      "gitBlobSha1": "099e0b4b23312268fa9c5db6648c884bf2ff079d",
+      "sha256": "783a614af72bc5cbd573fd3a74e275429aa19ff2cb768abe721f3d6cceeed88c"
+    },
+    "docs/OutSystems.Model.Expressions.Nodes.Generated.cs": {
+      "gitBlobSha1": "9e78adf5ba88f986faef984eb58adac4db1ddc56",
+      "sha256": "fd45285a27e3bfa5b5d1636832c66349b3ab4a2db4f2b5345a3f9e1da119de27"
+    },
+    "docs/OutSystems.Model.Factory.ChangeSet.Generated.cs": {
+      "gitBlobSha1": "f2c77385244b73b0a40d15cbca2e819a35355a07",
+      "sha256": "55610207f46dcf037f41c81908d3a0c1141e9d93eecf69781ead8af0f7ded63c"
+    },
+    "docs/OutSystems.Model.Factory.Generated.cs": {
+      "gitBlobSha1": "24614138ef84ab6349f1ae08e9fd3baf642ce3d5",
+      "sha256": "d4485a7387ecd4d55880e9b46a5e2ac09a45999c6e535151e1f71b862f751d85"
+    },
+    "docs/OutSystems.Model.Generated.cs": {
+      "gitBlobSha1": "daff93a42bd44e7ce90f9dcb0c9432ecf6af7fb7",
+      "sha256": "104cf4d99988970ae79d9fed73ad8e62aeaa525764e058583bb103e282e53989"
+    },
+    "docs/OutSystems.Model.Logic.Aggregates.Database.Generated.cs": {
+      "gitBlobSha1": "972af5abaabc421d37688c3146d8a925269bea14",
+      "sha256": "45e248d9c36dbee0138e95e32688fbea66317115a5da9106eb5e1d1ec2f6579f"
+    },
+    "docs/OutSystems.Model.Logic.Aggregates.Full.Generated.cs": {
+      "gitBlobSha1": "fd5f53223ef578858ca3ca950c465945b41d3e54",
+      "sha256": "82a5a5674e36a8a237895acd9a1488061e2b49caa3e3a940997f77193f9f58de"
+    },
+    "docs/OutSystems.Model.Logic.Aggregates.Generated.cs": {
+      "gitBlobSha1": "5b2ab60a93347afea6884fe0936c7e01955ad6a5",
+      "sha256": "5530df32cefc5c2986a802e0692348e2d09289df5a6aa0adea2137875bed9d33"
+    },
+    "docs/OutSystems.Model.Logic.Generated.cs": {
+      "gitBlobSha1": "b6184c369c2ad00678d5fe60f26d47baf47a17fc",
+      "sha256": "0725d92e1d7027a0c95c5f60d4d1289048be88677e445d0a6db1e5bb72577f62"
+    },
+    "docs/OutSystems.Model.Logic.Integrations.Generated.cs": {
+      "gitBlobSha1": "806abdf02261402629c05b8ee089f2325b1ea1d4",
+      "sha256": "9e59d28f1ca529dc92316ee582f26a8a1875369cfb299559db1297e3bfba2d21"
+    },
+    "docs/OutSystems.Model.Logic.Integrations.SOAP.Generated.cs": {
+      "gitBlobSha1": "75e3f4acf2a6a882d7ec3323fb8beec4a155f011",
+      "sha256": "13387360c3c2172cd5c76b634d9f250a8eadf1a4511e5290e1e5e20c105a6d8d"
+    },
+    "docs/OutSystems.Model.Logic.Mobile.Nodes.Generated.cs": {
+      "gitBlobSha1": "116dc9c079de6a1b07283a7d9f098a18088eedcd",
+      "sha256": "43cca39d649db8eed113a952fa96ee84fd570f7aae9538940d0d5de3435836a5"
+    },
+    "docs/OutSystems.Model.Logic.Nodes.Generated.cs": {
+      "gitBlobSha1": "e5a6b703be38335467c396d755d036c824586c71",
+      "sha256": "5dca907369e037b77f748628e2c7f22989346a8e708631dbfd7bfa8b8f68dd8d"
+    },
+    "docs/OutSystems.Model.ModelPlugins.Generated.cs": {
+      "gitBlobSha1": "359b5c724c969094a51e7658b49d81ef742b3c82",
+      "sha256": "9a8e2ef9864f90696f0d227385b570f96a4e90660f537c8d7d82fb69402ebaf5"
+    },
+    "docs/OutSystems.Model.ModelPlugins.UI.Mobile.Generated.cs": {
+      "gitBlobSha1": "83391579bea44b2dbc5cd056238b0e0d0e5dca3d",
+      "sha256": "fc94c83b1ed8843755d926eb8f27f2b696d483b6e715cb223fd58c7c17dbfea5"
+    },
+    "docs/OutSystems.Model.Plugin.NRWidgets.IconResources.Generated.cs": {
+      "gitBlobSha1": "6555354448dfa158ae78459a8c715670cb4636db",
+      "sha256": "0681a1462eb10097f017dc4227ffea00e6991e0b47a1d3ceb0986150da4b7bee"
+    },
+    "docs/OutSystems.Model.Processes.Generated.cs": {
+      "gitBlobSha1": "f76a82d70b50208c2d3ee3dfa8ab3e32050c68f9",
+      "sha256": "5f868d6cfd42e89d189399514f1b3037eb78a855c3e9a1a5770a7665d94f5620"
+    },
+    "docs/OutSystems.Model.Signatures.Generated.cs": {
+      "gitBlobSha1": "45f0d4ee47633eeee6e0abb3f21aa1c56e77b7d1",
+      "sha256": "74790f22169620f1714b02f240d2d831a5e3153c678f0d367a29ecfc2f5a3662"
+    },
+    "docs/OutSystems.Model.Types.Generated.cs": {
+      "gitBlobSha1": "50a6ead8e8757757d3e162358659b7dc2f104d55",
+      "sha256": "f4fa1838601a3f7ae9794f8fcacb81a7895110cfddad234fdc2d66c05772ceee"
+    },
+    "docs/OutSystems.Model.UI.Generated.cs": {
+      "gitBlobSha1": "efd32ef677bae94328374230de2bb11dd8603b1d",
+      "sha256": "815c1af4ef0849db02312f98171c6b990658ee103f964deb8c7871943745d4de"
+    },
+    "docs/OutSystems.Model.UI.Mobile.Events.Generated.cs": {
+      "gitBlobSha1": "74b5583af5065fcaff356ffd2ab6717b7b046315",
+      "sha256": "4f9c4cbda67c25ae25f26db4aa002a4e0c5abd77a97fb335bf582d68a019c919"
+    },
+    "docs/OutSystems.Model.UI.Mobile.Generated.cs": {
+      "gitBlobSha1": "c23e3948388da3a9a0406e5592422871e77933c1",
+      "sha256": "6ac9f1aa941823a07db19a5f3f771568d0443fc3eb372a527886d31b22475ed5"
+    },
+    "docs/OutSystems.Model.UI.Mobile.Widgets.Generated.cs": {
+      "gitBlobSha1": "87e75a775d8862d31d702de17fcae03230340560",
+      "sha256": "059ec2fc781fd537dd04d8421f4422fc64c165c1deee3c9f31afbd8a8454b85f"
+    },
+    "docs/OutSystems.Model.UI.Web.Generated.cs": {
+      "gitBlobSha1": "2235761be81009054a95c208e17595ffd1acf635",
+      "sha256": "c9ebb24fc420bc92ca56d4d9c3ccc01260661d9e65791a28efe91390ef9476ec"
+    },
+    "docs/OutSystems.Model.UI.Web.Widgets.Generated.cs": {
+      "gitBlobSha1": "3540aed4192833878d3fa877b643974e1a34349f",
+      "sha256": "2b5b05c2ef6a46b738ba7a0281e77fd131d3d63424691275d729a77ea2fb5166"
+    },
+    "docs/OutSystems.Model.Versioning.Generated.cs": {
+      "gitBlobSha1": "3392ceb6323f41b6ab97b40eac23066138a364ab",
+      "sha256": "5164f2398e4c1562d03bef7e12226a320f7457a5b6cb9e458a0133825c1a7101"
+    },
+    "docs/ServiceStudio.Plugin.NRWidgets.Enumerations.Generated.cs": {
+      "gitBlobSha1": "14037382865a7c6f42b63ba5183410801b2e75ea",
+      "sha256": "8bb4af18cf2d479f74c9e3eb5403528e711e42c2defde315ec5675725b9fa2d2"
+    },
+    "docs/ServiceStudio.Plugin.NRWidgets.Generated.cs": {
+      "gitBlobSha1": "039ce792ce414496db51126d2fd6c42e76843346",
+      "sha256": "287fb505f1e7f45209f8686a4e4b3a92b07c7b9df77dd9edbaac373b8c101793"
+    },
+    "docs/ServiceStudio.Plugin.REST.Enumerations.Generated.cs": {
+      "gitBlobSha1": "aec5b2d7f0b118d1775a888f87f3ac9f508ddee4",
+      "sha256": "7ec53aa41752e5319d8b7a1792cd4c29df181e002f32dcd686357bed34221f51"
+    },
+    "docs/ServiceStudio.Plugin.REST.Generated.cs": {
+      "gitBlobSha1": "a75ca4e1b7a7bb1df6c9c14974b52bad448963ba",
+      "sha256": "c7e3d3a13ef8fed880c1532c2119c3374367e11bf36a45ef04fd9f83556a6211"
+    },
+    "docs/ServiceStudio.Plugin.REST.ModelDefinition.Generated.cs": {
+      "gitBlobSha1": "fbcdca62dc1eedd70b2806feece971cc656b51f5",
+      "sha256": "1a94b46afaebab4b662adffe254905a625b4fe145b8eaf81c56d58ef5e4f9a82"
+    },
+    "docs/ServiceStudio.Plugin.REST.ModelDefinition.Types.Generated.cs": {
+      "gitBlobSha1": "8551e4dfba43ee92acee0389fa0c9082b952cf84",
+      "sha256": "1087a116b2ab413ad5db101ddc6cdd6ef118c87f5a66506fa740cd8f272a9d9d"
+    },
+    "docs/ServiceStudio.Plugin.REST.Parser.Generated.cs": {
+      "gitBlobSha1": "69ffa14d03398139140804d9ad1e16178e7bc8cd",
+      "sha256": "427bc87cfa1e314d0764d0e070ff6baff0391d2ca7a18d6477eef2e0d865a6cf"
+    },
+    "docs/ServiceStudio.Plugin.RESTService.Enumerations.Generated.cs": {
+      "gitBlobSha1": "5dc3e61f8ad8b6de9553d25629da23833370155a",
+      "sha256": "f0f6d21c5a793658e99a0388e602a251a2b46e6790029e8ed562c906afb7a38f"
+    },
+    "docs/ServiceStudio.Plugin.RESTService.Generated.cs": {
+      "gitBlobSha1": "976b8e3ec8cda05ee2638341d13f0834727aae2b",
+      "sha256": "6c78cd854520b7c9f4da7963cb1a7dc5468ed156b0b334286c2265f38aa917ae"
+    },
+    "docs/ServiceStudio.Plugin.SOAP.Enumerations.Generated.cs": {
+      "gitBlobSha1": "47845286ec53d8a1357fa6f4dd3021db4eb0f3d4",
+      "sha256": "bf66521a4341f6f03519c99be0ea1ed911a1719e4afee2db2ea56e5445aee7de"
+    },
+    "docs/ServiceStudio.Plugin.SOAP.Generated.cs": {
+      "gitBlobSha1": "0add1905267c7c47af405a5fe7d0264b23b8cb76",
+      "sha256": "fcc942c6645173259ab644820e58dd3382fc9571b95941c602beefd38ded249d"
+    },
+    "docs/ServiceStudio.Plugin.SOAP.SOAPTelemetry.Generated.cs": {
+      "gitBlobSha1": "f352e53b95e382311323bef0d053fd1f2654f192",
+      "sha256": "43832b547c0a8889c9b9673757985b892c92c409fbb6a1eacaa92c1101696c25"
+    },
+    "examples/AddAttribute.cs": {
+      "gitBlobSha1": "56bdd4eb8db5f066b1b0a826cacd4a555e9858ea",
+      "sha256": "d4051a8a9c8f7ac2c44ea1a6325c23db8c85fc4b24a9fa1b0767b1bad8074696"
+    },
+    "examples/AddAttributeAtBeginning.cs": {
+      "gitBlobSha1": "e6eb7e61e4810fea7455bcd411dddce0c4337fb5",
+      "sha256": "a21450981dd6e62bcb60f1fbcc5cb89f28606160de7796c96ab743128483712b"
+    },
+    "examples/AddAttributeBetweenExistingAttribute.cs": {
+      "gitBlobSha1": "b00aceb5dbc0bcd302b290808aa8bb143b1b606b",
+      "sha256": "640a9938ea418090c50964d273c22d878ee816fa1eb7eb02923e92dbb860206e"
+    },
+    "examples/AddClientActionDoLogin.cs": {
+      "gitBlobSha1": "f7db7a535e9c3387643d8fd8635ccbc9867b444e",
+      "sha256": "a914df976014be69d3935ba73a3802a7c4d9b0449439b2aaae2df151cc7a81f0"
+    },
+    "examples/AddClientActionWithAssign.cs": {
+      "gitBlobSha1": "dd1509fa37127acc7e6538a7db40f831ffdc6651",
+      "sha256": "836a02708405958db105bb185292e32308c123b276b1b68285cd1e8e77b0a502"
+    },
+    "examples/AddClientActionWithJavaScript.cs": {
+      "gitBlobSha1": "8d2d4aff3f6344bf302218c9b22c4f733c2f5142",
+      "sha256": "a12404b5e05299d0ed679c81c2ad86d1da6528765dffac8b40f134b7e2d5bc51"
+    },
+    "examples/AddClientActionWithValidation.cs": {
+      "gitBlobSha1": "5d4b7b5fc60c63775ad7f5fdf8e2714cc6c17d6f",
+      "sha256": "bd4ecce86cea18cffc767870fc2142b58d5a098c9725b6a114383b7c4f88d0c8"
+    },
+    "examples/AddClientEntity.cs": {
+      "gitBlobSha1": "1b549b4287b80a2e7db11a51125323727d792ca7",
+      "sha256": "417df570dad7997964344f53167a48a24bea908475dbecdb2110f7f1a79391f7"
+    },
+    "examples/AddDashboardScreenWithDonutChart.cs": {
+      "gitBlobSha1": "7aa99f69ed068ec684f84589f57364083e447d1b",
+      "sha256": "3c87bd597f778e9a6f3d467d7ff30de54a472cb89d6d781f6eb7318448475c2a"
+    },
+    "examples/AddDatePickerWidgetToEditScreen.cs": {
+      "gitBlobSha1": "7b9bc5f1e9f30bdd647629eab1bef8bcfaf7e9e2",
+      "sha256": "68cf922c5f8efc510cb03b38d0391157d7a946afb82db2b90c0481caaedeac0b"
+    },
+    "examples/AddDropdownWidgetToEditScreen.cs": {
+      "gitBlobSha1": "b9290bd3a3ae3824886eb7ce7956408fb9ba6c55",
+      "sha256": "63593970a19e0ac8d98f924d5202f7ddd4ff56cdc7a8f70281fac959439fdf0b"
+    },
+    "examples/AddEditScreen.cs": {
+      "gitBlobSha1": "32e215bb9f600924348ac31b200783cda2c8eba7",
+      "sha256": "22c9e7a47ceb0267e122da60dc3e1297f60924e24f1456a484fe3ada50416c1c"
+    },
+    "examples/AddEmailTemplate.cs": {
+      "gitBlobSha1": "648c97b4682d8f7636ad1afd4dec21124fbf0d74",
+      "sha256": "d049f636357275dc70f041d304e8e7c26efed1a0c7226f676e9258661626674e"
+    },
+    "examples/AddEmptyServerAction.cs": {
+      "gitBlobSha1": "6c183ffab93728f85fac8b0c19d01dc1b401f9c0",
+      "sha256": "970cb5cac70b901eb3008d8a1162e30d86de79892520bcb0ee6131d1a9d09f72"
+    },
+    "examples/AddExposedRestApi.cs": {
+      "gitBlobSha1": "b6370f958e6e44d85fbd4c8ee8d744b5424d8702",
+      "sha256": "3f040658317b37e2f89ffcc73effb9f48faef550b9e9843efb71e4ef3a8af685"
+    },
+    "examples/AddFactFunction.cs": {
+      "gitBlobSha1": "6f7594096b11a07547b86a737ac1cd382a9c120d",
+      "sha256": "73d5b6b8c24a2d902aff9e7e32e41adf84e07d50ee552d381f53180c117fb7dd"
+    },
+    "examples/AddFilter.cs": {
+      "gitBlobSha1": "a55c85233de3b69bc72fccd6c5cbd86d231f273c",
+      "sha256": "242a597d5e7646831e370a8b585a3cc45e3dfcddb5be89dba0f548c6ae62a6cc"
+    },
+    "examples/AddForeignKeyAttribute.cs": {
+      "gitBlobSha1": "4c521f03bf09c91305fec80ca5dcb8d10e26cb85",
+      "sha256": "a845e4febc4a208071100433a5aafd8996ac39bcd7b3c8f7651b53edfe4bde4b"
+    },
+    "examples/AddJoin.cs": {
+      "gitBlobSha1": "a3fce9898c0891565e5508e2e23743ea87cd6972",
+      "sha256": "3c3f6730681f1704debb8656e204790877182813b6048a520321b71935dce35f"
+    },
+    "examples/AddListScreen.cs": {
+      "gitBlobSha1": "5c2ac41fb925528c95052790e9c4008128c1e2b5",
+      "sha256": "31a7c95e6d408b9e606b1bfb912db3f60a7dd880ffaed2aaba6e77ea61679101"
+    },
+    "examples/AddListScreenWithEditPopup.cs": {
+      "gitBlobSha1": "14172e3b962184302bf09741a529875380a3143f",
+      "sha256": "aba57e7745502ce32abf4cbedf8ccf472c6a36f759b9d2352f81702553de6cc6"
+    },
+    "examples/AddParameter.cs": {
+      "gitBlobSha1": "2672922a5a3771d7803172a9418402e5e88ee625",
+      "sha256": "da2157425779d4ceb031e395dd5a5b09d5823d06cca86e8e755e2e7f4f8262e1"
+    },
+    "examples/AddParameter_NoValue.cs": {
+      "gitBlobSha1": "7da831e5dc370888ae3563bbbc00a4b88f474a46",
+      "sha256": "3a44cc7b6febecde931ef91c19b8581a9f08e912cd0fa29c3fa11a5fd5c74376"
+    },
+    "examples/AddPermission.cs": {
+      "gitBlobSha1": "fbfaff4cf4820fce6cf8ef14edfb9ea0692615d2",
+      "sha256": "b451a2ea2d390c017342ca85ff6023644014b5d679f09e931748acdf0ace53c2"
+    },
+    "examples/AddProcessWithHumanActivity.cs": {
+      "gitBlobSha1": "b0e35ccc2d2194abb3b6d964bab7437404573d4f",
+      "sha256": "cb56b5eb5e2226bad5ddb13a55d23f5303d699750593a387243312890d8c1db6"
+    },
+    "examples/AddRestClient.cs": {
+      "gitBlobSha1": "4e07c3bfefefe7f9ed20f41cf53dc574b79aef92",
+      "sha256": "104b30df2768603fb0183e2fda6189547e24c26db58fb0bdc2872eb815dc92e8"
+    },
+    "examples/AddScreenWithOnInitialize.cs": {
+      "gitBlobSha1": "d2148f5fa98ad77aa6b26dda54ba78e5dd7c2965",
+      "sha256": "03c41307dfb83aca2c1df3c16dedd3504bab34e57d2ee1dc18255609e95e5559"
+    },
+    "examples/AddServerActionCreateOrUpdate.cs": {
+      "gitBlobSha1": "8da60d5e57f2c32cc2097edb067cd73a2404f6cf",
+      "sha256": "87ba405b48b2dba06d4e28854869ad22120c1e4a3c619137b4486a40c00f7d89"
+    },
+    "examples/AddServerActionDelete.cs": {
+      "gitBlobSha1": "f6eee071afd3c02453a50ac5f7850e54598f0124",
+      "sha256": "c183534739d48bf38e52d816873c30092cddf690fa9880b863d4b78ed69c4cd9"
+    },
+    "examples/AddServerActionSendEmail.cs": {
+      "gitBlobSha1": "35356555667de82cae6b21fef9364b22e19d336c",
+      "sha256": "79587f02c0c948c6c50609af5d47642908388a3fd05846f8a10904a59cf73421"
+    },
+    "examples/AddServerActionWithAdvancedQuery.cs": {
+      "gitBlobSha1": "3b1258876dc631ef8dde9995175a87e9755ced0b",
+      "sha256": "d27122066014e991b20f1286e6708e51998360e4fc5d6e0fabdbee426174875f"
+    },
+    "examples/AddServerActionWithAggregate.cs": {
+      "gitBlobSha1": "0d516ca73439b350a28f821ded2edcea73b92be4",
+      "sha256": "6939097f011998fc99d26ac3e9f399a48ceae7efde98484270ea7aa8896e5709"
+    },
+    "examples/AddServerActionWithException.cs": {
+      "gitBlobSha1": "2fc8d9d0194cd8aa9ec68f31400a46e292fbe099",
+      "sha256": "b52cf3a7b981f57bd9d0a969f4db352679fd06a7cb4e3afb376ac3a51573e3d4"
+    },
+    "examples/AddServerActionWithForEach.cs": {
+      "gitBlobSha1": "ce1254a71b3a6b396a2e085e3b78ea64e83f766a",
+      "sha256": "36f28af7da8c0fedcd3bfc29188675e46292e8a476c86593d5b468fe8ab62bb5"
+    },
+    "examples/AddServerActionWithStatusTransition.cs": {
+      "gitBlobSha1": "ad2881921ce00e2a9572714d5d79d48b096bb674",
+      "sha256": "c2afd5469d78723ef48f024f12752545913c343abec47648f1d01182495de09a"
+    },
+    "examples/AddServerEntity.cs": {
+      "gitBlobSha1": "06738bfe2db5e7aba211b5c1813f93adb093fc1e",
+      "sha256": "e4bcde4cf4057013d391f9a4730150c22e3aafb6952de388b90ac33cf0568fdf"
+    },
+    "examples/AddSiteProperty.cs": {
+      "gitBlobSha1": "20e4f71f9570287b720a29a9d621673b6e5b3bc9",
+      "sha256": "e66eee10869bea2c89e115d457a0d5690b8522592f8667663eb4db3bf37e9559"
+    },
+    "examples/AddStaticEntity.cs": {
+      "gitBlobSha1": "8b36677faff5cfa9e9248aeea8acd530b476ae79",
+      "sha256": "a115af796a0f7682cc92c6ecf59420d2bfa1bff68dbc60f94335cff418f10d00"
+    },
+    "examples/AddStructure.cs": {
+      "gitBlobSha1": "0f52bd5c9ae5fffa271ee357d5bfc349d8b8e104",
+      "sha256": "654be1561c83aea4dd5ffe03a8cca77b7aea4ffb15f51cdda2942703cadc5ebf"
+    },
+    "examples/AddTimer.cs": {
+      "gitBlobSha1": "c92801f91c8a72dcfe3e24a86002efec34218729",
+      "sha256": "68d4712e948b540c861d5ccb34961eb816529cd446a39c1c902aa2da3498941a"
+    },
+    "examples/AddWebBlock.cs": {
+      "gitBlobSha1": "c8a09497a369ad3ef97c6fe8927933ceac3de615",
+      "sha256": "54c4c12d74f32499f983fd959c5a977850c21453d36957d55f25ba83faeded1b"
+    },
+    "examples/AddWebScreenWithListRecords.cs": {
+      "gitBlobSha1": "8ff4c8147c60b8e527dada785c2653a810009acf",
+      "sha256": "ade7c09a41185c8172be51d9ef19cd257eb7b3cc650a326ed0a8d12622160273"
+    },
+    "examples/CalculatedAttribute.cs": {
+      "gitBlobSha1": "e94516d4ac0bde77fb3614a4505d82e9aa9d373a",
+      "sha256": "912f71e0d2269b7becda7f4239f98216cda2abfa493f2287aeac172b10f766fd"
+    },
+    "examples/ChangeAggregatedAttribute.cs": {
+      "gitBlobSha1": "2c9eeaf5c9fd433d2331ed9592e72785c603d81b",
+      "sha256": "c237ce6f2ee9264b0d12ff4516cf9e0a3f9a7c86aa2995263625e23b8409d61b"
+    },
+    "examples/ChangeAttributes.cs": {
+      "gitBlobSha1": "5016ab1a3846ccb945d9dd23ac5f21592c2c7cf1",
+      "sha256": "29c58d558c16cc570d3e428a0ad2f164e3acf526a76143c46c0a6d4d354b209c"
+    },
+    "examples/ChangeCalculatedAttribute.cs": {
+      "gitBlobSha1": "d3d67038f7cce308d4dbbb294f4b868e0578a61e",
+      "sha256": "0d15dc75268c2959cd180af9326a1fd83633599586fdcfc5d03a41dbd7673113"
+    },
+    "examples/ChangeFilter.cs": {
+      "gitBlobSha1": "6da134294262c04aee1e2341bcb33c5b8264e91f",
+      "sha256": "1f9be18ac0bdfbe2db817bcb706a4ab7511b5ee94e4e8bff7d8b0f899ea041c7"
+    },
+    "examples/ChangeGroupBy.cs": {
+      "gitBlobSha1": "71b75d64fb4037eefb65a99141a385df00589780",
+      "sha256": "b59d610b898b584f90d1591b6c19759174def8c09d4350249c7c70f861b5980e"
+    },
+    "examples/ChangeGroupByFilter.cs": {
+      "gitBlobSha1": "5590fa88d355a59f02d6051f8c2b60c82a1424a8",
+      "sha256": "f0f60eea1c55fd87abae87dcb0ad39430dcb955fb4b82016e9fb5abed9757e8b"
+    },
+    "examples/ChangeIdentifierAttribute.cs": {
+      "gitBlobSha1": "70d9862081fecdbfc7827b8f6e6840c4d3426830",
+      "sha256": "bb2e5c588280f6091c404c19793d3cce0bf487081d19345a1b3bf937341b5753"
+    },
+    "examples/ChangeJoin.cs": {
+      "gitBlobSha1": "ad26aede8c9cb5436d41d01e4f0a6f791ec89615",
+      "sha256": "4ae1dda248857ff580ba200a9486599f4598047d1c84bca374d26872113d18c6"
+    },
+    "examples/ChangeSort.cs": {
+      "gitBlobSha1": "7be380ae69475813dade1c2c267753a54553e936",
+      "sha256": "87b43dc442b7629c3225a6e663354bb9a1a266aec256d0c94e54bba6951c279b"
+    },
+    "examples/ChangeValue.cs": {
+      "gitBlobSha1": "bc4ca0d6ce8d78f76639d921975d577c69331033",
+      "sha256": "e5b456f0546964a0d0528fcf724b9b16d18191dcc1a55ff243095a84bcf21e1a"
+    },
+    "examples/ChangeValue_MultipleParameters.cs": {
+      "gitBlobSha1": "c39f276a110a9f29396526c849f7508aa0147428",
+      "sha256": "0cec8972734504c1583ee81216b77338de9a225eeafca90c50432d4dace8e410"
+    },
+    "examples/CreateBasicDataModel.cs": {
+      "gitBlobSha1": "ae906b64f542be0096b435149dd20064d596b632",
+      "sha256": "147ba9aa33845157b99d3c092ab1f61d98b98b42b11978187483a5f4514db089"
+    },
+    "examples/DeleteAttributes.cs": {
+      "gitBlobSha1": "ad4226af6eda2ab86d9e1103c4a8972e2b4ca51e",
+      "sha256": "44545d792bf17f4746801d1c5def80a3b126afbbe6288c5c89ce9311d9ef5f74"
+    },
+    "examples/DeleteEntity.cs": {
+      "gitBlobSha1": "cd99d259d2244fda68a0d137cff693f42368f0ae",
+      "sha256": "e3f2cb3bddf343a759e8aef79e93385ffa5af5a3b50cd594ee58b19a735edd46"
+    },
+    "examples/DeleteParameter.cs": {
+      "gitBlobSha1": "04e705d30948f2f24a23af7f08076b1f05ff503a",
+      "sha256": "10f214425573478b173326f53fc77288f48d9fb6e3d132c6b25fa94d47788f2d"
+    },
+    "examples/DeleteServerAction.cs": {
+      "gitBlobSha1": "7483ae80c7a56cf8074e1e6e6bcfac94d8e64290",
+      "sha256": "71b84cfe5b7c4d10f42e9fa70e8c91d438de502a376edf1d95b55783298a5ffe"
+    },
+    "examples/Filter.cs": {
+      "gitBlobSha1": "7f98551b049799ce39c5e29d77d47738a76f9f80",
+      "sha256": "e36d3c74098be524308e5b96979bde2622ad490c41d15d7cfdffc909208537e1"
+    },
+    "examples/GroupBy.AggregatedAttribute.cs": {
+      "gitBlobSha1": "17e1f171a22d864a63af45b7076cc1358003e18f",
+      "sha256": "2b228cdee81b5b30e895b663a37fae26b65acfe02747006f78557642904b3cbb"
+    },
+    "examples/GroupBy.cs": {
+      "gitBlobSha1": "b2af3db836e745be0e481b69ec2fd6093fe538ee",
+      "sha256": "6085ba6af4f5a87f32db5f9f7fcdde334d6c96b7201a5589ba154e85e3984d66"
+    },
+    "examples/GroupBy.GroupByCalculatedAttribute.cs": {
+      "gitBlobSha1": "e4b839dfad8b3ea743a3dfbc1360e1ae1650905f",
+      "sha256": "d95ad2600feae80a1a4a946c712f16b0b91970f55c5fc371dfe456ce48fca962"
+    },
+    "examples/GroupBy.GroupByFilter.cs": {
+      "gitBlobSha1": "41152aff80a8e5ba6d17ebe9f69ec5a881141422",
+      "sha256": "52b733af401523ec181dc783a4e16ba74e63dc60632b74258dc7be724461bcf6"
+    },
+    "examples/GroupBy.GroupBySort.cs": {
+      "gitBlobSha1": "6ed32ce4d0104566d17d690fbf4ec0795a1db3e1",
+      "sha256": "52a42aeb9cdee0975933472e7f73aad8fc13321a8018c5b185a566c68c980913"
+    },
+    "examples/GroupBy_AggregatedAttribute.cs": {
+      "gitBlobSha1": "51ef4147a7f1b0b88b353119bb88fdfb7be52656",
+      "sha256": "767cff3ad322c26c11cae7183af4980aff4f9da71221c983b27d6d0915d3c6bf"
+    },
+    "examples/GroupBy_GroupByCalculatedAttribute.cs": {
+      "gitBlobSha1": "da48abc1ca60c50f0e5f07b47c56e1ac16477256",
+      "sha256": "01e6303f1080866e11c448b84ab59f35499eafe916c01ed7a7be725a65bd8d9b"
+    },
+    "examples/GroupBy_GroupByFilter.cs": {
+      "gitBlobSha1": "eb9e11b0722fa2ddef6eada986d3ba18ec00457e",
+      "sha256": "6b166b203d86da6eb2b423f916f489c67d72a6bb295fcf2cae76f7a2672c531d"
+    },
+    "examples/GroupBy_GroupBySort.cs": {
+      "gitBlobSha1": "3d39c73c9838b6b99b057efff3defaeeab660804",
+      "sha256": "dd65eb0fd2b346965d66e698cd5bfec71a59540a6579f8b2c4adac3b84938f27"
+    },
+    "examples/ImportPublicElement.cs": {
+      "gitBlobSha1": "cc39f2ae71fa593c6ba3075be8f66da041d72d3c",
+      "sha256": "8dbe2cb11c2d3589ef2c7440c1d36022f154e07848543cc55c26ded8ed9b61ca"
+    },
+    "examples/Join.cs": {
+      "gitBlobSha1": "73b52434fcceff5fcf635be9b7497e90f96d2258",
+      "sha256": "cacd028b32ab4ee60383a52321b1ce983addb278cbfe26b59202ced4815bb523"
+    },
+    "examples/Join.Filter.cs": {
+      "gitBlobSha1": "349f2e896e18013a7b2b6a53378de764876f7813",
+      "sha256": "d8ec12db2a456a6fb52a8f53fd65f475d4dc8acd0490c1410e48299d33313053"
+    },
+    "examples/LayoutActionFlow.cs": {
+      "gitBlobSha1": "44a0d044ccf808890bf11431893bead9df87c5f0",
+      "sha256": "336337c6aadf5e6de0e212b363ea8a762141ad76bb7e2d3aafbfe1e4e9893aab"
+    },
+    "examples/ProbeModelWithException.cs": {
+      "gitBlobSha1": "376cd08d0b2215db70a212b210bbe964eea8722d",
+      "sha256": "957ba9fb8dea03b12c2c0aea72566c04f249cb924b62965dff0a01ead39ae9d7"
+    },
+    "examples/RemovePermission.cs": {
+      "gitBlobSha1": "4f51308c385d38d030544a0d01d774ec7e489c2a",
+      "sha256": "7cb177c6efc3998f01aea8ec9d3d2f8f6c9d11045918d7bcf56ecede097752ec"
+    },
+    "examples/ReorderAttributes.cs": {
+      "gitBlobSha1": "cc825057ed7be9b18d4027e9b9fa99cf5bef3a2c",
+      "sha256": "a0848d5894edfaee58f48e252bc266fe2d3a82c1280a54e200e65e3add346265"
+    },
+    "examples/SetAttributeDescription.cs": {
+      "gitBlobSha1": "c1445d59b4818aa3a7a57587566232692f440e8a",
+      "sha256": "4e24d0ebab0c2260ecf93afae93f8bdbe6f4cf318809bdafcaceb2589844741e"
+    },
+    "examples/SetAttributeName.cs": {
+      "gitBlobSha1": "7a93cc2b1d8f18e47cfe1af38c341ae652e11643",
+      "sha256": "05d7f563025d9e143e873c0f214491692827ae5e69747a1658804ce8098b50d7"
+    },
+    "examples/SetDescription.cs": {
+      "gitBlobSha1": "e55c3204155a93fc60cf4bda99ad99e775482e9c",
+      "sha256": "4709d456ed3cf51fbecc289150bf271cbdafda7481dced1af89a99086471d6f2"
+    },
+    "examples/SetName.cs": {
+      "gitBlobSha1": "3ff6eb566dbf5f096a566eeb59f8ac3cdde3a4ed",
+      "sha256": "7771b33c9e87e40e011c9d84d76558aba6a0132a543026659bbfcd34f47fe1fb"
+    },
+    "examples/SetScreenAccess.cs": {
+      "gitBlobSha1": "ae13d5d4b41b01a48a71d0fbfaa44a6ab5d281ed",
+      "sha256": "5d5e96262bbbfeedf020e0216ebf52f89a4c3ef1fed08ff67fcacd274bcf406e"
+    },
+    "examples/Sort.cs": {
+      "gitBlobSha1": "c6d1f48c207e2ef3cae62bdd0673cbf2137db9f6",
+      "sha256": "52d51311d35dfeeff51769ea895b84fb5bcca271f99f20be807891b57a3a4c78"
+    },
+    "generation/generate-web-docs.cs": {
+      "gitBlobSha1": "797b7e07f96e4fccd371e427936cbe2412fab93b",
+      "sha256": "ccb365e2eb6ceb619e65f0989f8484b247ed0911d09870e25f69d1779700dcbb"
+    },
+    "generation/OutSystems.Model.UI.Web.reflection-dump.txt": {
+      "gitBlobSha1": "c4c6fe7e136d4e5bc57a67c28d99013364350747",
+      "sha256": "4485ac6c87995548ca544b5bf69ee3474b8f416e71cf73be00b3b63e51a798ef"
+    },
+    "generation/OutSystems.Model.UI.Web.Widgets.reflection-dump.txt": {
+      "gitBlobSha1": "2c913121e12d01a447aba92dd64fec5c62193466",
+      "sha256": "76723e7107171a801b89a432fb3314d33c98948fb7cfee41660f2d6bb400b0ba"
+    },
+    "generation/README.md": {
+      "gitBlobSha1": "6329d0eb39254fd220f7accf090844898922541a",
+      "sha256": "b36a71adfbe1e7b232a15bbf5493f30f2cb261820759c88a50f244405d051682"
+    },
+    "integration-examples/01-add-entity-via-mcp.md": {
+      "gitBlobSha1": "8fbea814c804f98d9c96efa79d551bc0836146c6",
+      "sha256": "95d7a5d896dd176813c018a3a6e2fa00b9859e1904400136afe570e968ee776f"
+    },
+    "integration-examples/02-recovery-from-compile-error.md": {
+      "gitBlobSha1": "1b850ac7682cf31dd6bd41f3a4c54a34ff6df8f6",
+      "sha256": "4eeacc7abe5f31e070fc51c0465df46de773fb4c2dc45d5127beeb84edfe748c"
+    },
+    "integration-examples/03-multi-step-edit.md": {
+      "gitBlobSha1": "c17543a08764813fee1fb727192ae9e92a6659fc",
+      "sha256": "952d23028ab26e2977e5f6112ece287025ce446b7df430df0930e658c295199c"
+    },
+    "integration-examples/04-oml-reset.md": {
+      "gitBlobSha1": "082d46005a2707669bf45adfd631204253a5b570",
+      "sha256": "43a5fb427f9a57265a3d1d336c8730d02c7636076d8601fdeb7c3e023ce341b4"
+    },
+    "integration-examples/05-traditional-mutation.md": {
+      "gitBlobSha1": "2b1b6541790c9bdaec425b96ab226e1594f673dd",
+      "sha256": "30ab61c7f59cc394447f245e01a00f4d00dc24628147bb8fbef4d50465e9c4fe"
+    },
+    "integration-examples/06-fk-to-system-entity.md": {
+      "gitBlobSha1": "6525ddf8e8ff809039e15c8f8c2d1f3cf48e3aab",
+      "sha256": "c64316c4e1d6eede99de42cd3dd18bd305c3b98633e181350108e7c394e0aaea"
+    },
+    "reference/lambda-contract.md": {
+      "gitBlobSha1": "af26d848c671317b882b04f416bdf9142eb90fcd",
+      "sha256": "10168cae033b72597ed54b9c676da1de3d131a51b116cfeb33b60ec8a14acbd1"
+    },
+    "reference/logic-and-integrations.md": {
+      "gitBlobSha1": "4128820649e7f0523f9debb8e4aecb38cf67d767",
+      "sha256": "c6ca482bdc3dea743000aefa2cb2404864b6b248aec0eceee704f509e498007c"
+    },
+    "reference/mcp-session-pointer.md": {
+      "gitBlobSha1": "e1121ead640a473baefe878c030d52a4176f7642",
+      "sha256": "2e4873134bbd330d1952b9bf759d3efbb56d6efd62ebd9c6f6e77b1de5dc9196"
+    },
+    "reference/model-api-summary.md": {
+      "gitBlobSha1": "a0d070c0acb043dff7cc5f197537fe07d9bc08c7",
+      "sha256": "1ef1fb9f5d4b5d9acddb2e945042c27299cd1fa283fceae3802916550d78d22a"
+    },
+    "reference/model-api-tips.md": {
+      "gitBlobSha1": "7d4ccfd1bd60b2a219cacd492a609b6dfdf2c49e",
+      "sha256": "6a677a5f21ce645c71a7a8f3c607ade1fd72656e062bcc65160d223a66aeb072"
+    },
+    "reference/module-style-support.md": {
+      "gitBlobSha1": "afa49f3c9e487b44b78649f9c70855de0477cdb2",
+      "sha256": "6889c1c486e694afe02bec9521807746440abc648ddb88638670f1eced1ec07f"
+    },
+    "reference/osui-verified-blocks.md": {
+      "gitBlobSha1": "6db6d3164e6b62aaf77da532143b468435134e31",
+      "sha256": "8c1a1bf3d6400b4ef27d621c9e6938f0ad6c4a9b81c7fbce7c22956ce529ded5"
+    },
+    "reference/patterns-by-element.md": {
+      "gitBlobSha1": "2bf05963db834b87452c2004b5f7e41f99e13f7f",
+      "sha256": "4b055e6d8a5fd31838b70981c38fb0f54d86a1b8a5d69c5ab3a19912ee0cad76"
+    },
+    "reference/reactive-ui-creation.md": {
+      "gitBlobSha1": "279c5438d3ae17065eb25ae5d26d4ded48d304ec",
+      "sha256": "37c37d684d9dac04a0872f5d474750e3b84f92c865768fc6076836ce754a15f8"
+    },
+    "reference/reactive-widget-api.md": {
+      "gitBlobSha1": "4e6b6ef5eb7f6d1443e0a3ffe8b603b15118eabe",
+      "sha256": "34d179e28e8c1210c46c0e805373dee981d1d526516c16dc409ae137ce9e30b8"
+    },
+    "reference/styleguide-ui-patterns.md": {
+      "gitBlobSha1": "2ff1bf710c486002d2599d8c554160ac46b313e5",
+      "sha256": "92783601e5e0fd5f42340a92e306e6fa4088b3472667c310e733f8eaa0a78007"
+    },
+    "reference/traditional-patterns.md": {
+      "gitBlobSha1": "53ea57e8f2d58639cb952ae2fccc471f698e2b09",
+      "sha256": "8824315db710fce2fc9213e3df372f1efcb401e50ee772c898d1caaed180b71e"
+    },
+    "reference/traditional-to-reactive-migration-cleanup.md": {
+      "gitBlobSha1": "51323908de5b4bb0c3bbbfd2086298ea1292c916",
+      "sha256": "8e99f6f7af57e3a57343b422c24ba5fa515f0a28571c36d7daaa7f4fd8b7f6e3"
+    },
+    "reference/traditional-ui-creation.md": {
+      "gitBlobSha1": "6cbe067c8876608521ca501bb2e69918dee484cb",
+      "sha256": "428b5cacf3201af0182fdc5c54b8ec8026e61feed02628c3cacd6a42bb3f1ed9"
+    },
+    "reference/verb-reference.md": {
+      "gitBlobSha1": "6923c686274e5e34c573f4ce67bb6c665bc354cf",
+      "sha256": "f67ac09c1750e369cfb54ad87b56187fe4ada8ae77aef17ed481991fc3e6e7d2"
+    },
+    "examples/odc-workflows-unsupported-on-o11/AddAutomaticActivity.cs": {
+      "gitBlobSha1": "ff9bde3837775968eeeaa54cf4c0a044b5332641",
+      "sha256": "1374db65bae1bf103b06583e882814c668805d0fdb112cf6f0bd690d7af2afa8"
+    },
+    "examples/odc-workflows-unsupported-on-o11/AddDecisionNode.cs": {
+      "gitBlobSha1": "25305d72dc28046105e41782225992b8dce6eade",
+      "sha256": "27d4cb8386e116721ff3582314342540d515f521f6f58bd771d2945d3d387113"
+    },
+    "examples/odc-workflows-unsupported-on-o11/ChangeAutomaticActivity.cs": {
+      "gitBlobSha1": "4a05d981b16ecd82fbc336fae9ab7cf6e7301ef4",
+      "sha256": "32ca9ea2f158ad2f4580b52b6b5829038e3cc01e3ab47e9bb8c9d1e350c5d0f5"
+    },
+    "examples/odc-workflows-unsupported-on-o11/ChangeComment.cs": {
+      "gitBlobSha1": "268923d63a3a56b0d4a7e1b39d708d62728c32d3",
+      "sha256": "8525e5949214d4f0607b0c3cb417a5a625d763b6942551bd8e9076f853779df6"
+    },
+    "examples/odc-workflows-unsupported-on-o11/ChangeConditionalStart.cs": {
+      "gitBlobSha1": "7d2c3f965634760ffb94c539cbf4b888d235ff9d",
+      "sha256": "4922072c3913cdeed835e682a91bf0cf0ed13a1a2ee8bfd36221c8130f383e49"
+    },
+    "examples/odc-workflows-unsupported-on-o11/ChangeHumanActivity.cs": {
+      "gitBlobSha1": "e1a463d4a07e46ad73a0d4d0c641ed01b210a02d",
+      "sha256": "da40f43bc2a8b0c0f8eda9b96edf6501266f1d8842769c970bc630f103a36192"
+    },
+    "examples/odc-workflows-unsupported-on-o11/Comment.cs": {
+      "gitBlobSha1": "59898b94279987a899799a19c6ca3c3bdbcced31",
+      "sha256": "ad4dd83fe667ecf0d969e339adc9bd51473462f432bded006989631f7b92bead"
+    },
+    "examples/odc-workflows-unsupported-on-o11/ConditionalStart.cs": {
+      "gitBlobSha1": "53d57a61cf78595f11e4e72da899e0d8743a1e5a",
+      "sha256": "c62c06240de4a40187c9290794aaaf22320b5b90c68eabe431970a8a8907259d"
+    },
+    "examples/odc-workflows-unsupported-on-o11/HumanActivity.cs": {
+      "gitBlobSha1": "bb8ef85b2be9c9381f0ebf33aa3d2cbc791d9af0",
+      "sha256": "95536266797d1ecd9030dd4cdce46b96aaec13f7148538b449a83387bf722326"
+    },
+    "examples/odc-workflows-unsupported-on-o11/NewWorkflow.cs": {
+      "gitBlobSha1": "0cde8082c12da4ebad784a45637d4c22fcfa3c8d",
+      "sha256": "97a2dca8e6ef87e50762b86936ba6eee0f31b8dd1a2b37283b21ef0673853bc0"
+    },
+    "examples/odc-workflows-unsupported-on-o11/README.md": {
+      "gitBlobSha1": "1c4253c94738a35325b36a1302f85208dc498060",
+      "sha256": "b6386a4c3bffb51d5c3b5b87b99ebc658d68df84346b4528e44c8171b484dcf8"
+    },
+    "examples/odc-workflows-unsupported-on-o11/Terminate.cs": {
+      "gitBlobSha1": "27d53f7b403de6f1c02459b00e42facce9664d07",
+      "sha256": "1553f3b9ded4ea9a6422eb04bf850e56c6fdc1c2aa2cff42421cb06f312859dd"
+    }
+  }
+}

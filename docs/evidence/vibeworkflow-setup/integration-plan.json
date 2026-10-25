@@ -1,0 +1,212 @@
+[
+  {
+    "path": ".codex/agents/analyst.toml",
+    "action": "CREATE",
+    "source_sha256": "54a5ce021b595a44de66ec90ddaa231b93f1841563fa90442444579a51201e07",
+    "existing_sha256": null
+  },
+  {
+    "path": ".codex/agents/architect.toml",
+    "action": "CREATE",
+    "source_sha256": "c96d3a03e428a8582a879023b282ff50b39e094e5215a3c2bae0a6ef968c598c",
+    "existing_sha256": null
+  },
+  {
+    "path": ".codex/agents/builder.toml",
+    "action": "CREATE",
+    "source_sha256": "cf34425cb0d8537fc11841b2b101b1ccc31d6619435593887a05356ac94c4284",
+    "existing_sha256": null
+  },
+  {
+    "path": ".codex/agents/designer.toml",
+    "action": "CREATE",
+    "source_sha256": "a315717251a03cd10a79aa9a66f4f24de67c869143e6b6fe5e7b6937c90aa7f9",
+    "existing_sha256": null
+  },
+  {
+    "path": ".codex/agents/planner.toml",
+    "action": "CREATE",
+    "source_sha256": "a06ae6dc5404b2a2bba83ecbb532507ed6b18c4b94e4c9a6e008400bb5d7a1db",
+    "existing_sha256": null
+  },
+  {
+    "path": ".codex/agents/qa.toml",
+    "action": "CREATE",
+    "source_sha256": "0e4e8293a897ee5e7817c6721134a56af858185fe27c48bf8188680686dee596",
+    "existing_sha256": null
+  },
+  {
+    "path": ".codex/agents/reviewer.toml",
+    "action": "CREATE",
+    "source_sha256": "a001cd24b941dfa1f55122ae6cc7e9eb95aba9b24b6b6a7a1006ef789f6fab05",
+    "existing_sha256": null
+  },
+  {
+    "path": ".codex/config.example.toml",
+    "action": "CREATE",
+    "source_sha256": "37b2be89fbc41bbfb418d4952cb7d3587dc71bdfdf0e7d9b40ce2f1c4dd2563e",
+    "existing_sha256": null
+  },
+  {
+    "path": ".gitignore",
+    "action": "CREATE",
+    "source_sha256": "96258a8e179d7dc4be4e3fa794705978705abe55f5fe7691052ab4dd9e817ac9",
+    "existing_sha256": null
+  },
+  {
+    "path": "adapters/O11.md",
+    "action": "CREATE",
+    "source_sha256": "0636987da7261cac657af77913b80dcb5c7a5d1ca49f602ac95090c224dda473",
+    "existing_sha256": null
+  },
+  {
+    "path": "adapters/SITES.md",
+    "action": "CREATE",
+    "source_sha256": "7ddcda673da4e3e4308b1d0a821618ca10773660f03ae4b00a6a07aa8e6682f6",
+    "existing_sha256": null
+  },
+  {
+    "path": "AGENTS.md",
+    "action": "APPEND_WORKFLOW_KEEP_EXISTING",
+    "source_sha256": "dc8c8ce8e27eb9beb6b6862736063fce6b1c7351b9d5599180bf67d35c2ce783",
+    "existing_sha256": "7882fb2d93935611392c83ce51b41f0e0f3a0a18788fa1075f5af969062be593"
+  },
+  {
+    "path": "package-check-results.json",
+    "action": "ARCHIVE_SOURCE_ONLY",
+    "source_sha256": "ddf5f859088b7abc99ab500eda3cb367eb70fc0558ba2cdd336daed5257662d1",
+    "existing_sha256": null
+  },
+  {
+    "path": "project.json",
+    "action": "CREATE_DRAFT_PROFILE",
+    "source_sha256": "a1a4e5ae073ed6a64529104782f8ac88ba1bf4c355ab2b1bc10857e07b09ad40",
+    "existing_sha256": null
+  },
+  {
+    "path": "prompts/RESUME.md",
+    "action": "CREATE",
+    "source_sha256": "2d66f62f9299393386be9c540a7b409a7dd98751ca61a94214e1edad61fb5ae0",
+    "existing_sha256": null
+  },
+  {
+    "path": "prompts/START.md",
+    "action": "CREATE",
+    "source_sha256": "be0393aa18e7bedd6b094db841ada7d3dd3eec10221cc6e167d77e2a1dcb8a67",
+    "existing_sha256": null
+  },
+  {
+    "path": "prompts/WORK_TO_LOCAL.md",
+    "action": "CREATE",
+    "source_sha256": "7492a2eaa9bd5297717fffc823c88314ad097f7452ba70d22ec010438e4b879d",
+    "existing_sha256": null
+  },
+  {
+    "path": "README.md",
+    "action": "CREATE",
+    "source_sha256": "558000667f49f9643273b88542a375d9ac30816c099290c86cbb0c035f4e5a5b",
+    "existing_sha256": null
+  },
+  {
+    "path": "scripts/check_workspace.py",
+    "action": "CREATE",
+    "source_sha256": "67a0fea9beddf4a2cf38333f33bd9c094faa5f7659f183a4c9c522631388612d",
+    "existing_sha256": null
+  },
+  {
+    "path": "SETUP.md",
+    "action": "CREATE",
+    "source_sha256": "6c88799be78d3b0f0864bc03e790c07883e3ae551cffe260123a698ab288485f",
+    "existing_sha256": null
+  },
+  {
+    "path": "tasks/README.md",
+    "action": "CREATE",
+    "source_sha256": "9e9c081466500bb9a5d6f4de6a26da0e3a58a9d120867232698a8ce4b8ca0060",
+    "existing_sha256": null
+  },
+  {
+    "path": "templates/BRIEF.template.md",
+    "action": "CREATE",
+    "source_sha256": "8b8b3ee9ae52c9941ef25c7ee4444f3cf143e476224e47bbf23e48f7fcd6fcfd",
+    "existing_sha256": null
+  },
+  {
+    "path": "templates/DESIGN_HANDOFF.template.md",
+    "action": "CREATE",
+    "source_sha256": "307c2a0a8dec633e1f0a97e30af6ea1a19ae5f3ab436280a2f025990bff69dcf",
+    "existing_sha256": null
+  },
+  {
+    "path": "templates/EXECUTION_REPORT.template.md",
+    "action": "CREATE",
+    "source_sha256": "18dfa4096598a2b1acb27020236e65d4490e099b17f4a217e4342b9f3a8ed563",
+    "existing_sha256": null
+  },
+  {
+    "path": "templates/O11_PLAN.template.md",
+    "action": "CREATE",
+    "source_sha256": "ee6ff510742b614584d026a8898e99a85e8d5ee31b2496d7d6b795c1b5a4cea6",
+    "existing_sha256": null
+  },
+  {
+    "path": "templates/TASK_SPEC.template.md",
+    "action": "CREATE",
+    "source_sha256": "1fa6d31c1521c812e4a8d7fb009634b36a52f3a17669cc37df7c9fe2886cd87d",
+    "existing_sha256": null
+  },
+  {
+    "path": "templates/TASK_STATE.template.json",
+    "action": "CREATE",
+    "source_sha256": "fbb45d097fc06162a6778302d23f02f7e14f48fbed7150796a6e5063935384bc",
+    "existing_sha256": null
+  },
+  {
+    "path": "templates/WORKER_ASSIGNMENT.template.md",
+    "action": "CREATE",
+    "source_sha256": "f25a226bfaa7190b80ad34a1c5a86c16ebfb364eb387a68cbfd2c8b20663f878",
+    "existing_sha256": null
+  },
+  {
+    "path": "templates/WORKER_RESULT.template.md",
+    "action": "CREATE",
+    "source_sha256": "37ed10f31a3c24b7ee3917184635d956ffe6827c6592f746ffd6e5f6c8227858",
+    "existing_sha256": null
+  },
+  {
+    "path": "TEMPLATES.md",
+    "action": "CREATE",
+    "source_sha256": "884d2a6c817b9fd661376faf516f27d4f516f9e6547e7343cce746064234a137",
+    "existing_sha256": null
+  },
+  {
+    "path": "VERIFICATION.md",
+    "action": "CREATE",
+    "source_sha256": "c25bd531197c0946bd3d0b54a0c82138e6434220e03cdf549d28a71ccf77c378",
+    "existing_sha256": null
+  },
+  {
+    "path": "workflow/CONTRACTS.md",
+    "action": "CREATE",
+    "source_sha256": "b5f1a0fd1a20da2291f8be5a60ed5d3cbfefe5728a7054e1c577e8b4be48f2aa",
+    "existing_sha256": null
+  },
+  {
+    "path": "workflow/PROJECT_SWITCH.md",
+    "action": "CREATE",
+    "source_sha256": "16a9e737f9d6dcad216578c0acbc09f29022befffad874450284ea4c2867f55e",
+    "existing_sha256": null
+  },
+  {
+    "path": "workflow/PROTOCOL.md",
+    "action": "CREATE",
+    "source_sha256": "715105b03d3f3355816ff5d47fcc87c0503ce6bb43c07bc6dbe778c2e6f8a270",
+    "existing_sha256": null
+  },
+  {
+    "path": "workflow/ROLES.md",
+    "action": "CREATE",
+    "source_sha256": "87dccfe8d4ec3af63c40a63c8c5e434715e62dde98f773b03a05f5e8235c35ca",
+    "existing_sha256": null
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "result": "PASS",
+  "checks": [
+    "Only authorized config fields changed; backup exists",
+    "Fresh CLI reads one MCP server with startup=30, tool=360, omlPublish excluded",
+    "Project skill complete; 169 SHA-256 checks match manifest",
+    "Vendor staged files and Git index unchanged",
+    "All required guidance documents and internal Markdown links exist",
+    "Preflight evidence counts and no-write flags are consistent",
+    "Pending checks and restart/resume instructions recorded"
+  ],
+  "serverConfigurationReadByFreshCli": {
+    "name": "servicestudio",
+    "enabled": true,
+    "disabled_reason": null,
+    "transport": {
+      "type": "streamable_http",
+      "url": "http://127.0.0.1:41820/mcp",
+      "bearer_token_env_var": null,
+      "http_headers": null,
+      "env_http_headers": null,
+      "http_headers_helper": null
+    },
+    "enabled_tools": null,
+    "disabled_tools": [
+      "omlPublish"
+    ],
+    "startup_timeout_sec": 30.0,
+    "tool_timeout_sec": 360.0
+  },
+  "overallSetupStatus": "CONFIGURED - VERIFICATION PENDING",
+  "newSessionEffectiveRestrictions": "UNKNOWN",
+  "newProjectSkillAutomaticDiscovery": "UNKNOWN",
+  "manualCompareAndMerge": "UNKNOWN"
+}

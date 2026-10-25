@@ -1,0 +1,17 @@
+{
+  "subject": "fresh accepted-live vs B02 pending",
+  "count": 76,
+  "errors": [],
+  "added": [],
+  "removed": [
+    {
+      "ownerPath": "/MainFlow/Donwload",
+      "ownerType": "IMobileScreen",
+      "id": "AnonymousAccess_NoPermissionsNoRoles",
+      "type": "Warning",
+      "message": "Missing roles",
+      "detail": "Screen 'Donwload' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+      "ownerKey": "b4UHK0xn6E+y0tzOA0e0iw"
+    }
+  ]
+}

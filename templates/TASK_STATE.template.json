@@ -1,0 +1,32 @@
+{
+  "project_id": "REPLACE_ME",
+  "task_id": "REPLACE_ME",
+  "spec_revision": "0.1",
+  "design_handoff_revision": null,
+  "stage": "INTAKE",
+  "status": "DRAFT",
+  "sites_target": null,
+  "o11_target": null,
+  "last_observed_target": {
+    "subject": null,
+    "identity": null,
+    "version": null,
+    "observed_at": null
+  },
+  "pending_disposition": "UNKNOWN",
+  "active_assignments": [],
+  "platform_owners": {
+    "sites_owner": "primary-work",
+    "o11_operator": "primary-local"
+  },
+  "blockers": [],
+  "evidence_index": [],
+  "next_action": "Fill brief, identify scope and choose per-platform targets.",
+  "delivery_route": null,
+  "active_surface": "UNASSIGNED",
+  "handoff_control": {
+    "outgoing_revision": null,
+    "next_surface": null,
+    "receiver_acknowledgement": null
+  }
+}

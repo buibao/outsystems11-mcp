@@ -1,0 +1,31 @@
+{
+  "observed_date": "2026-10-25",
+  "pdf": {
+    "path": "docs\\references\\cheatsheets\\OutSystems-Developer-Cheat-Sheet.pdf",
+    "bytes": 247616,
+    "sha256": "b74f8288a77e3c32cf88ac5c963e3dead8818881b820c885b881cc36b2110e9c",
+    "matches_user_file": true,
+    "page_count": 4,
+    "footer_version": "v0.8",
+    "metadata": {
+      "/Creator": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+      "/Producer": "Skia/PDF m121",
+      "/CreationDate": "D:20231221202034+00'00'",
+      "/ModDate": "D:20231221202034+00'00'"
+    }
+  },
+  "website": {
+    "url": "https://outsystemsui.outsystems.com/OutSystemsUIWebsite/CheatSheet",
+    "basic_fetch": "JavaScript is required",
+    "browser_read": "PASS; OutSystems UI | CheatSheet",
+    "observed_sections": [
+      "UI Patterns",
+      "Borders",
+      "Buttons",
+      "Colors"
+    ],
+    "release_version": null,
+    "publication_date": null,
+    "installed_contract_evidence": false
+  }
+}

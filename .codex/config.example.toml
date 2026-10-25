@@ -1,0 +1,9 @@
+# Optional fragment, NOT active configuration. Merge into existing config only
+# after checking installed-client support; preserve MCP and security settings.
+[agents]
+enabled = true
+max_concurrent_threads_per_session = 2
+
+# Custom roles are standalone .codex/agents/*.toml in current documentation.
+# Do not also register the same role with a legacy config_file entry.
+# Model and reasoning effort inherit the parent; no model access is assumed.

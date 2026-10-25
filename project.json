@@ -1,0 +1,46 @@
+﻿{
+    "workflow_version":  "1.0",
+    "profile_status":  "ACTIVE",
+    "project_id":  "wht",
+    "display_name":  "WHT",
+    "business_context":  "Phát triển UI prototype WHT theo bộ ảnh reference.",
+    "design_system":  {
+                          "source":  "WHT_Theme_Fabric based on OutSystemsUI, observed current MCP view",
+                          "visual_priority":  "Reference hierarchy with inherited native theme and scoped exceptions",
+                          "allowed_scoped_exceptions":  [
+                                                            "UI-001 Screen stylesheet under .wht-ui001 and native popup scope; referenced themes unchanged"
+                                                        ]
+                      },
+    "boundaries":  {
+                       "in_scope":  [
+                                        "WHT UI prototype UI-001, synthetic frontend state"
+                                    ],
+                       "out_of_scope":  [
+                                            "Business persistence, integrations, real upload/reminder/approval, publishing without authorization"
+                                        ],
+                       "protected_behavior":  [
+                                                  "Existing WHT_Request screens, shared themes, upstream distribution"
+                                              ]
+                   },
+    "sites":  {
+                  "project_id":  null,
+                  "audience":  null,
+                  "source_locator":  null,
+                  "selected_reference_version":  null
+              },
+    "o11":  {
+                "environment":  "Development - personal-g4et6y1o.outsystemscloud.com",
+                "application":  null,
+                "module":  "WHT_Request",
+                "module_style":  "Reactive",
+                "platform_version":  null,
+                "theme_version":  "OutSystemsUI stylesheet header 2.20.0; WHT theme package version unknown",
+                "official_skill_path":  ".agents/skills/servicestudio-mcp-oml/SKILL.md",
+                "skill_revision":  null
+            },
+    "durable_artifact_location":  "tasks/UI-001",
+    "task_root":  "tasks",
+    "active_task":  "UI-001",
+    "notes":  "WHT UI-001 selected by user on 2026-10-24. Current module identified live. Published version and dependency version unknown; no historical MyApp target inherited.",
+    "default_delivery_route":  "HYBRID_SITES_O11"
+}

@@ -1,0 +1,232 @@
+READBACK:SCREEN WHTDocumentsPrototype key=rgGzB72tVkW2rxXtLW41gw roles=Registered locals=ActiveType,SelectedPreset,Standalone,Reviewer,Feedback,DialogOpen,DialogKind,DialogState,COR2024,COR2025,COR2026,COR2027,COR2028,COR2029,PEL2024,PEL2025,PEL2026,PEL2027,PEL2028,PEL2029
+BLOCK PrototypeFileRow key=MpmKDYGa6UWfwwrVGb_+1Q inputs=State:True
+BLOCK PrototypeUpload key=JeuU9JeskUqqHdYQs81eeQ inputs=ResetVersion:True,Compact:True
+BLOCK PrototypeDocumentHeader key=reDM3Adrdk6sCH6p+vG1xQ inputs=ActiveType:True,Standalone:True,Reviewer:True
+BLOCK PrototypeDialogs key=1+Dc2V13xESziRlQcjvVyQ inputs=State:True,IsOpen:True,Kind:True,FocusKey:True,FallbackKey:True
+BLOCK PrototypeYearCard key=Dyhf+wE_w0C5l71RpAqJng inputs=State:True
+BLOCK PrototypeTracking key=jOr5mUsw90eHrkZNMitz2w inputs=State:True
+ACTION UpdateCOR2028 nodes=3
+NODE Ruzu2SxJy0S9YFohueBhXw Start xy=3200,800 targets=qskndkRHCEuhOS2z1+swDg
+NODE qskndkRHCEuhOS2z1+swDg Assign xy=3200,2171 targets=rd7NuVPmaECsqGuXNXBa6g
+NODE rd7NuVPmaECsqGuXNXBa6g End xy=3200,3542 targets=
+ACTION CancelDialog nodes=3
+NODE nvbd73mHhUSgEDxSNx8THQ Assign xy=3200,2171 targets=0ZPtAzpV8UWsQBGd_arzHw
+NODE PcvV2_kmbEC6QYZQbcGFmA Start xy=3200,800 targets=nvbd73mHhUSgEDxSNx8THQ
+NODE 0ZPtAzpV8UWsQBGd_arzHw End xy=3200,3542 targets=
+ACTION UpdateCOR2026 nodes=3
+NODE gMJMvPbIjkSOU7sSRia6Bw Assign xy=3200,2171 targets=1YRZEet2l02PyJlh_myqXA
+NODE LjjeQCKVwEyVZsw1C1suoA Start xy=3200,800 targets=gMJMvPbIjkSOU7sSRia6Bw
+NODE 1YRZEet2l02PyJlh_myqXA End xy=3200,3542 targets=
+ACTION UpdateCOR2027 nodes=3
+NODE MkdIS4KnYkiARQvqzlNyBg Assign xy=3200,2171 targets=D6yvxMF5qU6YxJhlri8p3Q
+NODE D6yvxMF5qU6YxJhlri8p3Q End xy=3200,3542 targets=
+NODE gGOPne2BvUqXzSkKkgHHTw Start xy=3200,800 targets=MkdIS4KnYkiARQvqzlNyBg
+ACTION ConfirmDialog nodes=3
+NODE skckZFLNfk26+fEE0NWQfw End xy=3200,3542 targets=
+NODE xKP6aNyLrUSV0w0crdo_4Q Assign xy=3200,2171 targets=skckZFLNfk26+fEE0NWQfw
+NODE MT1Nk52zQ0WA0+BQZR_NCQ Start xy=3200,800 targets=xKP6aNyLrUSV0w0crdo_4Q
+ACTION HeaderCommand nodes=3
+NODE 7nivdMGprEGwX196GZptew Assign xy=3200,2171 targets=UVxhxQrDs0uBXEB58WB9YQ
+NODE 5hXaFTFkKEOb0BnSWIWuQw Start xy=3200,800 targets=7nivdMGprEGwX196GZptew
+NODE UVxhxQrDs0uBXEB58WB9YQ End xy=3200,3542 targets=
+ACTION UpdatePEL2024 nodes=3
+NODE iimE9V_iNE2TVejqJbQrVA Assign xy=3200,2171 targets=_5lA9ASJVkSXCeAsSt13LA
+NODE _5lA9ASJVkSXCeAsSt13LA End xy=3200,3542 targets=
+NODE 7ajtPmEAbEy06hTqaK0f3w Start xy=3200,800 targets=iimE9V_iNE2TVejqJbQrVA
+ACTION UpdateCOR2029 nodes=3
+NODE p35rjmtjqky2AC__eNEwNA Assign xy=3200,2171 targets=175cJ9RGakG5UhtsMnxG+w
+NODE tLPD69wazk2MQOVT46CLJw Start xy=3200,800 targets=p35rjmtjqky2AC__eNEwNA
+NODE 175cJ9RGakG5UhtsMnxG+w End xy=3200,3542 targets=
+ACTION UpdatePEL2025 nodes=3
+NODE oqe_MG+JqkupR+vTmQVVkQ End xy=3200,3542 targets=
+NODE eUXjU3pSQEqU17q08ZtcIw Assign xy=3200,2171 targets=oqe_MG+JqkupR+vTmQVVkQ
+NODE BiPODA9LnUO0ujRJgRWA9Q Start xy=3200,800 targets=eUXjU3pSQEqU17q08ZtcIw
+ACTION UpdatePEL2026 nodes=3
+NODE 6vBX+SVY+0mslsOeu9_VcQ Assign xy=3200,2171 targets=ffyRQ+9clkasr22kk0EpWA
+NODE YZagq5PPekmq56TnS1c7HQ Start xy=3200,800 targets=6vBX+SVY+0mslsOeu9_VcQ
+NODE ffyRQ+9clkasr22kk0EpWA End xy=3200,3542 targets=
+ACTION LoadPreset nodes=3
+NODE DJ6fjQbYOEyg+DsXWB08pQ End xy=3200,3542 targets=
+NODE g2GJU+JAPEO4JuXbxKPggg Start xy=3200,800 targets=6tCnW8guBUiCDdcda2hvYQ
+NODE 6tCnW8guBUiCDdcda2hvYQ Assign xy=3200,2171 targets=DJ6fjQbYOEyg+DsXWB08pQ
+ACTION UpdateCOR2025 nodes=3
+NODE 6L8_f1eGaUGUeK1msJle5w Assign xy=3200,2171 targets=twDNvflh9063r9N2ORGc_w
+NODE gY_MaHOLiU24OsICLKXPfw Start xy=3200,800 targets=6L8_f1eGaUGUeK1msJle5w
+NODE twDNvflh9063r9N2ORGc_w End xy=3200,3542 targets=
+ACTION UpdatePEL2029 nodes=3
+NODE Hom4c6n5ak2_7pY5JxYDiA Start xy=3200,800 targets=HIyGv1V5ekehTeTTFQxgdQ
+NODE XvMVDV92qkenIBGAiTdpvg End xy=3200,3542 targets=
+NODE HIyGv1V5ekehTeTTFQxgdQ Assign xy=3200,2171 targets=XvMVDV92qkenIBGAiTdpvg
+ACTION UpdateCOR2024 nodes=3
+NODE AQ_Yam03tkyS56cpldKTKg Assign xy=3200,2171 targets=kiA7cjwoPUGuamVPZN4Z1A
+NODE kiA7cjwoPUGuamVPZN4Z1A End xy=3200,3542 targets=
+NODE SERx_uTjc0uROiem43W9WA Start xy=3200,800 targets=AQ_Yam03tkyS56cpldKTKg
+ACTION UpdatePEL2028 nodes=3
+NODE ovGIDscnWkGfCV6gJLSz9g End xy=3200,3542 targets=
+NODE VWSvZPuqYUqMosC4FuZk_A Assign xy=3200,2171 targets=ovGIDscnWkGfCV6gJLSz9g
+NODE 6+RXaYoq6E2DFx6oBxRJ0w Start xy=3200,800 targets=VWSvZPuqYUqMosC4FuZk_A
+ACTION UpdatePEL2027 nodes=3
+NODE p_nYpp4VqUqtHU98p1Xo_g Assign xy=3200,2171 targets=gg6P1TeKLU694rRuOI55cQ
+NODE KSNUf21qsEGLlDcvtdV7tw Start xy=3200,800 targets=p_nYpp4VqUqtHU98p1Xo_g
+NODE gg6P1TeKLU694rRuOI55cQ End xy=3200,3542 targets=
+ACTION OpenFile nodes=3
+NODE 8zntkjH8EUyJ5Cy+WK83bQ End xy=3200,3542 targets=
+NODE Sglb_A4iDU6ZUpM7Af8zMw TriggerEvent xy=3200,2171 targets=8zntkjH8EUyJ5Cy+WK83bQ
+NODE 0djyl5poW0KXCSpiXytAuw Start xy=3200,800 targets=Sglb_A4iDU6ZUpM7Af8zMw
+ACTION RemoveFile nodes=3
+NODE M1OGigru2Euu0DDfuimU4w Start xy=3200,800 targets=OWV67nXcz02VL41nCYT4ZQ
+NODE uZM4SQLE6UmlJCp+Zts13g End xy=3200,3542 targets=
+NODE OWV67nXcz02VL41nCYT4ZQ TriggerEvent xy=3200,2171 targets=uZM4SQLE6UmlJCp+Zts13g
+ACTION ResetSelection nodes=3
+NODE 0QCzn+BQ2kOOXV2_nC3gcg Assign xy=3200,2171 targets=3FJ3DOv9okuubW200GpkeQ
+NODE UQuepHcLdUCGOYCXGBx8qQ Start xy=3200,800 targets=0QCzn+BQ2kOOXV2_nC3gcg
+NODE 3FJ3DOv9okuubW200GpkeQ End xy=3200,3542 targets=
+ACTION FileSelected nodes=5
+NODE pJpBlWXlJEaaT3xIwsL5Wg TriggerEvent xy=3200,3542 targets=TydquHTr_0e5aitiy1XCBQ
+NODE dP4SbMVDekCg30ME7CTwJw End xy=3200,6284 targets=
+NODE TydquHTr_0e5aitiy1XCBQ Assign xy=3200,4913 targets=dP4SbMVDekCg30ME7CTwJw
+NODE GD3wyJ9W6kKNrIiQT3pH7w JavascriptNode xy=3200,2171 targets=pJpBlWXlJEaaT3xIwsL5Wg
+NODE uj1YqqehCkGxhhbghtiqlg Start xy=3200,800 targets=GD3wyJ9W6kKNrIiQT3pH7w
+ACTION Specimen nodes=3
+NODE G7TJcpsiAUut7xP3f8cEyw End xy=3200,3542 targets=
+NODE qtDHhsPFQkeeVxr8hK4MZA TriggerEvent xy=3200,2171 targets=G7TJcpsiAUut7xP3f8cEyw
+NODE HaBYfEVzZkqVu4EQ4R5Y6w Start xy=3200,800 targets=qtDHhsPFQkeeVxr8hK4MZA
+ACTION SelectCOR nodes=3
+NODE r4PnV4UWjESQ_JLyFM0zDQ End xy=3200,3542 targets=
+NODE 1dIEeelqmEKgz80Va+p+WA TriggerEvent xy=3200,2171 targets=r4PnV4UWjESQ_JLyFM0zDQ
+NODE m64ItJSB40S3WIfQ57nXzQ Start xy=3200,800 targets=1dIEeelqmEKgz80Va+p+WA
+ACTION Unavailable nodes=3
+NODE t9T3Hjz4bkOnpwsAPTDsgQ Start xy=3200,800 targets=mndDyq8TMEqlXTB41PH_og
+NODE nyeHlblLdUuEAL8En9i0Dg End xy=3200,3542 targets=
+NODE mndDyq8TMEqlXTB41PH_og TriggerEvent xy=3200,2171 targets=nyeHlblLdUuEAL8En9i0Dg
+ACTION SuspendReminder nodes=3
+NODE RTMZ5yFbhkGZH4gbOoimFg End xy=3200,3542 targets=
+NODE 5k65fdO7vkWR+e7hjUDLqQ TriggerEvent xy=3200,2171 targets=RTMZ5yFbhkGZH4gbOoimFg
+NODE 37++DofGi0KgrNWl7e1VEA Start xy=3200,800 targets=5k65fdO7vkWR+e7hjUDLqQ
+ACTION KeyboardDocumentSelection nodes=3
+NODE cepGLgJjiUqo2PvGFl10nQ Start xy=3200,800 targets=tzkGnLRseE+sq4J+RuE4jg
+NODE tzkGnLRseE+sq4J+RuE4jg JavascriptNode xy=3200,2171 targets=Q+wR2c1LJk6aZULt27GRqQ
+NODE Q+wR2c1LJk6aZULt27GRqQ End xy=3200,3542 targets=
+ACTION SelectPEL nodes=3
+NODE ip3WLQnu60qItVX2fHYelg TriggerEvent xy=3200,2171 targets=ln5hIDYovkC_G7MElLwg1Q
+NODE ln5hIDYovkC_G7MElLwg1Q End xy=3200,3542 targets=
+NODE 62OIuXZe80auMHo53Btgew Start xy=3200,800 targets=ip3WLQnu60qItVX2fHYelg
+ACTION ChooseYear2025 nodes=3
+NODE KZm28gOzS0K7PJemLbDCjg End xy=3200,3542 targets=
+NODE Ibhha43EHE6UPyGEV+2eyg Assign xy=3200,2171 targets=KZm28gOzS0K7PJemLbDCjg
+NODE 7IfLh0kx7kCIHS6R714iOQ Start xy=3200,800 targets=Ibhha43EHE6UPyGEV+2eyg
+ACTION ConfirmDialog nodes=3
+NODE tjb_O8h9BE2PN1R1XMKDKA End xy=3200,3542 targets=
+NODE 8_F1mGj2ck2042tTb2lZ0g Start xy=3200,800 targets=iVHfO6PTVUCLZdZMruNNig
+NODE iVHfO6PTVUCLZdZMruNNig TriggerEvent xy=3200,2171 targets=tjb_O8h9BE2PN1R1XMKDKA
+ACTION CancelDialog nodes=3
+NODE EDVdxxwYv0ucZUop1v+Esg End xy=3200,3542 targets=
+NODE lwyx6GkCZkue_hpNXkYZOw Start xy=3200,800 targets=35Qk_Q00dEy6BHxmqs+TtA
+NODE 35Qk_Q00dEy6BHxmqs+TtA TriggerEvent xy=3200,2171 targets=EDVdxxwYv0ucZUop1v+Esg
+ACTION ChooseYear2029 nodes=3
+NODE vwYtRJdiNEyyM1AWFJo4ow Assign xy=3200,2171 targets=50ZtKvYT80yv93oapmWbgw
+NODE UQ8ZaCn0QUCi7OeyEvATYg Start xy=3200,800 targets=vwYtRJdiNEyyM1AWFJo4ow
+NODE 50ZtKvYT80yv93oapmWbgw End xy=3200,3542 targets=
+ACTION ChooseYear2028 nodes=3
+NODE S7SwG7G0hkCnmIoiU+YvkA Start xy=3200,800 targets=4M3i_QDNXkeZ1GaHwu+VDA
+NODE GgC18v+d1EmZECdD3bSHJw End xy=3200,3542 targets=
+NODE 4M3i_QDNXkeZ1GaHwu+VDA Assign xy=3200,2171 targets=GgC18v+d1EmZECdD3bSHJw
+ACTION ChooseYear2026 nodes=3
+NODE feGP3TKhc0uLVxXUTQGTZA Start xy=3200,800 targets=e+2pJk20F0aH_cf7HHmSRg
+NODE Wa5GiqxmS0yHoqFBYH7dYQ End xy=3200,3542 targets=
+NODE e+2pJk20F0aH_cf7HHmSRg Assign xy=3200,2171 targets=Wa5GiqxmS0yHoqFBYH7dYQ
+ACTION DialogLifecycle nodes=3
+NODE HV+ALl8tnEKLid+f2JthcQ JavascriptNode xy=3200,2171 targets=rG9Lie0MqkWP9TL3LQ16jw
+NODE rG9Lie0MqkWP9TL3LQ16jw End xy=3200,3542 targets=
+NODE +ronAr79hkKAQktQlvOAJQ Start xy=3200,800 targets=HV+ALl8tnEKLid+f2JthcQ
+ACTION ChooseYear2024 nodes=3
+NODE dwzbQzGC0E+ETOHvzhW14A Assign xy=3200,2171 targets=c_iwnsMpskeh6P+4hE6dUg
+NODE WhrN7nvc+US0NbneHqH7ag Start xy=3200,800 targets=dwzbQzGC0E+ETOHvzhW14A
+NODE c_iwnsMpskeh6P+4hE6dUg End xy=3200,3542 targets=
+ACTION InitializeDraft nodes=3
+NODE ClUkmQhq7kiQjPNv5f0HVQ Assign xy=3200,2171 targets=DjzsOpSj3ECty8Mty0PMiQ
+NODE ViBaclCpt06jDbqNqi_xbg Start xy=3200,800 targets=ClUkmQhq7kiQjPNv5f0HVQ
+NODE DjzsOpSj3ECty8Mty0PMiQ End xy=3200,3542 targets=
+ACTION ChooseYear2027 nodes=3
+NODE l5voR92xBUeYiG0Ux69UbQ Assign xy=3200,2171 targets=D+My5oFGl0W_fU3MwUG3pg
+NODE 8VwJSRqWiU6xOqPBom9V4Q Start xy=3200,800 targets=l5voR92xBUeYiG0Ux69UbQ
+NODE D+My5oFGl0W_fU3MwUG3pg End xy=3200,3542 targets=
+ACTION ConfirmDialog nodes=4
+NODE QKRERWkjOU+eCOKQ9FNhXA Assign xy=3200,2171 targets=67eG4GrhEkSV67t20bt7aA
+NODE 67eG4GrhEkSV67t20bt7aA TriggerEvent xy=3200,3542 targets=Vx109SJPi06crzj2nzA7RA
+NODE Vx109SJPi06crzj2nzA7RA End xy=3200,4913 targets=
+NODE w4tYBlJoIUSxqXMC7oULTg Start xy=3200,800 targets=QKRERWkjOU+eCOKQ9FNhXA
+ACTION ToggleTracking nodes=4
+NODE Son66Yu7gUuZloAw55G7iA TriggerEvent xy=3200,3542 targets=w9PWJEHCGkOTcbd1_5O+oQ
+NODE w9PWJEHCGkOTcbd1_5O+oQ End xy=3200,4913 targets=
+NODE G6XIrytxjUGNJLt9ICkRIA Assign xy=3200,2171 targets=Son66Yu7gUuZloAw55G7iA
+NODE MGWnsg9LT0OR27YmH7ctYQ Start xy=3200,800 targets=G6XIrytxjUGNJLt9ICkRIA
+ACTION AcceptFile nodes=4
+NODE Aepo4LC7nEWaLyN4Kg2h1g TriggerEvent xy=3200,3542 targets=oHbAPf7sYUWZe+3JJaCDFQ
+NODE oHbAPf7sYUWZe+3JJaCDFQ End xy=3200,4913 targets=
+NODE OwpsGgid+EiPaLv1re64AA Start xy=3200,800 targets=nKzSLjm7+0u1G+Yakc0QtQ
+NODE nKzSLjm7+0u1G+Yakc0QtQ Assign xy=3200,2171 targets=Aepo4LC7nEWaLyN4Kg2h1g
+ACTION OpenApprove nodes=3
+NODE Hxt_vdyAdEmSWelV3rmlow Start xy=3200,800 targets=ynVSxnbT4Eq4N9+ExIsApA
+NODE ynVSxnbT4Eq4N9+ExIsApA Assign xy=3200,2171 targets=QjYq7tBoQEaPXTYEd64agA
+NODE QjYq7tBoQEaPXTYEd64agA End xy=3200,3542 targets=
+ACTION CancelResubmit nodes=4
+NODE wstWgC85XUKO1AxwCcnaug TriggerEvent xy=3200,3542 targets=7jl8Cy7o40yU2I3osCyk_Q
+NODE pXBb3jW5GU29Qs7JxK6dGg Start xy=3200,800 targets=LUT2kewWjkC_PE3yv0fmDA
+NODE 7jl8Cy7o40yU2I3osCyk_Q End xy=3200,4913 targets=
+NODE LUT2kewWjkC_PE3yv0fmDA Assign xy=3200,2171 targets=wstWgC85XUKO1AxwCcnaug
+ACTION OpenCoverage nodes=3
+NODE j99aib6o0k+L3XaTEUfdUg Start xy=3200,800 targets=u2zMGn8dL0uVVbc+GhB6RA
+NODE u2zMGn8dL0uVVbc+GhB6RA Assign xy=3200,2171 targets=qckJazrQ0EKM1d_48w+yCg
+NODE qckJazrQ0EKM1d_48w+yCg End xy=3200,3542 targets=
+ACTION Submit nodes=4
+NODE 1x2PjltvuU+XfUEmJXc9iw Start xy=3200,800 targets=t6XOym5IIkKayXAmRVfPmw
+NODE eIrr94SSTEOwId3vhm3QvA End xy=3200,4913 targets=
+NODE t6XOym5IIkKayXAmRVfPmw Assign xy=3200,2171 targets=+qgX5mKEO0mNDdUQQ6biYQ
+NODE +qgX5mKEO0mNDdUQQ6biYQ TriggerEvent xy=3200,3542 targets=eIrr94SSTEOwId3vhm3QvA
+ACTION ReminderInfo nodes=4
+NODE LGkHt+X1GEeCiOR7M8yiFw End xy=3200,4913 targets=
+NODE 0eUKHUx2N02pwM_6diuWaQ Assign xy=3200,2171 targets=CIjjr1AQP0uByfF7g8vM7Q
+NODE mMWKfbhYYUCN91l3jYTbqw Start xy=3200,800 targets=0eUKHUx2N02pwM_6diuWaQ
+NODE CIjjr1AQP0uByfF7g8vM7Q TriggerEvent xy=3200,3542 targets=LGkHt+X1GEeCiOR7M8yiFw
+ACTION ResumeReminder nodes=4
+NODE ++GmjVwB+UiXRqA9rI2SOg Assign xy=3200,2171 targets=Ht7O_plwVkWC9IW21c8u0g
+NODE QRluAZa_PkGrmowV3zaibg End xy=3200,4913 targets=
+NODE Ht7O_plwVkWC9IW21c8u0g TriggerEvent xy=3200,3542 targets=QRluAZa_PkGrmowV3zaibg
+NODE TMXD7LqsdkOkP5ROlf1xGA Start xy=3200,800 targets=++GmjVwB+UiXRqA9rI2SOg
+ACTION ToggleYear nodes=4
+NODE LZpYVpCyfEylRSyK_7zn2w Assign xy=3200,2171 targets=HulRxAQ_dEi0JFu2N5A5Kw
+NODE HulRxAQ_dEi0JFu2N5A5Kw TriggerEvent xy=3200,3542 targets=nTQxw+l5pECSizZ8yGqKfg
+NODE bYyDa+cLvkC31JPBdMAEmA Start xy=3200,800 targets=LZpYVpCyfEylRSyK_7zn2w
+NODE nTQxw+l5pECSizZ8yGqKfg End xy=3200,4913 targets=
+ACTION ReminderTooltipLifecycle nodes=3
+NODE steDMJzuBUaEL5DYx333nA End xy=3200,3542 targets=
+NODE 2u8YyoWXC0qPWA+qQB6BvA Start xy=3200,800 targets=McYSVBAWMk2z7sck6O4m1g
+NODE McYSVBAWMk2z7sck6O4m1g JavascriptNode xy=3200,2171 targets=steDMJzuBUaEL5DYx333nA
+ACTION CancelDialog nodes=3
+NODE OY9VXgvjj0CEDBsKrlkpQQ Assign xy=3200,2171 targets=P8l_v3DIcUiuTRReQxCy3w
+NODE P8l_v3DIcUiuTRReQxCy3w End xy=3200,3542 targets=
+NODE p+xatMyUyka6kQ_pjkWCGA Start xy=3200,800 targets=OY9VXgvjj0CEDBsKrlkpQQ
+ACTION BeginResubmit nodes=4
+NODE zX5eC4ChgEiyZi89DKZ3pA TriggerEvent xy=3200,3542 targets=NuQeqVK2REivty6XgDKNig
+NODE MMgTCGPI3UyJl+h7bo9oag Assign xy=3200,2171 targets=zX5eC4ChgEiyZi89DKZ3pA
+NODE mhsRkV6dIEqGRJ0Ab8pXUA Start xy=3200,800 targets=MMgTCGPI3UyJl+h7bo9oag
+NODE NuQeqVK2REivty6XgDKNig End xy=3200,4913 targets=
+ACTION OpenReject nodes=3
+NODE tjlkbHJJR0iwWg25EduFbg End xy=3200,3542 targets=
+NODE 4Gx9aXo_lEuX3U4PJwvUeg Start xy=3200,800 targets=eRSkTuBKAEOMwd1BhWum+g
+NODE eRSkTuBKAEOMwd1BhWum+g Assign xy=3200,2171 targets=tjlkbHJJR0iwWg25EduFbg
+ACTION FileCommand nodes=4
+NODE 6CLSLOsOGkaYTfKBgPnQbg End xy=3200,4913 targets=
+NODE crFvOERVCUKXbfypW0m25g Assign xy=3200,2171 targets=VcfpgYbkN0edhXo09HcCMQ
+NODE VcfpgYbkN0edhXo09HcCMQ TriggerEvent xy=3200,3542 targets=6CLSLOsOGkaYTfKBgPnQbg
+NODE bNRIwDCOiEuHqh6DjgKe+A Start xy=3200,800 targets=crFvOERVCUKXbfypW0m25g
+ACTION ClearAll nodes=4
+NODE spvcME1Q6UiMnGMUW5ZY_Q TriggerEvent xy=3200,3542 targets=8POWMHk6JEiFHNclurKIiw
+NODE bPTa5pnWJ0aDUOLjwvo4aA Assign xy=3200,2171 targets=spvcME1Q6UiMnGMUW5ZY_Q
+NODE f3_A99tWI0Kqld2VsOuriw Start xy=3200,800 targets=bPTa5pnWJ0aDUOLjwvo4aA
+NODE 8POWMHk6JEiFHNclurKIiw End xy=3200,4913 targets=
+ACTION ToggleTracking nodes=3
+NODE s9+ZVtRfNkervW2CCWcIMw TriggerEvent xy=3200,2171 targets=5vx2xFwGcEm4UX1C7+JpGQ
+NODE 5vx2xFwGcEm4UX1C7+JpGQ End xy=3200,3542 targets=
+NODE uY2xZ8fiDE2YxFm9XZqw+w Start xy=3200,800 targets=s9+ZVtRfNkervW2CCWcIMw

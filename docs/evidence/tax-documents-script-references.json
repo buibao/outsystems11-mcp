@@ -1,0 +1,6 @@
+{
+  "state": "Read-only typed inspection of fresh live checkout after merge",
+  "readback": "READBACK_ONLY: Scripts=TaxDocumentsPrototype; ScreenRequired=TaxDocumentsPrototype; UploadRequired=TaxDocumentsPrototype; DialogRequired=TaxDocumentsPrototype",
+  "mutatedOmlPath": "",
+  "verificationSessionEnded": true
+}

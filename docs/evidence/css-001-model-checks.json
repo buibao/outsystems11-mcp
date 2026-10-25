@@ -1,0 +1,237 @@
+{
+  "capturedUTC": "2026-10-22 03:32:14 UTC",
+  "subject": "pending MCP model",
+  "target": {
+    "name": "MyApp",
+    "key": "5f28b208-ec42-4a32-a28d-c0e74109dfa5",
+    "moduleType": "Reactive"
+  },
+  "baseline": [
+    {
+      "ownerPath": "/Common/InvalidPermissions",
+      "ownerType": "IMobileScreen",
+      "id": "AnonymousAccess_NoPermissionsNoRoles",
+      "type": "Warning",
+      "message": "Missing roles",
+      "detail": "Screen 'InvalidPermissions' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+      "ownerKey": "5nVIK0JIkEq75V4SgIpFYw"
+    },
+    {
+      "ownerPath": "/Common/Login",
+      "ownerType": "IMobileScreen",
+      "id": "AnonymousAccess_NoPermissionsNoRoles",
+      "type": "Warning",
+      "message": "Missing roles",
+      "detail": "Screen 'Login' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+      "ownerKey": "dazwmfzUG0aXr0zvksbeWA"
+    },
+    {
+      "ownerPath": "/MainFlow/TaxDocumentsPreview",
+      "ownerType": "IMobileScreen",
+      "id": "AnonymousAccess_NoPermissionsNoRoles",
+      "type": "Warning",
+      "message": "Missing roles",
+      "detail": "Screen 'TaxDocumentsPreview' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+      "ownerKey": "YKggOxuT+UOrYZcKwyg5uw"
+    }
+  ],
+  "representativeReadbacks": {
+    "ReminderControls": "```csharp\n(OutSystems.Model.UI.Mobile.IMobileFlow mainFlow) => {\r\n    \r\n    /*** creating IMobileBlock 'ReminderControls' ***/\r\n    var reminderControls = mainFlow.CreateBlock(\"ReminderControls\");\r\n    reminderControls.Description = \"Native Tax Documents prototype component. Inputs are parent owned; events carry Command, stable DocumentKey and Payload.\";\r\n    reminderControls.HorizontalPosition = 3400;\r\n    reminderControls.Icon = null; // default value\r\n    reminderControls.IsDisabled = false; // default value\r\n    reminderControls.JavaScript = \"\"; // default value\r\n    reminderControls.SetOnRenderJavascript(null); // default value\r\n    reminderControls.Public = false; // default value\r\n    reminderControls.Shareable = false; // default value\r\n    reminderControls.StyleSheet = null; // default value\r\n    reminderControls.VerticalPosition = 5400;\r\n    \r\n    var reminderRequested = reminderControls.CreateEvent(\"ReminderRequested\");\r\n    reminderRequested.Description = null; // default value\r\n    reminderRequested.IsMandatory = true; // default value\r\n    \r\n    var requestCommand = reminderRequested.CreateInputParameter(\"RequestCommand\");\r\n    var eSpace = mainFlow.GetESpace();\r\n    requestCommand.DataType = eSpace.TextType;\r\n    requestCommand.Description = null; // default value\r\n    requestCommand.IsMandatory = true; // default value\r\n    \r\n    var requestKey = reminderRequested.CreateInputParameter(\"RequestKey\");\r\n    requestKey.DataType = eSpace.TextType;\r\n    requestKey.Description = null; // default value\r\n    requestKey.IsMandatory = true; // default value\r\n    \r\n    var requestPayload = reminderRequested.CreateInputParameter(\"RequestPayload\");\r\n    requestPayload.DataType = eSpace.TextType;\r\n    requestPayload.Description = null; // default value\r\n    requestPayload.IsMandatory = true; // default value\r\n    \r\n    var documentKey = reminderControls.CreateInputParameter(\"DocumentKey\");\r\n    documentKey.DataType = eSpace.TextType;\r\n    documentKey.Description = null; // default value\r\n    documentKey.IsMandatory = true; // default value\r\n    \r\n    var isSuspended = reminderControls.CreateInputParameter(\"IsSuspended\");\r\n    isSuspended.DataType = eSpace.BooleanType;\r\n    isSuspended.Description = null; // default value\r\n    isSuspended.IsMandatory = true; // default value\r\n    reminderControls.OnDestroy.Destination = null; // default value\r\n    reminderControls.OnInitialize.Destination = null; // default value\r\n    reminderControls.OnParametersChanged.Destination = null; // default value\r\n    reminderControls.OnReady.Destination = null; // default value\r\n    reminderControls.OnRender.Destination = null; // default value\r\n    \r\n    var raiseIntent = reminderControls.CreateScreenAction(\"RaiseIntent\");\r\n    raiseIntent.Description = null; // default value\r\n    \r\n    var requestCommand2 = raiseIntent.CreateInputParameter(\"RequestCommand\");\r\n    requestCommand2.DataType = eSpace.TextType;\r\n    requestCommand2.Description = null; // default value\r\n    requestCommand2.IsMandatory = true; // default value\r\n    \r\n    var requestKey2 = raiseIntent.CreateInputParameter(\"RequestKey\");\r\n    requestKey2.DataType = eSpace.TextType;\r\n    requestKey2.Description = null; // default value\r\n    requestKey2.IsMandatory = true; // default value\r\n    \r\n    var requestPayload2 = raiseIntent.CreateInputParameter(\"RequestPayload\");\r\n    requestPayload2.DataType = eSpace.TextType;\r\n    requestPayload2.Description = null; // default value\r\n    requestPayload2.IsMandatory = true; // default value\r\n    \r\n    var startNode = raiseIntent.CreateNode<OutSystems.Model.Logic.Nodes.IStartNode>();\r\n    startNode.HorizontalPosition = 3200;\r\n    startNode.IsDisabled = false; // default value\r\n    startNode.VerticalPosition = 800;\r\n    \r\n    var raiseParentIntent = raiseIntent.CreateNode<OutSystems.Model.Logic.Nodes.ITriggerNode>(\"RaiseParentIntent\").ConnectedBelow(startNode, 1371);\r\n    raiseParentIntent.Description = null; // default value\r\n    raiseParentIntent.Event = reminderRequested;\r\n    raiseParentIntent.IsDisabled = false; // default value\r\n    raiseParentIntent.SetArgumentValue(requestCommand, \"RequestCommand\");\r\n    raiseParentIntent.SetArgumentValue(requestPayload, \"RequestPayload\");\r\n    raiseParentIntent.SetArgumentValue(requestKey, \"RequestKey\");\r\n    \r\n    var endNode = raiseIntent.CreateNode<OutSystems.Model.Logic.Nodes.IEndNode>().ConnectedBelow(raiseParentIntent, 1371);\r\n    endNode.IsDisabled = false; // default value\r\n    \r\n    var ifWidget = reminderControls.CreateWidget<OutSystems.Model.UI.Mobile.Widgets.IIfWidget>();\r\n    ifWidget.Animate = false; // default value\r\n    ifWidget.SetCondition(\"IsSuspended\");\r\n    ifWidget.CustomStyle = null; // default value\r\n    ifWidget.DesignMode = OutSystems.Model.Enumerations.DesignMode.ShowAll; // default value\r\n    \r\n    var button = ifWidget.TrueBranch.CreateWidget<ServiceStudio.Plugin.NRWidgets.IButton>();\r\n    button.AlignItems = OutSystems.Model.Enumerations.AlignItems.Stretch; // default value\r\n    button.AlignSelf = OutSystems.Model.Enumerations.AlignSelf.Auto; // default value\r\n    button.ColumnGap = null; // default value\r\n    button.ColumnSpan = null; // default value\r\n    button.SetConfirmationMessage(null); // default value\r\n    button.CustomStyle = null; // default value\r\n    button.SetEnabled(\"True\");\r\n    button.FlexBasis = null; // default value\r\n    button.FlexDirection = OutSystems.Model.Enumerations.FlexDirection.Row; // default value\r\n    button.Flexible = OutSystems.Model.Enumerations.Flexible.Shrink; // default value\r\n    button.FlexWrap = OutSystems.Model.Enumerations.FlexWrap.NoWrap; // default value\r\n    button.Gap = null;\r\n    button.GridColumns = null; // default value\r\n    button.GridRows = null; // default value\r\n    button.IsDefault = false; // default value\r\n    button.JustifyContent = OutSystems.Model.Enumerations.JustifyContent.Start; // default value\r\n    button.RowGap = null; // default value\r\n    button.RowSpan = null; // default value\r\n    button.SetStyle(\"\\\"btn btn-small\\\"\");\r\n    button.SetVisible(\"True\"); // default value\r\n    button.WidgetGridType = OutSystems.Model.Enumerations.WidgetGridType.None; // default value\r\n    button.Width = \"\"; // default value\r\n    \r\n    var textWidget = (OutSystems.Model.UI.Mobile.Widgets.ITextWidget)button.Widgets.First();\r\n    textWidget.CustomStyle = null; // default value\r\n    textWidget.Name = null; // default value\r\n    textWidget.SetStyleClasses(null); // default value\r\n    textWidget.Text = \"♧ Resume Reminder\";\r\n    var builtinEvent = button.OnClick;\r\n    builtinEvent.BuiltInValidations = OutSystems.Model.Enumerations.ValidationBehavior.None; // default value\r\n    builtinEvent.Destination = raiseIntent;\r\n    builtinEvent.Transition = OutSystems.Model.Enumerations.TransitionTypeWithInheritance.Inherited; // default value\r\n    builtinEvent.SetArgumentValue(requestCommand2, \"\\\"resume\\\"\");\r\n    builtinEvent.SetArgumentValue(requestKey2, \"DocumentKey\");\r\n    builtinEvent.SetArgumentValue(requestPayload2, \"\\\"\\\"\");\r\n    \r\n    var extendedProperty = button.CreateExtendedProperty();\r\n    extendedProperty.Property = \"title\";\r\n    extendedProperty.SetValue(\"\\\"Reminder for this document has been suspended. Resume locally.\\\"\");\r\n}\r\n\n```",
+    "DocumentTypeTabs": "```csharp\n(OutSystems.Model.UI.Mobile.IMobileFlow mainFlow) => {\r\n    \r\n    /*** creating IMobileBlock 'DocumentTypeTabs' ***/\r\n    var documentTypeTabs = mainFlow.CreateBlock(\"DocumentTypeTabs\");\r\n    documentTypeTabs.Description = \"Native Tax Documents prototype component. Inputs are parent owned; events carry Command, stable DocumentKey and Payload.\";\r\n    documentTypeTabs.HorizontalPosition = 800;\r\n    documentTypeTabs.Icon = null; // default value\r\n    documentTypeTabs.IsDisabled = false; // default value\r\n    documentTypeTabs.JavaScript = \"\"; // default value\r\n    documentTypeTabs.SetOnRenderJavascript(null); // default value\r\n    documentTypeTabs.Public = false; // default value\r\n    documentTypeTabs.Shareable = false; // default value\r\n    documentTypeTabs.StyleSheet = null; // default value\r\n    documentTypeTabs.VerticalPosition = 2400;\r\n    \r\n    var typeChanged = documentTypeTabs.CreateEvent(\"TypeChanged\");\r\n    typeChanged.Description = null; // default value\r\n    typeChanged.IsMandatory = true; // default value\r\n    \r\n    var requestCommand = typeChanged.CreateInputParameter(\"RequestCommand\");\r\n    var eSpace = mainFlow.GetESpace();\r\n    requestCommand.DataType = eSpace.TextType;\r\n    requestCommand.Description = null; // default value\r\n    requestCommand.IsMandatory = true; // default value\r\n    \r\n    var requestKey = typeChanged.CreateInputParameter(\"RequestKey\");\r\n    requestKey.DataType = eSpace.TextType;\r\n    requestKey.Description = null; // default value\r\n    requestKey.IsMandatory = true; // default value\r\n    \r\n    var requestPayload = typeChanged.CreateInputParameter(\"RequestPayload\");\r\n    requestPayload.DataType = eSpace.TextType;\r\n    requestPayload.Description = null; // default value\r\n    requestPayload.IsMandatory = true; // default value\r\n    \r\n    var activeDocumentType = documentTypeTabs.CreateInputParameter(\"ActiveDocumentType\");\r\n    var documentType = eSpace.Entities.OfType<OutSystems.Model.Data.IStaticEntity>().Named(\"DocumentType\");\r\n    activeDocumentType.DataType = documentType.IdentifierType;\r\n    activeDocumentType.Description = null; // default value\r\n    activeDocumentType.IsMandatory = true; // default value\r\n    documentTypeTabs.OnDestroy.Destination = null; // default value\r\n    documentTypeTabs.OnInitialize.Destination = null; // default value\r\n    documentTypeTabs.OnParametersChanged.Destination = null; // default value\r\n    documentTypeTabs.OnReady.Destination = null; // default value\r\n    documentTypeTabs.OnRender.Destination = null; // default value\r\n    \r\n    var raiseIntent = documentTypeTabs.CreateScreenAction(\"RaiseIntent\");\r\n    raiseIntent.Description = null; // default value\r\n    \r\n    var requestCommand2 = raiseIntent.CreateInputParameter(\"RequestCommand\");\r\n    requestCommand2.DataType = eSpace.TextType;\r\n    requestCommand2.Description = null; // default value\r\n    requestCommand2.IsMandatory = true; // default value\r\n    \r\n    var requestKey2 = raiseIntent.CreateInputParameter(\"RequestKey\");\r\n    requestKey2.DataType = eSpace.TextType;\r\n    requestKey2.Description = null; // default value\r\n    requestKey2.IsMandatory = true; // default value\r\n    \r\n    var requestPayload2 = raiseIntent.CreateInputParameter(\"RequestPayload\");\r\n    requestPayload2.DataType = eSpace.TextType;\r\n    requestPayload2.Description = null; // default value\r\n    requestPayload2.IsMandatory = true; // default value\r\n    \r\n    var startNode = raiseIntent.CreateNode<OutSystems.Model.Logic.Nodes.IStartNode>();\r\n    startNode.HorizontalPosition = 3200;\r\n    startNode.IsDisabled = false; // default value\r\n    startNode.VerticalPosition = 800;\r\n    \r\n    var raiseParentIntent = raiseIntent.CreateNode<OutSystems.Model.Logic.Nodes.ITriggerNode>(\"RaiseParentIntent\").ConnectedBelow(startNode, 1371);\r\n    raiseParentIntent.Description = null; // default value\r\n    raiseParentIntent.Event = typeChanged;\r\n    raiseParentIntent.IsDisabled = false; // default value\r\n    raiseParentIntent.SetArgumentValue(requestKey, \"RequestKey\");\r\n    raiseParentIntent.SetArgumentValue(requestPayload, \"RequestPayload\");\r\n    raiseParentIntent.SetArgumentValue(requestCommand, \"RequestCommand\");\r\n    \r\n    var endNode = raiseIntent.CreateNode<OutSystems.Model.Logic.Nodes.IEndNode>().ConnectedBelow(raiseParentIntent, 1371);\r\n    endNode.IsDisabled = false; // default value\r\n    \r\n    var container = documentTypeTabs.CreateWidget<ServiceStudio.Plugin.NRWidgets.IContainer>();\r\n    container.Align = ServiceStudio.Plugin.NRWidgets.Enumerations.Align.Default; // default value\r\n    container.AlignItems = OutSystems.Model.Enumerations.AlignItems.Stretch; // default value\r\n    container.AlignSelf = OutSystems.Model.Enumerations.AlignSelf.Auto; // default value\r\n    container.Animate = false; // default value\r\n    container.ColumnGap = null; // default value\r\n    container.ColumnSpan = null; // default value\r\n    container.CustomStyle = null; // default value\r\n    container.FlexBasis = null; // default value\r\n    container.FlexDirection = OutSystems.Model.Enumerations.FlexDirection.Row; // default value\r\n    container.Flexible = OutSystems.Model.Enumerations.Flexible.Shrink; // default value\r\n    container.FlexWrap = OutSystems.Model.Enumerations.FlexWrap.NoWrap; // default value\r\n    container.Gap = null;\r\n    container.GridColumns = null; // default value\r\n    container.GridRows = null; // default value\r\n    container.JustifyContent = OutSystems.Model.Enumerations.JustifyContent.Start; // default value\r\n    container.RowGap = null; // default value\r\n    container.RowSpan = null; // default value\r\n    container.SetStyle(\"\\\"display-flex align-items-center margin-bottom-base td-tabs\\\"\");\r\n    container.SetVisible(\"True\"); // default value\r\n    container.VisibleWasExpression = false; // default value\r\n    container.WidgetGridType = OutSystems.Model.Enumerations.WidgetGridType.None; // default value\r\n    container.Width = \"(fill parent)\"; // default value\r\n    \r\n    var button = container.CreateWidget<ServiceStudio.Plugin.NRWidgets.IButton>();\r\n    button.AlignItems = OutSystems.Model.Enumerations.AlignItems.Stretch; // default value\r\n    button.AlignSelf = OutSystems.Model.Enumerations.AlignSelf.Auto; // default value\r\n    button.ColumnGap = null; // default value\r\n    button.ColumnSpan = null; // default value\r\n    button.SetConfirmationMessage(null); // default value\r\n    button.CustomStyle = null; // default value\r\n    button.SetEnabled(\"True\");\r\n    button.FlexBasis = null; // default value\r\n    button.FlexDirection = OutSystems.Model.Enumerations.FlexDirection.Row; // default value\r\n    button.Flexible = OutSystems.Model.Enumerations.Flexible.Shrink; // default value\r\n    button.FlexWrap = OutSystems.Model.Enumerations.FlexWrap.NoWrap; // default value\r\n    button.Gap = null;\r\n    button.GridColumns = null; // default value\r\n    button.GridRows = null; // default value\r\n    button.IsDefault = false; // default value\r\n    button.JustifyContent = OutSystems.Model.Enumerations.JustifyContent.Start; // default value\r\n    button.RowGap = null; // default value\r\n    button.RowSpan = null; // default value\r\n    button.SetStyle(\"If(ActiveDocumentType = Entities.DocumentType.COR, \\\"btn btn-small btn-primary\\\", \\\"btn btn-small\\\")\");\r\n    button.SetVisible(\"True\"); // default value\r\n    button.WidgetGridType = OutSystems.Model.Enumerations.WidgetGridType.None; // default value\r\n    button.Width = \"\"; // default value\r\n    \r\n    var textWidget = (OutSystems.Model.UI.Mobile.Widgets.ITextWidget)button.Widgets.First();\r\n    textWidget.CustomStyle = null; // default value\r\n    textWidget.Name = null; // default value\r\n    textWidget.SetStyleClasses(null); // default value\r\n    textWidget.Text = \"Certificate of Tax Residence (COR)\";\r\n    var builtinEvent = button.OnClick;\r\n    builtinEvent.BuiltInValidations = OutSystems.Model.Enumerations.ValidationBehavior.None; // default value\r\n    builtinEvent.Destination = raiseIntent;\r\n    builtinEvent.Transition = OutSystems.Model.Enumerations.TransitionTypeWithInheritance.Inherited; // default value\r\n    builtinEvent.SetArgumentValue(requestKey2, \"\\\"\\\"\");\r\n    builtinEvent.SetArgumentValue(requestPayload2, \"IntegerToText(Entities.DocumentType.COR)\");\r\n    builtinEvent.SetArgumentValue(requestCommand2, \"\\\"tab\\\"\");\r\n    \r\n    var extendedProperty = button.CreateExtendedProperty();\r\n    extendedProperty.Property = \"role\";\r\n    extendedProperty.SetValue(\"\\\"tab\\\"\");\r\n    \r\n    var extendedProperty2 = button.CreateExtendedProperty();\r\n    extendedProperty2.Property = \"aria-selected\";\r\n    extendedProperty2.SetValue(\"If(ActiveDocumentType = Entities.DocumentType.COR, \\\"true\\\", \\\"false\\\")\");\r\n    \r\n    var button2 = container.CreateWidget<ServiceStudio.Plugin.NRWidgets.IButton>();\r\n    button2.AlignItems = OutSystems.Model.Enumerations.AlignItems.Stretch; // default value\r\n    button2.AlignSelf = OutSystems.Model.Enumerations.AlignSelf.Auto; // default value\r\n    button2.ColumnGap = null; // default value\r\n    button2.ColumnSpan = null; // default value\r\n    button2.SetConfirmationMessage(null); // default value\r\n    button2.CustomStyle = null; // default value\r\n    button2.SetEnabled(\"True\");\r\n    button2.FlexBasis = null; // default value\r\n    button2.FlexDirection = OutSystems.Model.Enumerations.FlexDirection.Row; // default value\r\n    button2.Flexible = OutSystems.Model.Enumerations.Flexible.Shrink; // default value\r\n    button2.FlexWrap = OutSystems.Model.Enumerations.FlexWrap.NoWrap; // default value\r\n    button2.Gap = null;\r\n    button2.GridColumns = null; // default value\r\n    button2.GridRows = null; // default value\r\n    button2.IsDefault = false; // default value\r\n    button2.JustifyContent = OutSystems.Model.Enumerations.JustifyContent.Start; // default value\r\n    button2.RowGap = null; // default value\r\n    button2.RowSpan = null; // default value\r\n    button2.SetStyle(\"If(ActiveDocumentType = Entities.DocumentType.PEL, \\\"btn btn-small btn-primary\\\", \\\"btn btn-small\\\")\");\r\n    button2.SetVisible(\"True\"); // default value\r\n    button2.WidgetGridType = OutSystems.Model.Enumerations.WidgetGridType.None; // default value\r\n    button2.Width = \"\"; // default value\r\n    \r\n    var textWidget2 = (OutSystems.Model.UI.Mobile.Widgets.ITextWidget)button2.Widgets.First();\r\n    textWidget2.CustomStyle = null; // default value\r\n    textWidget2.Name = null; // default value\r\n    textWidget2.SetStyleClasses(null); // default value\r\n    textWidget2.Text = \"Permanent Establishment Letter (PEL)\";\r\n    var builtinEvent2 = button2.OnClick;\r\n    builtinEvent2.BuiltInValidations = OutSystems.Model.Enumerations.ValidationBehavior.None; // default value\r\n    builtinEvent2.Destination = raiseIntent;\r\n    builtinEvent2.Transition = OutSystems.Model.Enumerations.TransitionTypeWithInheritance.Inherited; // default value\r\n    builtinEvent2.SetArgumentValue(requestCommand2, \"\\\"tab\\\"\");\r\n    builtinEvent2.SetArgumentValue(requestPayload2, \"IntegerToText(Entities.DocumentType.PEL)\");\r\n    builtinEvent2.SetArgumentValue(requestKey2, \"\\\"\\\"\");\r\n    \r\n    var extendedProperty3 = button2.CreateExtendedProperty();\r\n    extendedProperty3.Property = \"role\";\r\n    extendedProperty3.SetValue(\"\\\"tab\\\"\");\r\n    \r\n    var extendedProperty4 = button2.CreateExtendedProperty();\r\n    extendedProperty4.Property = \"aria-selected\";\r\n    extendedProperty4.SetValue(\"If(ActiveDocumentType = Entities.DocumentType.PEL, \\\"true\\\", \\\"false\\\")\");\r\n    \r\n    var extendedProperty5 = container.CreateExtendedProperty();\r\n    extendedProperty5.Property = \"role\";\r\n    extendedProperty5.SetValue(\"\\\"tablist\\\"\");\r\n    \r\n    var extendedProperty6 = container.CreateExtendedProperty();\r\n    extendedProperty6.Property = \"aria-label\";\r\n    extendedProperty6.SetValue(\"\\\"Document type\\\"\");\r\n}\r\n\n```"
+  },
+  "probes": {
+    "controls": {
+      "exceptionMessage": "PROBE:ReminderControls/button: \"btn btn-small\" [ValueExpression[ServiceStudio.Expressions.AbstractExpression]]\nDocumentTypeTabs/container: \"display-flex align-items-center margin-bottom-base td-tabs\" [ValueExpression[ServiceStudio.Expressions.AbstractExpression]]\nDocumentTypeTabs/button: If(ActiveDocumentType = Entities.DocumentType.COR, \"btn btn-small btn-primary\", \"btn btn-small\") [ValueExpression[ServiceStudio.Expressions.AbstractExpression]]\nDocumentTypeTabs/button2: If(ActiveDocumentType = Entities.DocumentType.PEL, \"btn btn-small btn-primary\", \"btn btn-small\") [ValueExpression[ServiceStudio.Expressions.AbstractExpression]]",
+      "stdoutOutput": "",
+      "stderrOutput": "",
+      "validationMessages": [
+        {
+          "ownerPath": "/Common/InvalidPermissions",
+          "ownerType": "IMobileScreen",
+          "id": "AnonymousAccess_NoPermissionsNoRoles",
+          "type": "Warning",
+          "message": "Missing roles",
+          "detail": "Screen 'InvalidPermissions' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+          "ownerKey": "5nVIK0JIkEq75V4SgIpFYw"
+        },
+        {
+          "ownerPath": "/Common/Login",
+          "ownerType": "IMobileScreen",
+          "id": "AnonymousAccess_NoPermissionsNoRoles",
+          "type": "Warning",
+          "message": "Missing roles",
+          "detail": "Screen 'Login' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+          "ownerKey": "dazwmfzUG0aXr0zvksbeWA"
+        },
+        {
+          "ownerPath": "/MainFlow/TaxDocumentsPreview",
+          "ownerType": "IMobileScreen",
+          "id": "AnonymousAccess_NoPermissionsNoRoles",
+          "type": "Warning",
+          "message": "Missing roles",
+          "detail": "Screen 'TaxDocumentsPreview' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+          "ownerKey": "YKggOxuT+UOrYZcKwyg5uw"
+        }
+      ],
+      "mutatedOmlPath": ""
+    },
+    "badge": {
+      "exceptionMessage": "PROBE:resident Tag uses existing StatusId and original label expression",
+      "stdoutOutput": "",
+      "stderrOutput": "",
+      "validationMessages": [
+        {
+          "ownerPath": "/Common/InvalidPermissions",
+          "ownerType": "IMobileScreen",
+          "id": "AnonymousAccess_NoPermissionsNoRoles",
+          "type": "Warning",
+          "message": "Missing roles",
+          "detail": "Screen 'InvalidPermissions' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+          "ownerKey": "5nVIK0JIkEq75V4SgIpFYw"
+        },
+        {
+          "ownerPath": "/Common/Login",
+          "ownerType": "IMobileScreen",
+          "id": "AnonymousAccess_NoPermissionsNoRoles",
+          "type": "Warning",
+          "message": "Missing roles",
+          "detail": "Screen 'Login' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+          "ownerKey": "dazwmfzUG0aXr0zvksbeWA"
+        },
+        {
+          "ownerPath": "/MainFlow/TaxDocumentsPreview",
+          "ownerType": "IMobileScreen",
+          "id": "AnonymousAccess_NoPermissionsNoRoles",
+          "type": "Warning",
+          "message": "Missing roles",
+          "detail": "Screen 'TaxDocumentsPreview' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+          "ownerKey": "YKggOxuT+UOrYZcKwyg5uw"
+        }
+      ],
+      "mutatedOmlPath": ""
+    },
+    "popup": {
+      "exceptionMessage": "PROBE:native Popup with preserved TaxYearDialog target",
+      "stdoutOutput": "",
+      "stderrOutput": "",
+      "validationMessages": [
+        {
+          "ownerPath": "/Common/InvalidPermissions",
+          "ownerType": "IMobileScreen",
+          "id": "AnonymousAccess_NoPermissionsNoRoles",
+          "type": "Warning",
+          "message": "Missing roles",
+          "detail": "Screen 'InvalidPermissions' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+          "ownerKey": "5nVIK0JIkEq75V4SgIpFYw"
+        },
+        {
+          "ownerPath": "/Common/Login",
+          "ownerType": "IMobileScreen",
+          "id": "AnonymousAccess_NoPermissionsNoRoles",
+          "type": "Warning",
+          "message": "Missing roles",
+          "detail": "Screen 'Login' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+          "ownerKey": "dazwmfzUG0aXr0zvksbeWA"
+        },
+        {
+          "ownerPath": "/MainFlow/TaxDocumentsPreview",
+          "ownerType": "IMobileScreen",
+          "id": "AnonymousAccess_NoPermissionsNoRoles",
+          "type": "Warning",
+          "message": "Missing roles",
+          "detail": "Screen 'TaxDocumentsPreview' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+          "ownerKey": "YKggOxuT+UOrYZcKwyg5uw"
+        }
+      ],
+      "mutatedOmlPath": ""
+    },
+    "model": {
+      "exceptionMessage": "PROBE:ScreenCSS=empty; BaseTheme=OutSystemsUI; IconLibrary=null\nScreenScripts=TaxDocumentsPrototype\nScreenRoles=Registered,Anonymous; AnonymousAccess=False\nDocumentUploadPanelScripts=TaxDocumentsPrototype\nYearSelectionDialogScripts=TaxDocumentsPrototype\nStatusTag=Tag; arguments=Size:Entities.Size.Small [Value[ServiceStudio.Expressions.AbstractExpression]],ExtendedClass:default,Shape:Entities.Shape.Rounded [Value[ServiceStudio.Expressions.AbstractExpression]],IsLight:True [Value[ServiceStudio.Expressions.AbstractExpression]],Color:If(StatusId = Entities.DocumentStatus.Rejected, Entities.Color.Red, If(StatusId = Entities.DocumentStatus.Accepted, Entities.Color.Green, If(StatusId = Entities.DocumentStatus.NotProvidable, Entities.Color.Neutral8, Entities.Color.Orange))) [Value[ServiceStudio.Expressions.AbstractExpression]]\nPopup=TaxSelectionPopup; inner focus target=TaxYearDialog; show=True [ValueExpression[ServiceStudio.Expressions.AbstractExpression]]\nFlow=InitializeDemo; reachable=3/3; positioned=True\nFlow=HandleIntent; reachable=6/6; positioned=True\nFlow=ChangePreset; reachable=3/3; positioned=True\nFlow=RaiseIntent; reachable=3/3; positioned=True\nFlow=RaiseIntent; reachable=3/3; positioned=True\nFlow=RaiseIntent; reachable=3/3; positioned=True\nFlow=RaiseIntent; reachable=3/3; positioned=True\nFlow=RaiseIntent; reachable=3/3; positioned=True\nFlow=RaiseIntent; reachable=3/3; positioned=True\nFlow=PrepareFileSelection; reachable=3/3; positioned=True\nFlow=AttachSelectedFile; reachable=5/5; positioned=True\nFlow=RaiseIntent; reachable=3/3; positioned=True\nFlow=RestoreFocus; reachable=3/3; positioned=True\nFlow=FocusDialog; reachable=3/3; positioned=True\nFlow=RaiseIntent; reachable=3/3; positioned=True",
+      "stdoutOutput": "",
+      "stderrOutput": "",
+      "validationMessages": [
+        {
+          "ownerPath": "/Common/InvalidPermissions",
+          "ownerType": "IMobileScreen",
+          "id": "AnonymousAccess_NoPermissionsNoRoles",
+          "type": "Warning",
+          "message": "Missing roles",
+          "detail": "Screen 'InvalidPermissions' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+          "ownerKey": "5nVIK0JIkEq75V4SgIpFYw"
+        },
+        {
+          "ownerPath": "/Common/Login",
+          "ownerType": "IMobileScreen",
+          "id": "AnonymousAccess_NoPermissionsNoRoles",
+          "type": "Warning",
+          "message": "Missing roles",
+          "detail": "Screen 'Login' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+          "ownerKey": "dazwmfzUG0aXr0zvksbeWA"
+        },
+        {
+          "ownerPath": "/MainFlow/TaxDocumentsPreview",
+          "ownerType": "IMobileScreen",
+          "id": "AnonymousAccess_NoPermissionsNoRoles",
+          "type": "Warning",
+          "message": "Missing roles",
+          "detail": "Screen 'TaxDocumentsPreview' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+          "ownerKey": "YKggOxuT+UOrYZcKwyg5uw"
+        },
+        {
+          "ownerPath": "/MyApp",
+          "ownerType": "IMobileTheme",
+          "id": "InvalidIconLibrary",
+          "type": "Error",
+          "message": "Invalid Icon Library",
+          "detail": "The MyApp theme uses an invalid icon library. Allowed libraries are: FontAwesome4.0, Phosphor2.0",
+          "ownerKey": "EHWy15q2lEymE4eJ_Th8yQ"
+        }
+      ],
+      "mutatedOmlPath": ""
+    }
+  },
+  "finalMutation": {
+    "exceptionMessage": "",
+    "stdoutOutput": "",
+    "stderrOutput": "",
+    "validationMessages": [
+      {
+        "ownerPath": "/Common/InvalidPermissions",
+        "ownerType": "IMobileScreen",
+        "id": "AnonymousAccess_NoPermissionsNoRoles",
+        "type": "Warning",
+        "message": "Missing roles",
+        "detail": "Screen 'InvalidPermissions' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+        "ownerKey": "5nVIK0JIkEq75V4SgIpFYw"
+      },
+      {
+        "ownerPath": "/Common/Login",
+        "ownerType": "IMobileScreen",
+        "id": "AnonymousAccess_NoPermissionsNoRoles",
+        "type": "Warning",
+        "message": "Missing roles",
+        "detail": "Screen 'Login' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+        "ownerKey": "dazwmfzUG0aXr0zvksbeWA"
+      },
+      {
+        "ownerPath": "/MainFlow/TaxDocumentsPreview",
+        "ownerType": "IMobileScreen",
+        "id": "AnonymousAccess_NoPermissionsNoRoles",
+        "type": "Warning",
+        "message": "Missing roles",
+        "detail": "Screen 'TaxDocumentsPreview' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+        "ownerKey": "YKggOxuT+UOrYZcKwyg5uw"
+      },
+      {
+        "ownerPath": "/MyApp",
+        "ownerType": "IMobileTheme",
+        "id": "InvalidIconLibrary",
+        "type": "Error",
+        "message": "Invalid Icon Library",
+        "detail": "The MyApp theme uses an invalid icon library. Allowed libraries are: FontAwesome4.0, Phosphor2.0",
+        "ownerKey": "EHWy15q2lEymE4eJ_Th8yQ"
+      }
+    ],
+    "mutatedOmlPath": "C:\\Users\\buiba\\AppData\\Local\\Temp\\ServiceStudio.MCPServer\\db01f277a98a43e9a436b894e35376f3-out.oml"
+  }
+}

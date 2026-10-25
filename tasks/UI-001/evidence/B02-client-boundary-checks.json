@@ -1,0 +1,40 @@
+{
+  "subject": "B02 pending model exported code only; runtime network NOT_RUN",
+  "checks": [
+    {
+      "object": "WHTDocumentsPrototype",
+      "status": "PASS",
+      "serverModelPatterns": []
+    },
+    {
+      "object": "PrototypeDocumentHeader",
+      "status": "PASS",
+      "serverModelPatterns": []
+    },
+    {
+      "object": "PrototypeYearCard",
+      "status": "PASS",
+      "serverModelPatterns": []
+    },
+    {
+      "object": "PrototypeUpload",
+      "status": "PASS",
+      "serverModelPatterns": []
+    },
+    {
+      "object": "PrototypeFileRow",
+      "status": "PASS",
+      "serverModelPatterns": []
+    },
+    {
+      "object": "PrototypeTracking",
+      "status": "PASS",
+      "serverModelPatterns": []
+    },
+    {
+      "object": "PrototypeDialogs",
+      "status": "PASS",
+      "serverModelPatterns": []
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.local.json
+.env
+.env.*
+!.env.example
+# Keep approved evidence/checkpoints in an access-controlled durable location.
+# Do not blanket-ignore every OML, image or artifact and silently lose evidence.

@@ -1,0 +1,31 @@
+{
+  "result": "PASS",
+  "markdown_local_links_checked": 33,
+  "broken_links": [],
+  "syntax_files": {
+    "json": 89,
+    "toml": 9
+  },
+  "syntax_errors": [],
+  "baseline_files": 767,
+  "protected_files_checked": 665,
+  "protected_changes": [],
+  "changed_existing_paths": [
+    "adapters\\SITES.md",
+    "prompts\\O11_UI_APPLY.md",
+    "prompts\\UI_DESIGN_START.md",
+    "templates\\UI_DESIGN_CONTRACT.template.md",
+    "templates\\UI_FOUNDATION.template.json",
+    ".codex\\agents\\architect.toml",
+    ".codex\\agents\\builder.toml",
+    ".codex\\agents\\designer.toml",
+    ".codex\\agents\\reviewer.toml",
+    "docs\\catalogs\\README.md",
+    "docs\\standards\\O11_UI_NATIVE_FIRST.md"
+  ],
+  "all_other_baseline_files_unchanged": true,
+  "role_changes_only_developer_instructions": true,
+  "upstream_git_status": " M .gitignore\n",
+  "note": "Protected hashes include upstream .git/index; preserves existing modified .gitignore and all recorded staged state. No config/task/live changes.",
+  "verification_note": "Final rerun after evidence files were written; preliminary check found only not-yet-written evidence paths, now resolved."
+}

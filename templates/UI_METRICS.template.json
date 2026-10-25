@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.1",
+  "project_id": null,
+  "task_id": null,
+  "run_id": null,
+  "stage": null,
+  "model": null,
+  "reasoning_effort": null,
+  "usage_source": null,
+  "input_tokens": null,
+  "cached_input_tokens": null,
+  "output_tokens": null,
+  "total_tokens": null,
+  "elapsed_minutes": null,
+  "agent_assignments": null,
+  "mcp_reads": null,
+  "mcp_write_attempts": null,
+  "unchanged_repeated_reads": null,
+  "validation_cycles": null,
+  "review_rounds": null,
+  "rework_causes": [],
+  "required_checks_passed": null,
+  "required_checks_not_run": null,
+  "notes": [
+    "Unknown values stay null. Compare like-for-like scope/stage; do not treat artifact bytes as token usage."
+  ]
+}

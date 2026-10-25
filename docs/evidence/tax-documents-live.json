@@ -1,0 +1,208 @@
+{
+  "observedAt": "2026-10-22T02:55:11+07:00",
+  "state": "Fresh checkout from live module after successful merge; no subsequent model writes",
+  "merge": {
+    "merged": true,
+    "message": "All of the agent's changes were merged."
+  },
+  "inventory": {
+    "data": {
+      "Root": {
+        "type_": "ESpace",
+        "Name": "MyApp",
+        "Entities": [
+          {
+            "type_": "StaticEntity",
+            "Name": "DocumentStatus"
+          },
+          {
+            "type_": "StaticEntity",
+            "Name": "DocumentType"
+          }
+        ],
+        "Structures": [
+          {
+            "type_": "Structure",
+            "Name": "YearOptionVM"
+          },
+          {
+            "type_": "Structure",
+            "Name": "YearDocumentVM"
+          },
+          {
+            "type_": "Structure",
+            "Name": "DocumentFileVM"
+          },
+          {
+            "type_": "Structure",
+            "Name": "PreviewScenarioVM"
+          },
+          {
+            "type_": "Structure",
+            "Name": "TrackingEventVM"
+          },
+          {
+            "type_": "Structure",
+            "Name": "TaxPreviewStateVM"
+          }
+        ],
+        "ServerActions": [
+          {
+            "type_": "ServerAction",
+            "Name": "DoLogout"
+          },
+          {
+            "type_": "ServerAction",
+            "Name": "DoLogin"
+          }
+        ],
+        "MobileFlows": [
+          {
+            "type_": "MobileFlow",
+            "Name": "Layouts",
+            "Nodes": [
+              {
+                "type_": "MobileBlock",
+                "Name": "LayoutTopMenu"
+              },
+              {
+                "type_": "MobileBlock",
+                "Name": "LayoutBlank"
+              },
+              {
+                "type_": "MobileBlock",
+                "Name": "LayoutBase"
+              },
+              {
+                "type_": "MobileBlock",
+                "Name": "LayoutSideMenu"
+              },
+              {
+                "type_": "MobileBlock",
+                "Name": "LayoutBaseSection"
+              }
+            ]
+          },
+          {
+            "type_": "MobileFlow",
+            "Name": "Common",
+            "Nodes": [
+              {
+                "type_": "MobileScreen",
+                "Name": "InvalidPermissions"
+              },
+              {
+                "type_": "ExternalSite",
+                "Name": "RedirectToURL"
+              },
+              {
+                "type_": "MobileBlock",
+                "Name": "UserInfo"
+              },
+              {
+                "type_": "MobileBlock",
+                "Name": "MenuIcon"
+              },
+              {
+                "type_": "MobileBlock",
+                "Name": "ApplicationTitle"
+              },
+              {
+                "type_": "MobileBlock",
+                "Name": "Menu"
+              },
+              {
+                "type_": "MobileScreen",
+                "Name": "Login"
+              }
+            ]
+          },
+          {
+            "type_": "MobileFlow",
+            "Name": "MainFlow",
+            "Nodes": [
+              {
+                "type_": "MobileBlock",
+                "Name": "ReminderControls"
+              },
+              {
+                "type_": "MobileBlock",
+                "Name": "DocumentUploadPanel"
+              },
+              {
+                "type_": "MobileBlock",
+                "Name": "DocumentTrackingTimeline"
+              },
+              {
+                "type_": "MobileBlock",
+                "Name": "DocumentFileRow"
+              },
+              {
+                "type_": "MobileBlock",
+                "Name": "DocumentYearList"
+              },
+              {
+                "type_": "MobileBlock",
+                "Name": "DocumentStatusBadge"
+              },
+              {
+                "type_": "MobileScreen",
+                "Name": "TaxDocumentsPreview"
+              },
+              {
+                "type_": "MobileBlock",
+                "Name": "YearSelectionDialog"
+              },
+              {
+                "type_": "MobileBlock",
+                "Name": "DocumentTypeTabs"
+              },
+              {
+                "type_": "MobileBlock",
+                "Name": "DocumentYearCard"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "validation": {
+    "validationMessages": [
+      {
+        "ownerPath": "/Common/InvalidPermissions",
+        "ownerType": "IMobileScreen",
+        "id": "AnonymousAccess_NoPermissionsNoRoles",
+        "type": "Warning",
+        "message": "Missing roles",
+        "detail": "Screen 'InvalidPermissions' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+        "ownerKey": "5nVIK0JIkEq75V4SgIpFYw"
+      },
+      {
+        "ownerPath": "/Common/Login",
+        "ownerType": "IMobileScreen",
+        "id": "AnonymousAccess_NoPermissionsNoRoles",
+        "type": "Warning",
+        "message": "Missing roles",
+        "detail": "Screen 'Login' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+        "ownerKey": "dazwmfzUG0aXr0zvksbeWA"
+      },
+      {
+        "ownerPath": "/MainFlow/TaxDocumentsPreview",
+        "ownerType": "IMobileScreen",
+        "id": "AnonymousAccess_NoPermissionsNoRoles",
+        "type": "Warning",
+        "message": "Missing roles",
+        "detail": "Screen 'TaxDocumentsPreview' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+        "ownerKey": "YKggOxuT+UOrYZcKwyg5uw"
+      }
+    ]
+  },
+  "screen": {
+    "registered": true,
+    "anonymous": false,
+    "cssScoped": true
+  },
+  "publish": "NOT RUN",
+  "runtime": "NOT RUN"
+}

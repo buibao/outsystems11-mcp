@@ -1,0 +1,58 @@
+{
+  "capturedUTC": "2026-10-22 03:43:22 UTC",
+  "merge": {
+    "merged": true,
+    "message": "All of the agent's changes were merged."
+  },
+  "endMergedEdit": {
+    "ended": true,
+    "discardedChanges": true
+  },
+  "freshLiveCheckout": {
+    "started": true
+  },
+  "liveValidation": {
+    "validationMessages": [
+      {
+        "ownerPath": "/Common/InvalidPermissions",
+        "ownerType": "IMobileScreen",
+        "id": "AnonymousAccess_NoPermissionsNoRoles",
+        "type": "Warning",
+        "message": "Missing roles",
+        "detail": "Screen 'InvalidPermissions' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+        "ownerKey": "5nVIK0JIkEq75V4SgIpFYw"
+      },
+      {
+        "ownerPath": "/Common/Login",
+        "ownerType": "IMobileScreen",
+        "id": "AnonymousAccess_NoPermissionsNoRoles",
+        "type": "Warning",
+        "message": "Missing roles",
+        "detail": "Screen 'Login' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+        "ownerKey": "dazwmfzUG0aXr0zvksbeWA"
+      },
+      {
+        "ownerPath": "/MainFlow/TaxDocumentsPreview",
+        "ownerType": "IMobileScreen",
+        "id": "AnonymousAccess_NoPermissionsNoRoles",
+        "type": "Warning",
+        "message": "Missing roles",
+        "detail": "Screen 'TaxDocumentsPreview' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'.",
+        "ownerKey": "YKggOxuT+UOrYZcKwyg5uw"
+      }
+    ]
+  },
+  "endReadOnlyCheckout": {
+    "content": [
+      {
+        "type": "text",
+        "text": "tool call error: tool call failed for `servicestudio/endOmlEditSession`\n\nCaused by:\n    Transport send error: Transport [codex_rmcp_client::event_notification_transport::EventNotificationTransport<rmcp::transport::worker::WorkerTransport<rmcp::transport::streamable_http_client::StreamableHttpClientWorker<codex_rmcp_client::http_client_adapter::StreamableHttpClientAdapter>>>] error: Client error: HTTP request failed: http/request failed: error sending request for url (http://127.0.0.1:41820/mcp)"
+      }
+    ],
+    "isError": true
+  },
+  "postCleanupIdentityRead": "Read-only reconnect did not return during the bounded wait; wait terminated. No mutation was retried.",
+  "subject": "Accepted live model was read and verified before cleanup transport failure",
+  "liveReadbacks": "docs/evidence/css-001-live.json",
+  "liveComparison": "docs/evidence/css-001-live-readback-checks.json"
+}

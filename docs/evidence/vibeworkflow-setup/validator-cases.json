@@ -1,0 +1,67 @@
+{
+  "subject": "Package and disposable metadata fixtures; no role discovery/platform behavior",
+  "cases": [
+    {
+      "case": "Installed package and draft metadata",
+      "result": "PASS",
+      "observed": []
+    },
+    {
+      "case": "Draft cannot be ready",
+      "result": "PASS",
+      "observed": [
+        "Unfilled project project_id",
+        "Unfilled project display_name",
+        "profile_status must be ACTIVE for metadata readiness",
+        "--ready requires --task tasks/<task-id>"
+      ]
+    },
+    {
+      "case": "Hybrid profile permits O11-only task metadata",
+      "result": "PASS",
+      "observed": []
+    },
+    {
+      "case": "Cross-project task rejected",
+      "result": "PASS",
+      "observed": [
+        "Task project_id does not match the filled project profile"
+      ]
+    },
+    {
+      "case": "Invalid target rejected",
+      "result": "PASS",
+      "observed": [
+        "Invalid O11 target"
+      ]
+    },
+    {
+      "case": "O11 implementation requires target",
+      "result": "PASS",
+      "observed": [
+        "Valid O11 target is required for O11 implementation metadata"
+      ]
+    },
+    {
+      "case": "O11-only task rejects Sites target",
+      "result": "PASS",
+      "observed": [
+        "Sites target must be null for O11_ONLY"
+      ]
+    },
+    {
+      "case": "Task path outside tasks rejected",
+      "result": "PASS",
+      "observed": [
+        "Task path must be inside this workspace's tasks directory"
+      ]
+    },
+    {
+      "case": "Duplicate role rejected",
+      "result": "PASS",
+      "observed": [
+        "Duplicate role: analyst"
+      ]
+    }
+  ]
+}

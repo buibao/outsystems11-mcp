@@ -1,0 +1,846 @@
+PROBE:THEME=WHT_Theme_Fabric
+BASE=OutSystemsUI
+CSS
+@font-face {
+    font-family: 'Manrope';
+    src: url('/WHT_TH_Fabric/Manrope-VariableFont.wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+/*!
+Section Index:
+0. Root - CSS Variables
+1. Resets
+2. HTML Elements
+    2.1. Links
+    2.2. Images
+    2.3. Headings
+3. Page Layout
+    3.1. Layout
+    3.2. Header
+    3.3. Layout Native - Header
+    3.4. Layout Side - Header
+    3.5. Menu
+    3.6. Layout Native - Menu
+    3.7. Layout Side - Menu
+    3.8. Menu - Header Logo
+    3.9. Menu - App Menu Link
+    3.10. Menu - App Login Info
+    3.11. Content
+    3.12. ThemeGrid_Container
+    3.13. Section
+    3.14. Login
+    3.15. iOS Scroll Bounce
+    3.16. Layout Side wht
+    3.17. Header wht
+    3.18. Menu wht - App Menu Link
+    3.19. Footer
+4. Widgets
+    4.1. Inputs and TextAreas
+    4.2. Switch
+    4.3. Checkbox
+    4.4. Dropdown
+    4.5. Button
+    4.6. List
+    4.7. List Item
+    4.8. Table
+    4.9. Table - Sortable Icon
+    4.10. Table - Bulk Actions
+    4.11. Form
+    4.12. Upload
+    4.13. Button Group
+    4.14. Popover
+    4.15. Popup
+    4.16. Feedback Message
+    4.17. Radio Button
+5. Providers
+    5.1. Flatpickr
+    5.2. NoUiSlider
+    5.3. Splide
+    5.4. VirtualSelect
+6. Patterns
+    6.1. Adaptive
+        6.1.1. Columns
+        6.1.2. Gallery
+        6.1.3. Master Detail
+    6.2. Content
+        6.2.1. Accordion
+        6.2.2. Accordion Item
+        6.2.3. Alert
+        6.2.4. Blank Slate
+        6.2.5. Card
+        6.2.6. Card Background
+        6.2.7. Card Item
+        6.2.8. Card Sectioned
+        6.2.9. Chat Message
+        6.2.10. Flip Content
+        6.2.11. Floating Content
+        6.2.12. List Item Content
+        6.2.13. Section
+        6.2.14. Tag
+        6.2.15. Tooltip
+        6.2.16. User Avatar
+    6.3. Interaction
+        6.3.1. Action Sheet
+        6.3.2. Animate
+        6.3.3. Animated Label
+        6.3.4. Balloon
+        6.3.5. Bottom Sheet
+        6.3.6. Carousel
+        6.3.7. DatePicker
+        6.3.8. Dropdown
+            6.3.8.1 Dropdown Search
+            6.3.8.2 Dropdown Tags
+        6.3.9. Floating Actions
+        6.3.10. Input With Icon
+        6.3.11. Lightbox Image
+        6.3.12. MonthPicker
+        6.3.13. Notification
+        6.3.14. RangeSlider
+        6.3.15. Scrollable Area
+        6.3.16. Sidebar
+        6.3.17. Search
+        6.3.18. Stacked Cards
+        6.3.19. TimePicker
+        6.3.20. Video
+    6.4. Navigation
+        6.4.1. Bottom Bar Item
+        6.4.2. Breadcrumbs
+        6.4.3. OverflowMenu
+        6.4.4. Pagination
+        6.4.5. Section Index
+        6.4.6. Submenu
+        6.4.7. Tabs
+        6.4.8. Timeline
+        6.4.9. Wizard
+    6.5. Numbers
+        6.5.1. Badge
+        6.5.2. Counter
+        6.5.3. Icon Badge
+        6.5.4. Progress
+            6.5.4.1 Progress Bar
+            6.5.4.2 Progress Circle
+        6.5.5. Rating
+    6.6. Utilities
+        6.6.1. Align Center
+        6.6.2. Button Loading
+        6.6.3. Center Content
+        6.6.4. Margin Container
+        6.6.5. Separator
+        6.6.6. Pull to Refresh
+        6.6.7. List Updating
+    6.7. Advanced
+        6.7.1. Dropdown ServerSide
+        6.7.2. Dropdown ServerSide Item
+    6.8. Deprecated Patterns
+        6.8.1. Accordion
+        6.8.2. Button Loading
+        6.8.3. Carousel
+        6.8.4. Datepicker
+        6.8.5. Dropdown Search an Tags (Common)
+        6.8.6. Dropdown Search
+        6.8.7. Dropdown Tags
+        6.8.8. Flip Content
+        6.8.9. Gallery
+        6.8.10. Horizontal Scroll
+        6.8.11. Notification
+        6.8.12. Progress Bar
+        6.8.13. Progress Circle
+        6.8.14. Progress Circle Fraction
+        6.8.15. Section Index
+        6.8.16. Sidebar
+        6.8.17. Search
+        6.8.18. Submenu
+        6.8.19. Tabs
+        6.8.20. Tooltip
+        6.8.21. Video
+    6.9. External Patterns
+        6.9.1. International Phone Input
+7. Usefull Classes
+    7.1. a11y (Accessibility)
+    7.2. Colors - Brand
+    7.3. Colors - Neutral
+    7.4. Colors - Palette
+    7.5. Colors - Semantic
+    7.6. Colors - Others
+    7.7. Text
+    7.8. Typography
+    7.9. Border Size
+    7.10. Border Radius
+    7.11. Space - Margin
+    7.12. Space - Padding
+    7.13. Shadow
+    7.14. Box Width
+    7.15. Box Height
+    7.16. Display
+    7.17. Display - Flex
+    7.18. Display - Align
+    7.19. Images
+    7.20. Overflow
+    7.21. Visibility
+    7.22. Position
+    7.23. Position - Absolute
+    7.24. Miscellaneous
+    7.25. Cursor
+8. Screen Transitions
+9. Keyframes - Animations
+    9.1. Animate
+    9.2. Button Loading
+    9.3. List Item
+    9.4. Feedback Message
+    9.5. Pull To Refresh
+    9.6. Miscellaneous
+    9.7. Skeleton
+10. Service Studio Preview
+*/
+
+/*! ==============================================================================
+0. Root - CSS Variables
+=============================================================================== */
+:root {
+    /* Colors */
+    --color-primary: #1068EB;
+    --color-secondary: #303d60;
+    --color-active-menu-subitem: #F2F2F2;
+    --color-active-menu-item: #E4E4E4;
+
+    /* Fon --color-active-menu-item: #E4E4E4;
+    
+        /* Font size */
+    --font-size-xxxs: 8px;
+    --font-size-xxs: 10px;
+    --font-size-display-xl: 40px;
+    --font-size-display-xxl: 44px;
+    
+    /* Spacing */
+    --space-xxs: 2px;
+    --submenu-item-padding-x: 18px;
+    --submenu-item-padding-y: 7.5px;
+    --menu-item-right-margin: 12px;
+    --submenu-item-right-margin: 22px; 
+}
+
+/*! ==============================================================================
+1. Resets
+=============================================================================== */
+
+
+/*! ==============================================================================
+2. HTML Elements
+=============================================================================== */
+/*! 2.1. Links */
+/*! 2.2. Images */
+/*! 2.3. Headings */
+
+/*! ==============================================================================
+3. Page Layout
+=============================================================================== */
+/*! 3.1. Layout */
+/*! 3.2. Header */
+.layout-side .header-logo, 
+.tablet .header-logo, 
+.phone .header-logo {
+    padding: var(--space-none);
+}
+/*! 3.3. Layout Native - Header */
+/*! 3.4. Layout Side - Header */
+/*! 3.5. Menu */
+/*! 3.6. Layout Native - Menu */
+/*! 3.7. Layout Side - Menu */
+/*! 3.8. Menu - Header Logo */
+/*! 3.9. Menu - App Menu Link */
+/*! 3.10. Menu - App Login Info */
+/*! 3.11. Content */
+/*! 3.12. ThemeGrid_Container */
+/*! 3.13. Section */
+/*! 3.14. Login */
+/*! 3.15. iOS Scroll Bounce */
+/*! 3.16. Layout Side wht */
+/*! 3.17. Header wht */
+.desktop .layout-side .header-top .wht-logo {
+    display: none;
+}
+
+.wht-logo {
+    /* background-image: url(/WHT_TH/img/WHT_TH.UserMaster_block.png); */
+    background-size: cover;
+    background-position: center;
+    color: var(--color-neutral-0);
+    justify-content: center;
+    font-size: var(--font-size-h5);
+    min-width: 120px;
+}
+/*! 3.18. Menu wht - App Menu Link */
+.wht-side-menu.app-menu-links {
+    padding: var(--space-s) var(--space-base) var(--space-none) var(--space-base);
+}
+
+.menu-item-icon-right-margin {
+    margin-right: var(--menu-item-right-margin);
+}
+
+.submenu-item-icon-right-margin {
+    margin-right: var(--submenu-item-right-margin);
+}
+
+.osui-submenu__header__item a{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.osui-submenu__header__item{
+     color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.osui-submenu__header__item a.active{
+    color: white !important
+}
+
+.desktop .osui-submenu__header__item a:hover {
+    color: white !important;
+}
+
+.wht-side-menu.app-menu-links > a,
+.wht-side-menu.app-menu-links .osui-submenu .osui-submenu__header {
+    border-left: var(--space-none);
+    padding: var(--space-s);
+}
+
+.wht-side-menu.app-menu-links > a,
+.wht-side-menu.app-menu-links .osui-submenu .osui-submenu__header,
+.wht-side-menu.app-menu-links .osui-submenu .osui-submenu__items a {
+    border-radius: var(--border-radius-soft);
+}
+
+.desktop .layout-side .wht-side-menu.app-menu-links .osui-submenu__header:hover {
+    border-left: none;
+}
+
+.wht-side-menu.app-menu-links > a:hover,
+.wht-side-menu.app-menu-links .osui-submenu__header:hover,
+.wht-side-menu.app-menu-links .osui-submenu:has(.menu-active-item) .osui-submenu__header {
+    background-color: var(--color-active-menu-item);
+}
+
+.wht-side-menu.app-menu-links > a .icon,
+.wht-side-menu.app-menu-links .osui-submenu .osui-submenu__header .icon {
+    font-size: var(--font-size-h5);
+}
+
+.wht-side-menu.app-menu-links > a,
+.wht-side-menu.app-menu-links .osui-submenu .osui-submenu__header__item,
+.wht-side-menu.app-menu-links .osui-submenu__items a {
+    color: var(--color-neutral-9);
+}
+
+.wht-side-menu.app-menu-links .osui-submenu__items {
+    padding: var(--space-none);
+}
+
+.wht-side-menu.app-menu-links .osui-submenu__items .icon {
+    font-size: 5px;
+    margin-right: var(--submenu-item-right-margin);
+}
+
+.wht-side-menu.app-menu-links .osui-submenu__items a.menu-active-item {
+    background-color: var(--color-active-menu-subitem);
+    color: var(--color-secondary);
+    font-weight: var(--font-semi-bold);
+}
+
+.wht-navigation-background{
+    background-image: url(/WHT_TH_Fabric/img/WHT_TH_Fabric.backgroundnavigation.png);
+}
+/*! 3.19. Footer */
+footer{
+    min-height: 40px;
+}
+/*! ==============================================================================
+4. Widgets
+=============================================================================== */
+/*! 4.1. Inputs and TextAreas */
+.resize-none {
+    resize: none;
+}
+/*! 4.2. Switch */
+/*! 4.3. Checkbox */
+/*! 4.4. Dropdown */
+/*! 4.5. Button */
+/*! 4.6. List */
+/*! 4.7. List Item */
+/*! 4.8. Table */
+/*! 4.9. Table - Sortable Icon */
+/*! 4.10. Table - Bulk Actions */
+/*! 4.11. Form */
+.form span.wcag-hide-text {
+    position: absolute;
+}
+/*! 4.12. Upload */
+/*! 4.13. Button Group */
+/*! 4.14. Popover */
+/*! 4.15. Popup */
+/*! 4.16. Feedback Message */
+/*! 4.17. Radio Button */
+
+/*! ==============================================================================
+5. Providers
+=============================================================================== */
+/*! 5.1. Flatpickr */
+/*! 5.2. NoUiSlider */
+/*! 5.3. Splide */
+/*! 5.4. VirtualSelect */
+
+/*! ==============================================================================
+6. Patterns
+=============================================================================== */
+/*! 6.1. Adaptive */
+/*! 6.1.1. Columns */
+/*! 6.1.2. Gallery */
+/*! 6.1.3. Master Detail */
+/*! 6.2. Content */
+/*! 6.2.1. Accordion */
+/*! 6.2.2. Accordion Item */
+/*! 6.2.3. Alert */
+.alert-info {
+    /* height: 48px !important; */
+}
+
+.alert-custom-warning{
+    background-color: #FAEAEA !important;
+    color: black !important;
+    width: fit-content !important;
+}
+
+.alert-custom-warning .fa-info-circle:before {
+    color: #8C1D1D;
+}
+
+
+.alert-custom-pending{
+    background-color: #FEF5E5 !important;
+    color: black !important;
+    width: fit-content !important;
+}
+
+.alert-custom-pending .fa-info-circle:before {
+    color: #AC6F00;
+}
+
+.alert-custom-pending .icon::before{
+    color:#E9A100 !important;
+}
+
+.alert-custom-success{
+    background-color: #EBF7ED !important;
+    color: black !important;
+    width: fit-content !important;
+}
+
+.alert-custom-success .fa-info-circle:before {
+    color: #267D36;
+}
+
+/*! 6.2.4. Blank Slate */
+/*! 6.2.5. Card */
+/*! 6.2.6. Card Background */
+/*! 6.2.7. Card Item */
+/*! 6.2.8. Card Sectioned */
+/*! 6.2.9. Chat Message */
+/*! 6.2.10. Flip Content */
+/*! 6.2.11. Floating Content */
+/*! 6.2.12. List Item Content */
+/*! 6.2.13. Section */
+/*! 6.2.14. Tag */
+.status-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+}
+
+.status-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 215px;
+  min-width: 100px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 12px 12px;
+  text-align: left;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.status-card.active {
+  border-color: #1068EB; /* blue border for selected */
+  background-color: #E8F0FD;
+}
+
+.status-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 9999px;
+  width: max-content;
+}
+
+/* Status colors: text + background */
+.all-requests .status-label {
+  color: #1068EB;
+  background-color: #1068EB1A;
+}
+.draft .status-label {
+  color: #4E32A2;
+  background-color: #F1EDFD;
+}
+.pending-approval .status-label {
+  color: #AC6F00;
+  background-color: #FEF5E5;
+}
+.pending-assessment .status-label {
+  color: #AC6F00;
+  background-color: #FEF5E5;
+}
+.rejected-approver .status-label {
+  color: #8C1D1D;
+  background-color: #FAEAEA;
+}
+.rejected-assessor .status-label {
+  color: #8C1D1D;
+  background-color: #FAEAEA;
+}
+.completed .status-label {
+  color: #267D36;
+  background-color: #EBF7ED;
+}
+.cancelled .status-label {
+  color: #272B30;
+  background-color: #CED4DA;
+}
+
+.status-number {
+  font-size: 20px;
+  font-weight: bold;
+  color: #101213;
+  margin-top: 6px;
+  text-align: left;
+}
+
+
+/*! 6.2.15. Tooltip */
+/*! 6.2.16. User Avatar */
+/*! 6.3. Interaction */
+/*! 6.3.1. Action Sheet */
+/*! 6.3.2. Animate */
+/*! 6.3.3. Animated Label */
+/*! 6.3.4. Balloon */
+/*! 6.3.5. Bottom Sheet */
+/*! 6.3.6. Carousel */
+/*! 6.3.7. DatePicker */
+/*! 6.3.8. Dropdown */
+/*! 6.3.8.1 Dropdown Search */
+/*! 6.3.8.2 Dropdown Tags */
+/*! 6.3.9. Floating Actions */
+/*! 6.3.10. Input With Icon */
+/*! 6.3.11. Lightbox Image */
+/*! 6.3.12. MonthPicker */
+/*! 6.3.13. Notification */
+/*! 6.3.14. RangeSlider */
+/*! 6.3.15. Scrollable Area */
+/*! 6.3.16. Sidebar */
+.osui-sidebar--has-overlay::before{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/*! 6.3.17. Search */
+/*! 6.3.18. Stacked Cards */
+/*! 6.3.19. TimePicker */
+/*! 6.3.20. Video */
+/*! 6.4. Navigation */
+/*! 6.4.1. Bottom Bar Item */
+/*! 6.4.2. Breadcrumbs */
+.breadcrumbs-item .icon {
+    color: unset;
+}
+/*! 6.4.3. OverflowMenu */
+/*! 6.4.4. Pagination */
+/*! 6.4.5. Section Index */
+/*! 6.4.6. Submenu */
+.osui-submenu__items a[disabled]{
+    color: var(--color-neutral-6);
+    cursor: default;
+}
+/*! 6.4.7. Tabs */
+
+/*! 6.4.8. Timeline */
+/*! 6.4.9. Wizard */
+/*! 6.5. Numbers */
+/*! 6.5.1. Badge */
+/*! 6.5.2. Counter */
+/*! 6.5.3. Icon Badge */
+/*! 6.5.4. Progress */
+/*! 6.5.4.1 Progress Bar */
+/*! 6.5.4.2 Progress Circle */
+/*! 6.5.5. Rating */
+/*! 6.6. Utilities */
+/*! 6.6.1. Align Center */
+/*! 6.6.2. Button Loading */
+div:has(.osui-btn-loading .btn) + .btn,
+.btn + div:has(.osui-btn-loading .btn),
+div:has(.osui-btn-loading .btn) + div:has(.osui-btn-loading .btn) {
+    margin-left: var(--space-m);
+}
+/*! 6.6.3. Center Content */
+/*! 6.6.4. Margin Container */
+/*! 6.6.5. Separator */
+/*! 6.6.6. Pull to Refresh */
+/*! 6.6.7. List Updating */
+/*! 6.7. Advanced */
+/*! 6.7.1. Dropdown ServerSide */
+/*! 6.7.2. Dropdown ServerSide Item */
+/*! 6.8. Deprecated Patterns */
+/*! 6.8.1. Accordion */
+/*! 6.8.2. Button Loading */
+/*! 6.8.3. Carousel */
+/*! 6.8.4. Datepicker */
+/*! 6.8.5. Dropdown Search an Tags (Common) */
+/*! 6.8.6. Dropdown Search */
+/*! 6.8.7. Dropdown Tags */
+/*! 6.8.8. Flip Content */
+/*! 6.8.9. Gallery */
+/*! 6.8.10. Horizontal Scroll */
+.horizontal-scroll{
+    overflow-x: auto;
+}
+/*! 6.8.11. Notification */
+/*! 6.8.12. Progress Bar */
+/*! 6.8.13. Progress Circle */
+/*! 6.8.14. Progress Circle Fraction */
+/*! 6.8.15. Section Index */
+/*! 6.8.16. Sidebar */
+/*! 6.8.17. Search */
+/*! 6.8.18. Submenu */
+/*! 6.8.19. Tabs */
+/*! 6.8.20. Tooltip */
+/*! 6.8.21. Video */
+/*! 6.9. External Patterns */
+/*! 6.9.1 International Phone Input */
+.form .iti {
+    margin-bottom: var(--space-m);
+}
+
+.form .iti + span.validation-message {
+    bottom: -22px;
+}
+
+/*! ==============================================================================
+7. Usefull Classes
+=============================================================================== */
+/*! 7.1. a11y (Accessibility) */
+/*! 7.2. Colors - Brand */
+/*! 7.3. Colors - Neutral */
+/*! 7.4. Colors - Palette */
+/*! 7.5. Colors - Semantic */
+/*! 7.6. Colors - Others */
+/*! 7.7. Text */
+.underline {
+    text-decoration: underline;
+}
+
+/*! 7.8. Typography */
+.font-size-xxxs {
+    font-size: var(--font-size-xxxs);
+}
+
+.font-size-xxs {
+    font-size: var(--font-size-xxs);
+
+}
+
+.font-size-display-xl {
+    font-size: var(--font-size-display-xl);
+}
+
+.font-size-display-xxl {
+    font-size: var(--font-size-display-xxl);
+}
+/*! 7.9. Border Size */
+/*! 7.10. Border Radius */
+.border-radius-16{
+    border-radius: 16px;
+}
+
+.border-radius-12{
+    border-radius: 12px
+}
+
+.border-radius-8{
+    border-radius: 8px
+}
+/*! 7.11. Space - Margin */
+.margin-xxs {
+    margin: var(--space-xxs);
+}
+
+.margin-top-xxs {
+    margin-top: var(--space-xxs);
+}
+
+.margin-right-xxs {
+    margin-right: var(--space-xxs);
+}
+
+.margin-bottom-xxs {
+    margin-bottom: var(--space-xxs);
+}
+
+.margin-left-xxs {
+    margin-left: var(--space-xxs);
+}
+
+.margin-y-xxs {
+    margin-top: var(--space-xxs);
+    margin-bottom: var(--space-xxs);
+}
+
+.margin-x-xxs {
+    margin-left: var(--space-xxs);
+    margin-right: var(--space-xxs);
+}
+/*! 7.12. Space - Padding */
+.padding-xxs {
+    padding: var(--space-xxs);
+}
+
+.padding-top-xxs {
+    padding-top: var(--space-xxs);
+}
+
+.padding-right-xxs {
+    padding-right: var(--space-xxs);
+}
+
+.padding-bottom-xxs {
+    padding-bottom: var(--space-xxs);
+}
+
+.padding-left-xxs {
+    padding-left: var(--space-xxs);
+}
+
+.padding-y-xxs {
+    padding-top: var(--space-xxs);
+    padding-bottom: var(--space-xxs);
+}
+
+.padding-x-xxs {
+    padding-left: var(--space-xxs);
+    padding-right: var(--space-xxs);
+}
+/*! 7.13. Shadow */
+/*! 7.14. Box Width */
+.width-fit-content {
+    width: fit-content;
+}
+
+.width-min-content {
+    width: min-content;
+}
+
+.width-max-content {
+    width: max-content;
+}
+
+/*! 7.15. Box Height */
+.height-fit-content {
+    height: fit-content;
+}
+
+.height-min-content {
+    height: min-content;
+}
+
+.height-max-content {
+    height: max-content;
+}
+
+/*! 7.16. Display */
+.display-nonne {
+    display: none;
+}
+/*! 7.17. Display - Flex */
+/*! 7.18. Display - Align */
+/*! 7.19. Images */
+/*! 7.20. Overflow */
+/*! 7.21. Visibility */
+/*! 7.22. Position */
+/*! 7.23. Position - Absolute */
+/*! 7.24. Miscellaneous */
+/*! 7.25. Cursor */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/*! ==============================================================================
+8. Screen Transitions
+=============================================================================== */
+.translateX-base {
+    transform: translateX(var(--space-base));
+}
+.translateY-base {
+    transform: translateY(var(--space-base));
+}
+
+/*! ==============================================================================
+9. Keyframes - Animations
+=============================================================================== */
+/*! 9.1. Animate */
+/*! 9.2. Button Loading */
+/*! 9.3. List Item */
+/*! 9.4. Feedback Message */
+/*! 9.5. Pull To Refresh */
+/*! 9.6. Miscellaneous */
+/*! 9.7. Skeleton */
+.skeleton {
+    background-color: #e0e0e0;
+    margin-bottom: 20px;
+    animation: loading-skeleton 1.5s infinite linear;
+    border-radius: 8px;
+}
+
+/* Loading Animation */
+@keyframes loading-skeleton {
+    0% {
+        background-color: #e0e0e0;
+    }
+    50% {
+        background-color: #d0d0d0;
+    }
+    100% {
+        background-color: #e0e0e0;
+    }
+}
+
+/*! ==============================================================================
+10. Service Studio Preview
+=============================================================================== */
+REF=WHT_TH_Fabric version= revision=
+REF=OutSystemsUI version= revision=
+BLOCK=Tabs inputs=TabsOrientation:Orientation Identifier (EntityIdentifierType:gQI11yjusEahX2P7KSxH_Q.#IdentifierType),StartingTab:Integer (BasicTypes.Integer:j2Lc0phK0kuggij4gQYfAw),Height:Text (BasicTypes.Text:uROOBXPvQEyU76NWO+1uxQ),TabsVerticalPosition:Direction Identifier (EntityIdentifierType:E5NAZo+qhkWhZqJLJiAaDw.#IdentifierType),OptionalConfigs:TabsOptionalConfigs (ReferenceStructure:FiijaoOjWEGNV+_eiM+HeQ),ExtendedClass:Text (BasicTypes.Text:uROOBXPvQEyU76NWO+1uxQ)
+BLOCK=Tag inputs=Color:Color Identifier (EntityIdentifierType:tkImtPuLxUO5n523whgi8A.#IdentifierType),Size:Size Identifier (EntityIdentifierType:3xBxXLGDs0O9bHfWUr_ysA.#IdentifierType),Shape:Shape Identifier (EntityIdentifierType:9dtxXlea90GvX3GE7VbEgQ.#IdentifierType),IsLight:Boolean (BasicTypes.Boolean:oD0fxvc7hUOX_305zIXIlg),ExtendedClass:Text (BasicTypes.Text:uROOBXPvQEyU76NWO+1uxQ)
+BLOCK=AccordionItem inputs=StartsExpanded:Boolean (BasicTypes.Boolean:oD0fxvc7hUOX_305zIXIlg),Icon:AccordionIconType Identifier (EntityIdentifierType:p_pbzAE3BkOvzuTWRMrm2Q.#IdentifierType),IconPosition:AccordionIconPosition Identifier (EntityIdentifierType:F5T_Tipvl0q9XNHs+bR7XA.#IdentifierType),IsDisabled:Boolean (BasicTypes.Boolean:oD0fxvc7hUOX_305zIXIlg),ExtendedClass:Text (BasicTypes.Text:uROOBXPvQEyU76NWO+1uxQ)
+REF=WHT_CW version= revision=
+BLOCK=LayoutBlank inputs=EnableAccessibilityFeatures:Boolean (BasicTypes.Boolean:oD0fxvc7hUOX_305zIXIlg),ExtendedClass:Text (BasicTypes.Text:uROOBXPvQEyU76NWO+1uxQ)
+BLOCK=CW_Confirm_Popup inputs=IsShow:Boolean (BasicTypes.Boolean:oD0fxvc7hUOX_305zIXIlg),Title:Text (BasicTypes.Text:uROOBXPvQEyU76NWO+1uxQ),Message:Text (BasicTypes.Text:uROOBXPvQEyU76NWO+1uxQ),IsLoadingButton:Boolean (BasicTypes.Boolean:oD0fxvc7hUOX_305zIXIlg),TermCondition:Text (BasicTypes.Text:uROOBXPvQEyU76NWO+1uxQ)
+

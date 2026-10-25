@@ -1,0 +1,765 @@
+{
+  "scope": "new and changed Markdown explicit local paths; remote URLs and placeholders excluded",
+  "checked": 147,
+  "introduced_broken": [],
+  "preexisting_broken": [
+    {
+      "file": "docs\\setup-status.md",
+      "target": "execution/UI-002.report.md",
+      "exists": false,
+      "preexisting": true
+    },
+    {
+      "file": "docs\\setup-status.md",
+      "target": "execution/CSS-001.report.md",
+      "exists": false,
+      "preexisting": true
+    },
+    {
+      "file": "docs\\verification.md",
+      "target": "execution/UI-002.report.md",
+      "exists": false,
+      "preexisting": true
+    }
+  ],
+  "links": [
+    {
+      "file": "AGENTS.md",
+      "target": "docs/setup-status.md",
+      "exists": true
+    },
+    {
+      "file": "AGENTS.md",
+      "target": "docs/project-context.md",
+      "exists": true
+    },
+    {
+      "file": "AGENTS.md",
+      "target": ".agents/skills/servicestudio-mcp-oml/SKILL.md",
+      "exists": true
+    },
+    {
+      "file": "AGENTS.md",
+      "target": "docs/standards/O11_EXECUTION_PROTOCOL.md",
+      "exists": true
+    },
+    {
+      "file": "AGENTS.md",
+      "target": "docs/templates/TECH_SPEC.template.md",
+      "exists": true
+    },
+    {
+      "file": "AGENTS.md",
+      "target": "docs/templates/EXECUTION_REPORT.template.md",
+      "exists": true
+    },
+    {
+      "file": "AGENTS.md",
+      "target": "docs/standards/O11_UI_NATIVE_FIRST.md",
+      "exists": true
+    },
+    {
+      "file": "AGENTS.md",
+      "target": "templates/UI_DESIGN_CONTRACT.template.md",
+      "exists": true
+    },
+    {
+      "file": "AGENTS.md",
+      "target": "docs/engineering-standards.md",
+      "exists": true
+    },
+    {
+      "file": "AGENTS.md",
+      "target": "docs/verification.md",
+      "exists": true
+    },
+    {
+      "file": "AGENTS.md",
+      "target": "docs/recovery.md",
+      "exists": true
+    },
+    {
+      "file": "AGENTS.md",
+      "target": "workflow/ROLES.md",
+      "exists": true
+    },
+    {
+      "file": "AGENTS.md",
+      "target": "docs/standards/LEAN_UI_WORKFLOW.md",
+      "exists": true
+    },
+    {
+      "file": "AGENTS.md",
+      "target": "workflow/PROTOCOL.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/execution/VIBE-SETUP.report.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/VIBEWORKFLOW_QUICKSTART.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "project.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/execution/NATIVE-FIRST-SETUP.report.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/standards/LEAN_UI_WORKFLOW.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/standards/O11_UI_NATIVE_FIRST.md",
+      "exists": true
+    },
+    {
+      "file": "TEMPLATES.md",
+      "target": "templates/UI_DESIGN_CONTRACT.template.md",
+      "exists": true
+    },
+    {
+      "file": "TEMPLATES.md",
+      "target": "templates/UI_FOUNDATION.template.json",
+      "exists": true
+    },
+    {
+      "file": "TEMPLATES.md",
+      "target": "prompts/UI_DESIGN_START.md",
+      "exists": true
+    },
+    {
+      "file": "TEMPLATES.md",
+      "target": "prompts/O11_UI_APPLY.md",
+      "exists": true
+    },
+    {
+      "file": "adapters\\O11.md",
+      "target": "../docs/engineering-standards.md",
+      "exists": true
+    },
+    {
+      "file": "adapters\\O11.md",
+      "target": "../docs/verification.md",
+      "exists": true
+    },
+    {
+      "file": "adapters\\O11.md",
+      "target": "../docs/recovery.md",
+      "exists": true
+    },
+    {
+      "file": "adapters\\O11.md",
+      "target": "../docs/standards/O11_EXECUTION_PROTOCOL.md",
+      "exists": true
+    },
+    {
+      "file": "adapters\\O11.md",
+      "target": "../docs/standards/O11_UI_NATIVE_FIRST.md",
+      "exists": true
+    },
+    {
+      "file": "adapters\\O11.md",
+      "target": "../docs/standards/LEAN_UI_WORKFLOW.md",
+      "exists": true
+    },
+    {
+      "file": "adapters\\SITES.md",
+      "target": "../templates/UI_DESIGN_CONTRACT.template.md",
+      "exists": true
+    },
+    {
+      "file": "adapters\\SITES.md",
+      "target": "../templates/DESIGN_HANDOFF.template.md",
+      "exists": true
+    },
+    {
+      "file": "adapters\\SITES.md",
+      "target": "../docs/standards/O11_UI_NATIVE_FIRST.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\engineering-standards.md",
+      "target": "../AGENTS.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\engineering-standards.md",
+      "target": "setup-status.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\engineering-standards.md",
+      "target": "standards/O11_UI_NATIVE_FIRST.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\engineering-standards.md",
+      "target": "standards/LEAN_UI_WORKFLOW.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\setup-status.md",
+      "target": "execution/NATIVE-FIRST-SETUP.report.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\setup-status.md",
+      "target": "execution/VIBE-SETUP.report.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\setup-status.md",
+      "target": "evidence/vibeworkflow-setup/",
+      "exists": true
+    },
+    {
+      "file": "docs\\setup-status.md",
+      "target": "VIBEWORKFLOW_QUICKSTART.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\setup-status.md",
+      "target": "execution/UI-002.report.md",
+      "exists": false,
+      "preexisting": true
+    },
+    {
+      "file": "docs\\setup-status.md",
+      "target": "execution/CSS-001.report.md",
+      "exists": false,
+      "preexisting": true
+    },
+    {
+      "file": "docs\\setup-status.md",
+      "target": "evidence/css-001-merge.json",
+      "exists": true
+    },
+    {
+      "file": "docs\\setup-status.md",
+      "target": "defects/DEF-001-tax-preview-reduce.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\setup-status.md",
+      "target": "tax-documents-preview.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\setup-status.md",
+      "target": "evidence/tax-documents-live.json",
+      "exists": true
+    },
+    {
+      "file": "docs\\setup-status.md",
+      "target": "../AGENTS.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\setup-status.md",
+      "target": "evidence/skill-manifest.json",
+      "exists": true
+    },
+    {
+      "file": "docs\\setup-status.md",
+      "target": "evidence/preflight.json",
+      "exists": true
+    },
+    {
+      "file": "docs\\setup-status.md",
+      "target": "evidence/local-checks.json",
+      "exists": true
+    },
+    {
+      "file": "docs\\setup-status.md",
+      "target": "evidence/skill-manifest.json",
+      "exists": true
+    },
+    {
+      "file": "docs\\setup-status.md",
+      "target": "../AGENTS.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\setup-status.md",
+      "target": "project-context.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\setup-status.md",
+      "target": "engineering-standards.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\setup-status.md",
+      "target": "verification.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\setup-status.md",
+      "target": "recovery.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\setup-status.md",
+      "target": "../outsystems-mcp-verification.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\setup-status.md",
+      "target": "../.agents/skills/servicestudio-mcp-oml/SKILL.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\verification.md",
+      "target": "execution/VIBE-SETUP.report.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\verification.md",
+      "target": "execution/UI-002.report.md",
+      "exists": false,
+      "preexisting": true
+    },
+    {
+      "file": "docs\\verification.md",
+      "target": "evidence/preflight.json",
+      "exists": true
+    },
+    {
+      "file": "docs\\verification.md",
+      "target": "tax-documents-preview.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\verification.md",
+      "target": "evidence/tax-documents-live.json",
+      "exists": true
+    },
+    {
+      "file": "docs\\verification.md",
+      "target": "setup-status.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\verification.md",
+      "target": "execution/NATIVE-FIRST-SETUP.report.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\verification.md",
+      "target": "../templates/UI_DESIGN_CONTRACT.template.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\VIBEWORKFLOW_QUICKSTART.md",
+      "target": "execution/VIBE-SETUP.report.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\VIBEWORKFLOW_QUICKSTART.md",
+      "target": "execution/NATIVE-FIRST-SETUP.report.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\VIBEWORKFLOW_QUICKSTART.md",
+      "target": "../AGENTS.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\VIBEWORKFLOW_QUICKSTART.md",
+      "target": "../project.json",
+      "exists": true
+    },
+    {
+      "file": "docs\\VIBEWORKFLOW_QUICKSTART.md",
+      "target": "../workflow/PROTOCOL.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\VIBEWORKFLOW_QUICKSTART.md",
+      "target": "../workflow/ROLES.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\VIBEWORKFLOW_QUICKSTART.md",
+      "target": "../workflow/CONTRACTS.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\VIBEWORKFLOW_QUICKSTART.md",
+      "target": "../prompts/UI_DESIGN_START.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\VIBEWORKFLOW_QUICKSTART.md",
+      "target": "../templates/UI_DESIGN_CONTRACT.template.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\VIBEWORKFLOW_QUICKSTART.md",
+      "target": "../TEMPLATES.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\VIBEWORKFLOW_QUICKSTART.md",
+      "target": "../prompts/WORK_TO_LOCAL.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\VIBEWORKFLOW_QUICKSTART.md",
+      "target": "../prompts/O11_UI_APPLY.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\VIBEWORKFLOW_QUICKSTART.md",
+      "target": "../workflow/PROJECT_SWITCH.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\VIBEWORKFLOW_QUICKSTART.md",
+      "target": "../prompts/RESUME.md",
+      "exists": true
+    },
+    {
+      "file": "prompts\\START.md",
+      "target": "UI_DESIGN_START.md",
+      "exists": true
+    },
+    {
+      "file": "templates\\AGENTS.workflow.template.md",
+      "target": "../workflow/ROLES.md",
+      "exists": true
+    },
+    {
+      "file": "templates\\AGENTS.workflow.template.md",
+      "target": "../docs/standards/LEAN_UI_WORKFLOW.md",
+      "exists": true
+    },
+    {
+      "file": "templates\\AGENTS.workflow.template.md",
+      "target": "../docs/standards/O11_UI_NATIVE_FIRST.md",
+      "exists": true
+    },
+    {
+      "file": "templates\\DESIGN_HANDOFF.template.md",
+      "target": "UI_DESIGN_CONTRACT.template.md",
+      "exists": true
+    },
+    {
+      "file": "templates\\DESIGN_HANDOFF.template.md",
+      "target": "../workflow/CONTRACTS.md",
+      "exists": true
+    },
+    {
+      "file": "templates\\O11_PLAN.template.md",
+      "target": "UI_DESIGN_CONTRACT.template.md",
+      "exists": true
+    },
+    {
+      "file": "templates\\TASK_SPEC.template.md",
+      "target": "UI_DESIGN_CONTRACT.template.md",
+      "exists": true
+    },
+    {
+      "file": "workflow\\CONTRACTS.md",
+      "target": "../templates/UI_DESIGN_CONTRACT.template.md",
+      "exists": true
+    },
+    {
+      "file": "workflow\\PROTOCOL.md",
+      "target": "../docs/standards/O11_UI_NATIVE_FIRST.md",
+      "exists": true
+    },
+    {
+      "file": "workflow\\PROTOCOL.md",
+      "target": "../docs/standards/LEAN_UI_WORKFLOW.md",
+      "exists": true
+    },
+    {
+      "file": "workflow\\ROLES.md",
+      "target": "../docs/standards/LEAN_UI_WORKFLOW.md",
+      "exists": true
+    },
+    {
+      "file": "workflow\\ROLES.md",
+      "target": "../docs/standards/O11_UI_NATIVE_FIRST.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../evidence/native-first-setup/source.json",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../evidence/native-first-setup/baseline-hashes.json",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../evidence/native-first-setup/preservation.json",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../evidence/native-first-setup/git-before.txt",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../evidence/native-first-setup/git-after.txt",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../AGENTS.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../README.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../TEMPLATES.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../docs/engineering-standards.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../docs/setup-status.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../docs/verification.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../docs/VIBEWORKFLOW_QUICKSTART.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../adapters/O11.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../adapters/SITES.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../workflow/CONTRACTS.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../workflow/PROTOCOL.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../workflow/ROLES.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../docs/standards/O11_EXECUTION_PROTOCOL.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../prompts/START.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../prompts/WORK_TO_LOCAL.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../templates/AGENTS.workflow.template.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../templates/DESIGN_HANDOFF.template.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../templates/EXECUTION_REPORT.template.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../templates/O11_PLAN.template.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../templates/TASK_SPEC.template.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../docs/templates/EXECUTION_REPORT.template.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../docs/templates/TECH_SPEC.template.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../.codex/agents/analyst.toml",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../.codex/agents/architect.toml",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../.codex/agents/builder.toml",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../.codex/agents/designer.toml",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../.codex/agents/planner.toml",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../.codex/agents/qa.toml",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../.codex/agents/reviewer.toml",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../docs/catalogs/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../docs/standards/LEAN_UI_WORKFLOW.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../docs/standards/O11_UI_NATIVE_FIRST.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../prompts/O11_UI_APPLY.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../prompts/UI_DESIGN_START.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../templates/UI_DESIGN_CONTRACT.template.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../templates/UI_FOUNDATION.template.json",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../../templates/UI_METRICS.template.json",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../evidence/native-first-setup/checker-results.json",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../evidence/native-first-setup/syntax-results.json",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../evidence/native-first-setup/link-results.json",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../evidence/native-first-setup/review.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../evidence/native-first-setup/preservation.json",
+      "exists": true
+    },
+    {
+      "file": "docs\\execution\\NATIVE-FIRST-SETUP.report.md",
+      "target": "../evidence/native-first-setup/integration.diff",
+      "exists": true
+    },
+    {
+      "file": "docs\\standards\\O11_EXECUTION_PROTOCOL.md",
+      "target": "O11_UI_NATIVE_FIRST.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\standards\\O11_EXECUTION_PROTOCOL.md",
+      "target": "LEAN_UI_WORKFLOW.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\templates\\TECH_SPEC.template.md",
+      "target": "../../templates/UI_DESIGN_CONTRACT.template.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\templates\\TECH_SPEC.template.md",
+      "target": "../standards/O11_UI_NATIVE_FIRST.md",
+      "exists": true
+    },
+    {
+      "file": "docs\\templates\\TECH_SPEC.template.md",
+      "target": "../standards/LEAN_UI_WORKFLOW.md",
+      "exists": true
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "verification": "static only; no platform calls",
+  "cases": [
+    {
+      "case": "template package parses",
+      "result": "PASS"
+    },
+    {
+      "case": "unfilled template rejected for ready",
+      "result": "PASS"
+    },
+    {
+      "case": "filled matching metadata accepted",
+      "result": "PASS"
+    },
+    {
+      "case": "unknown live target metadata blocks O11-specific check",
+      "result": "PASS"
+    },
+    {
+      "case": "cross-project handoff rejected",
+      "result": "PASS"
+    },
+    {
+      "case": "invalid target rejected",
+      "result": "PASS"
+    },
+    {
+      "case": "pending O11 target permits independent design metadata",
+      "result": "PASS"
+    },
+    {
+      "case": "O11-only task works in hybrid project without Sites target",
+      "result": "PASS"
+    },
+    {
+      "case": "external task path rejected",
+      "result": "PASS"
+    },
+    {
+      "case": "missing role instructions rejected",
+      "result": "PASS"
+    }
+  ],
+  "result": "PASS"
+}

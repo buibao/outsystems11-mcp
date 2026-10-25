@@ -1,0 +1,6 @@
+{
+  "command": "python scripts/check_workspace.py --ready --task tasks/UI-001 --for-o11",
+  "exit_code": 0,
+  "stdout": "NOTE: Checks cover package/metadata only: not role discovery, authorization, source semantics, evidence truth, or platform behavior.\nPACKAGE/METADATA: PASS\n",
+  "stderr": ""
+}

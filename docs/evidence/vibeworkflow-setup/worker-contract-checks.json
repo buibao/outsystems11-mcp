@@ -1,0 +1,23 @@
+{
+  "contracts": [
+    {
+      "role": "analyst",
+      "assignment": "A-DOCS-01",
+      "all_required_labels": true,
+      "identity_revision_match": true,
+      "no_files_changed": true,
+      "status": "PASS"
+    },
+    {
+      "role": "reviewer",
+      "assignment": "R-DOCS-01",
+      "all_required_labels": true,
+      "identity_revision_match": true,
+      "no_files_changed": true,
+      "status": "PASS"
+    }
+  ],
+  "native_role_instruction_match": true,
+  "no_worker_O11_MCP_calls": true,
+  "reconciliation": "Worker loader-provenance/config checks were outside their scopes; Coordinator verified via strict config/read and exact developer-context match. No material documentation defect found."
+}

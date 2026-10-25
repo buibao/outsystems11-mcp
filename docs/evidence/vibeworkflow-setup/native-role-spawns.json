@@ -1,0 +1,37 @@
+{
+  "supervisor_thread": "01a169ac-d0df-7fa1-9306-0f38f4867e49",
+  "source_session": "C:\\Users\\buiba\\.codex\\sessions\\2026\\10\\23\\rollout-2026-10-23T23-51-36-01a169ac-d0df-7fa1-9306-0f38f4867e49.jsonl",
+  "spawns": [
+    {
+      "timestamp": "2026-10-23T16:52:03.384Z",
+      "call_id": "call_918bfef8136d4205af54dfeda3653a3f",
+      "tool": "collaboration.spawn_agent",
+      "arguments": {
+        "task_name": "analyst_setup_docs",
+        "agent_type": "analyst",
+        "fork_turns": "none"
+      }
+    },
+    {
+      "timestamp": "2026-10-23T16:52:09.380Z",
+      "call_id": "call_b4fb60822ef448bd9c48d0e49254fb98",
+      "tool": "collaboration.spawn_agent",
+      "arguments": {
+        "task_name": "reviewer_setup_docs",
+        "agent_type": "reviewer",
+        "fork_turns": "none"
+      }
+    },
+    {
+      "timestamp": "2026-10-23T16:52:03.541Z",
+      "call_id": "call_918bfef8136d4205af54dfeda3653a3f",
+      "output": "{\"task_name\":\"/root/analyst_setup_docs\"}"
+    },
+    {
+      "timestamp": "2026-10-23T16:52:09.530Z",
+      "call_id": "call_b4fb60822ef448bd9c48d0e49254fb98",
+      "output": "{\"task_name\":\"/root/reviewer_setup_docs\"}"
+    }
+  ],
+  "scope": "Token-free extraction limited to explicit role selection and thread return; encrypted message bodies excluded."
+}

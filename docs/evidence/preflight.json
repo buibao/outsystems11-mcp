@@ -1,0 +1,475 @@
+{
+  "recordedAt": "2026-10-22T01:42:50+07:00",
+  "timeZone": "Asia/Saigon",
+  "scope": "Read-only bootstrap, no feature work",
+  "workspace": "D:\\OutsystemsAIAgent",
+  "connection": {
+    "server": "servicestudio",
+    "url": "http://127.0.0.1:41820/mcp",
+    "workingBeforeAndAfterConfig": true,
+    "sameApprovedSessionTokenReused": true,
+    "tokenOmitted": true
+  },
+  "environment": {
+    "uiLabel": "Development - personal-g4et6y1o.outsystemscloud.com",
+    "evidence": "Windows UI Automation read from Service Studio; independent of module name",
+    "organizationalRoleAndDeploymentAuthorization": "UNKNOWN",
+    "platformVersion": "UNKNOWN"
+  },
+  "apps": [
+    {
+      "key": "31528bde-1c02-46e6-ac4b-2d14a432e584",
+      "name": "MyApp",
+      "kind": "eSpace",
+      "version": "0",
+      "isOpen": true,
+      "isReference": false,
+      "moduleType": "Reactive"
+    }
+  ],
+  "readView": {
+    "pendingCopyStatus": "UNKNOWN; bootstrap created no pending copy; sidecar reads follow the host pointer",
+    "publishedVersion": "UNKNOWN"
+  },
+  "references": [
+    "OutSystemsCharts",
+    "OutSystemsUI",
+    "OutSystemsMaps",
+    "(System)",
+    "Users"
+  ],
+  "localEntities": [],
+  "referencedEntities": [
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/AccordionIconPosition"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/AccordionIconType"
+    },
+    {
+      "type": "IServerEntitySignature",
+      "qualifiedName": "(System)/Activity"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/Alert"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/AnimationType"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/Autoplay"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsCharts/AxisValuesType"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/BooleanTypes"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/BreakColumns"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/CarouselDirection"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/CarouselNavigation"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/Color"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/ColumnBreak"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/DatePickerLanguage"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/DatePickerTimeFormat"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/DatePickerWeekDay"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/DeviceResponsive"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/Direction"
+    },
+    {
+      "type": "IServerEntitySignature",
+      "qualifiedName": "(System)/Espace"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/FloatingPosition"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/Gradient"
+    },
+    {
+      "type": "IServerEntitySignature",
+      "qualifiedName": "(System)/Group"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/GutterSize"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsCharts/HighchartModules"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsCharts/LegendLayout"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsCharts/LegendPosition"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsMaps/MapErrors"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsMaps/MapEventTriggered"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsMaps/MarkerEventTriggered"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/MenuAction"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/MessageStatus"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/Month"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/Orientation"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/Position"
+    },
+    {
+      "type": "IServerEntitySignature",
+      "qualifiedName": "(System)/Process"
+    },
+    {
+      "type": "IServerEntitySignature",
+      "qualifiedName": "(System)/Role"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "(System)/RuntimeKind"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/ScrollbarStyle"
+    },
+    {
+      "type": "IServerEntitySignature",
+      "qualifiedName": "(System)/Sent_Email"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsCharts/SeriesType"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/Shape"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/SideMenuBehavior"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/Size"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/Space"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/Speed"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/StackedCardsPosition"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsCharts/StackingType"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/Steps"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/StepsBehaviour"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsMaps/Style"
+    },
+    {
+      "type": "IServerEntitySignature",
+      "qualifiedName": "(System)/Tenant"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/Trigger"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsMaps/Type"
+    },
+    {
+      "type": "IServerEntitySignature",
+      "qualifiedName": "(System)/User"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsCharts/ValuesType"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsUI/VideoState"
+    },
+    {
+      "type": "IStaticEntitySignature",
+      "qualifiedName": "OutSystemsMaps/Zoom"
+    }
+  ],
+  "targetedEntity": {
+    "producer": "(System)",
+    "name": "User",
+    "attributeNames": [
+      "Id",
+      "Name",
+      "Username",
+      "Password",
+      "Email",
+      "MobilePhone",
+      "External_Id",
+      "Creation_Date",
+      "Last_Login",
+      "Is_Active"
+    ],
+    "readKind": "Model schema only, no runtime user records or attribute values retrieved; projection selected schema fields from resident references"
+  },
+  "serverActions": [
+    {
+      "name": "AbortTransaction",
+      "isReferenced": true
+    },
+    {
+      "name": "CommitTransaction",
+      "isReferenced": true
+    },
+    {
+      "name": "DoLogin",
+      "isReferenced": false
+    },
+    {
+      "name": "DoLogout",
+      "isReferenced": false
+    },
+    {
+      "name": "GetGoogleMapsServerKey",
+      "isReferenced": true
+    },
+    {
+      "name": "ListAll",
+      "isReferenced": true
+    },
+    {
+      "name": "ListAny",
+      "isReferenced": true
+    },
+    {
+      "name": "ListAppend",
+      "isReferenced": true
+    },
+    {
+      "name": "ListAppendAll",
+      "isReferenced": true
+    },
+    {
+      "name": "ListClear",
+      "isReferenced": true
+    },
+    {
+      "name": "ListDuplicate",
+      "isReferenced": true
+    },
+    {
+      "name": "ListFilter",
+      "isReferenced": true
+    },
+    {
+      "name": "ListIndexOf",
+      "isReferenced": true
+    },
+    {
+      "name": "ListInsert",
+      "isReferenced": true
+    },
+    {
+      "name": "ListRemove",
+      "isReferenced": true
+    },
+    {
+      "name": "ListSort",
+      "isReferenced": true
+    },
+    {
+      "name": "LogMessage",
+      "isReferenced": true
+    },
+    {
+      "name": "Login",
+      "isReferenced": true
+    },
+    {
+      "name": "Logout",
+      "isReferenced": true
+    },
+    {
+      "name": "SetCurrentLocale",
+      "isReferenced": true
+    },
+    {
+      "name": "User_GetName",
+      "isReferenced": true
+    },
+    {
+      "name": "User_GetUnifiedLoginUrl",
+      "isReferenced": true
+    },
+    {
+      "name": "User_GetUnifiedLogoutUrl",
+      "isReferenced": true
+    },
+    {
+      "name": "User_Login",
+      "isReferenced": true
+    },
+    {
+      "name": "User_Logout",
+      "isReferenced": true
+    }
+  ],
+  "representativeAction": {
+    "name": "DoLogin",
+    "folder": "Authentication",
+    "public": false,
+    "invokes": "Users.User_Login",
+    "inputParameterNames": [
+      "Username",
+      "Password",
+      "RememberLogin"
+    ],
+    "credentialValuesRetrieved": false,
+    "executed": false
+  },
+  "roles": [
+    {
+      "name": "Anonymous",
+      "isReferenced": false
+    },
+    {
+      "name": "Registered",
+      "isReferenced": false
+    }
+  ],
+  "validation": {
+    "counts": {
+      "error": 0,
+      "warning": 2,
+      "info": 0
+    },
+    "messages": [
+      {
+        "ownerPath": "/Common/InvalidPermissions",
+        "ownerType": "IMobileScreen",
+        "id": "AnonymousAccess_NoPermissionsNoRoles",
+        "type": "Warning",
+        "message": "Missing roles",
+        "detail": "Screen 'InvalidPermissions' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'."
+      },
+      {
+        "ownerPath": "/Common/Login",
+        "ownerType": "IMobileScreen",
+        "id": "AnonymousAccess_NoPermissionsNoRoles",
+        "type": "Warning",
+        "message": "Missing roles",
+        "detail": "Screen 'Login' is only accessible by authenticated users, but there are no roles. Create a role or change 'Accessible by' to 'Everyone'."
+      }
+    ]
+  },
+  "mcpReadToolsUsedThisBootstrap": [
+    "listApps",
+    "runQuery",
+    "getServerAction",
+    "getValidationMessages",
+    "getDataModel",
+    "getActionNames",
+    "getRoleNames"
+  ],
+  "prohibitedOperationsPerformed": {
+    "applyModelApiCode": false,
+    "omlMerge": false,
+    "omlPublish": false,
+    "omlRefreshReferences": false,
+    "omlReset": false,
+    "dataMigration": false,
+    "liveModuleChange": false,
+    "reviewSettingChange": false
+  },
+  "unverified": {
+    "newSessionSkillDiscovery": "UNKNOWN",
+    "newSessionToolTimeoutAndPublishExclusion": "UNKNOWN",
+    "manualCompareAndMerge": "UNKNOWN; user answered not checked; embedded browser did not expose control state via UI Automation",
+    "writeSmokeTest": "NOT RUN",
+    "merge": "NOT RUN",
+    "publish": "NOT RUN",
+    "runtime": "NOT RUN",
+    "existingTestHarness": "UNKNOWN",
+    "durableO11Checkpoint": "UNKNOWN",
+    "organizationAiAccountAndDataSettings": "UNKNOWN",
+    "approvedProjectGitDestination": "UNKNOWN"
+  },
+  "sessionCatalogBeforeReload": {
+    "omlPublishStillAdvertised": true,
+    "doNotCallToTestExclusion": true
+  }
+}

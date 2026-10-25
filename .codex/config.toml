@@ -1,0 +1,5 @@
+# Supported by installed codex-cli 0.162.0-alpha.17.2 (strict config/read probe).
+# No MCP, permissions, sandbox, model, trust, or duplicate role registrations.
+[agents]
+enabled = true
+max_concurrent_threads_per_session = 2
