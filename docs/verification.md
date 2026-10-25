@@ -1,10 +1,12 @@
 # Verification
 
-## Current setup verification — 2026-10-23
+Current feature evidence belongs to the selected task report referenced by [project.json](../project.json); for the recorded WHT binding see [UI-001 report](../tasks/UI-001/report.md). The dated MyApp baselines below are historical and do not establish WHT validation/runtime results. Current local setup corrections are recorded [here](execution/SETUP-CORRECTIONS.report.md).
+
+## Historical setup verification — 2026-10-23
 
 VibeWorkflow SETUP_ONLY verification is in [VIBE-SETUP.report.md](execution/VIBE-SETUP.report.md). Actual checks: package/metadata validation (nine cases), effective config loading, native analyst/reviewer role discovery and exact instruction loading, real result contracts, primary-only O11 identity/environment/validation/restrictions. Baseline is the current MCP view, 0 errors/4 warnings. No feature changes, merge, publication, Site or runtime checks were executed by this setup. Historical feature verification below does not establish the behavior or target of a future task.
 
-Latest feature verification (2026-10-22): UI-002 reached RUNTIME_VERIFIED on Development MyApp135. 34 successful browser checks,12 reference scenario captures and 0-error/4-baseline-warning live validation are documented in [UI-002 report](execution/UI-002.report.md). Startup and dialog defects resolved; favicon404 recorded. Bootstrap/prototype NOT_RUN statements below are historical and do not override this feature evidence.
+Historical MyApp feature verification (2026-10-22): UI-002 reached RUNTIME_VERIFIED on Development MyApp135. 34 successful browser checks,12 reference scenario captures and 0-error/4-baseline-warning live validation are documented in [UI-002 report](execution/UI-002.report.md). Startup and dialog defects resolved; favicon404 recorded. Bootstrap/prototype NOT_RUN statements below are historical and do not override this feature evidence.
 
 ## Bootstrap baseline
 

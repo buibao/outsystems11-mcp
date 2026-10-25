@@ -1,5 +1,5 @@
 # WHT UI-001 specification
-Project/task/spec: wht / UI-001 / 0.2. Status: MODEL_VERIFIED, MERGE_ACCEPTED, ACCEPTED_LIVE_VERIFIED; awaiting manual DEV publication. Mode UI_PROTOTYPE, FULL. Route O11_ONLY, LOCAL. O11 target RUNTIME_VERIFIED; Sites N/A.
+Project/task/spec: wht / UI-001 / 0.2. Progress: see [current report](report.md) and [task state](task-state.json). Mode UI_PROTOTYPE, FULL. Route O11_ONLY, LOCAL. O11 target RUNTIME_VERIFIED; Sites N/A.
 
 ## Outcome and boundaries
 One new isolated prototype Screen and cohesive Blocks; preserve existing WHT_Request business screens and consumers. Synthetic in-memory state only. Request R1 is authoritative. No restoration of historical MyApp features.
@@ -25,5 +25,5 @@ Check file selection/removal, Clear/Cancel/Submit, year selection, COR/PEL isola
 No backend operations added, so transaction/migration tests N/A; screen access and no accidental backend invocation still require verification.
 Before each slice inspect guards/contracts. After each slice readback and exact validation delta; preserve existing warning identities. Unknown write outcome requires inspection, never blind repeat.
 
-## Open work
-Representative B01 and full B02 pending model are verified; RV04 checked seven readbacks,1259 assignments,9504 fixture values and53 flows. Remaining work: manual merge result, fresh accepted-live verification, user DEV publication and identified-version runtime/visual QA. Existing Request_COR_PELetter is rejected for reuse because inspected code performs server aggregates/download/delete/upload transactions (evidence/existing-cor-block.json). Do not alter its existing consumers. Publication and runtime QA remain later-stage dependencies, not permission to lower the target.
+## Progress reference and preserved constraints
+Current stage, completed checks and remaining actions are maintained in the [report](report.md) and [task state](task-state.json). Do not replay completed merge/readback based on superseded progress text in this spec. Existing Request_COR_PELetter is rejected for reuse because inspected code performs server aggregates/download/delete/upload transactions (evidence/existing-cor-block.json). Do not alter its existing consumers. Publication and runtime QA remain later-stage dependencies, not permission to lower the target.

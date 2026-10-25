@@ -1,5 +1,9 @@
 # Pre-coding setup status
 
+## Current setup entry point - 2026-10-26
+
+Use [project.json](../project.json) and the selected task state/report for current binding and progress. See [setup corrections](execution/SETUP-CORRECTIONS.report.md), [native-first setup](execution/NATIVE-FIRST-SETUP.report.md) and [CheatSheet setup](execution/CHEATSHEET-SETUP.report.md) for local setup evidence. The dated bootstrap/MyApp entries below retain their original observations and instructions as history, not an active checklist. Do not reopen MyApp, repeat completed checks or inherit old approvals from those entries. Resolve only changed or missing prerequisites for the requested operation.
+
 ## Native-first v1.1 documentation integration - 2026-10-25
 
 Guidance installed; local check results and remaining live dependencies are recorded in the [setup report](execution/NATIVE-FIRST-SETUP.report.md). No O11 or Sites operation is part of this setup. Current WHT profile/UI-001 remain unchanged; older setup bindings below are historical.

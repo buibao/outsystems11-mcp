@@ -1,0 +1,26 @@
+[
+  {
+    "command": [
+      "python",
+      "-B",
+      "scripts/verify_workflow_setup.py"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"subject\": \"Package and disposable metadata fixtures; no role discovery/platform behavior\",\n  \"cases\": [\n    {\n      \"case\": \"Installed package and current metadata\",\n      \"result\": \"PASS\",\n      \"observed\": []\n    },\n    {\n      \"case\": \"Draft cannot be ready\",\n      \"result\": \"PASS\",\n      \"observed\": [\n        \"profile_status must be ACTIVE for metadata readiness\",\n        \"--ready requires --task tasks/<task-id>\"\n      ]\n    },\n    {\n      \"case\": \"Hybrid profile permits O11-only task metadata\",\n      \"result\": \"PASS\",\n      \"observed\": []\n    },\n    {\n      \"case\": \"Cross-project task rejected\",\n      \"result\": \"PASS\",\n      \"observed\": [\n        \"Task project_id does not match the filled project profile\"\n      ]\n    },\n    {\n      \"case\": \"Invalid target rejected\",\n      \"result\": \"PASS\",\n      \"observed\": [\n        \"Invalid O11 target\"\n      ]\n    },\n    {\n      \"case\": \"O11 implementation requires target\",\n      \"result\": \"PASS\",\n      \"observed\": [\n        \"Valid O11 target is required for O11 implementation metadata\"\n      ]\n    },\n    {\n      \"case\": \"O11-only task rejects Sites target\",\n      \"result\": \"PASS\",\n      \"observed\": [\n        \"Sites target must be null for O11_ONLY\"\n      ]\n    },\n    {\n      \"case\": \"Task path outside tasks rejected\",\n      \"result\": \"PASS\",\n      \"observed\": [\n        \"Task path must be inside this workspace's tasks directory\"\n      ]\n    },\n    {\n      \"case\": \"Duplicate role rejected\",\n      \"result\": \"PASS\",\n      \"observed\": [\n        \"Duplicate role: analyst\"\n      ]\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "-B",
+      "scripts/check_workspace.py",
+      "--ready",
+      "--task",
+      "tasks/UI-001",
+      "--for-o11"
+    ],
+    "exit_code": 0,
+    "stdout": "NOTE: Checks cover package/metadata only: not role discovery, authorization, source semantics, evidence truth, or platform behavior.\nPACKAGE/METADATA: PASS\n",
+    "stderr": ""
+  }
+]

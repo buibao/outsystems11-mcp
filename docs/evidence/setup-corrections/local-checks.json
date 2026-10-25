@@ -1,0 +1,41 @@
+{
+  "result": "PASS for introduced references and syntax",
+  "links_checked": 73,
+  "introduced_broken_links": [],
+  "preexisting_missing_historical_links": [
+    [
+      "docs\\project-context.md",
+      "specs/UI-002-tax-documents-visual-fidelity.md"
+    ],
+    [
+      "docs\\project-context.md",
+      "execution/UI-002.report.md"
+    ],
+    [
+      "docs\\project-context.md",
+      "../artifacts/ui-002/comparison.html"
+    ],
+    [
+      "docs\\project-context.md",
+      "execution/CSS-001.report.md"
+    ],
+    [
+      "docs\\setup-status.md",
+      "execution/UI-002.report.md"
+    ],
+    [
+      "docs\\setup-status.md",
+      "execution/CSS-001.report.md"
+    ],
+    [
+      "docs\\verification.md",
+      "execution/UI-002.report.md"
+    ]
+  ],
+  "syntax_counts": {
+    "json": 92,
+    "toml": 9
+  },
+  "python_ast": "PASS",
+  "limits": "Historical missing artifacts not restored; external links and placeholders excluded."
+}

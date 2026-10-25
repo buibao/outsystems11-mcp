@@ -1,0 +1,143 @@
+--- before/docs\project-context.md
++++ after/docs\project-context.md
+@@ -1,12 +1,18 @@
+ # Project context
+ 
+-## Current workflow binding — 2026-10-23
++## Current binding and source of truth
++
++Read [project profile](../project.json) for the selected project and active task, then its canonical spec, task-state and report. The current recorded binding is WHT / UI-001; [task state](../tasks/UI-001/task-state.json) and [report](../tasks/UI-001/report.md) own progress and remaining work. This pointer is documentation, not a fresh live identity or runtime check. Re-identify live state before dependent operations.
++
++All MyApp/UI-002/CSS-001 observations below are retained history. Their keys, version numbers, permissions, checkpoint waivers and unresolved setup checks must not be inherited by WHT or replayed as current work. Some historical artifact links are no longer present; do not restore removed features to satisfy them. See [setup corrections](execution/SETUP-CORRECTIONS.report.md).
++
++## Historical workflow binding — 2026-10-23
+ 
+ The VibeWorkflow setup created an intentionally unbound DRAFT [project.json](../project.json): business ID/name UNKNOWN, Site/O11 bindings null, no active task. For new work, confirm project/task/route/targets rather than inheriting historical feature context below. The live read-only setup observation is recorded separately in [VIBE-SETUP.report.md](execution/VIBE-SETUP.report.md); it does not select a business target. Existing records are retained as history; no removed feature/project is reactivated. See [quickstart](VIBEWORKFLOW_QUICKSTART.md) for Work/local responsibilities and project switching.
+ 
+-Latest task state (UI-002 v1.1, 2026-10-22): MyApp Reactive key `1e4623ed-64fa-4600-97f5-8a8442332e57`; Development versionSequence 135 independently identified after user manual publish. Figma hierarchy/layout correction is merged and runtime-verified with 34 successful browser checks and12 scenario comparisons. Model validation remains0 errors/4 baseline warnings. Existing Anonymous and Registered roles and the unused OnReady action are preserved. Startup and dialog/focus defects are resolved; root favicon404 and minor visual residuals are disclosed. Final read-only session closed with no pending changes. omlPublish remains disabled. See [UI-002 spec](specs/UI-002-tax-documents-visual-fidelity.md), [report](execution/UI-002.report.md) and [comparison gallery](../artifacts/ui-002/comparison.html); historical task notes below remain prior-session evidence.
++Historical task state (UI-002 v1.1, 2026-10-22): MyApp Reactive key `1e4623ed-64fa-4600-97f5-8a8442332e57`; Development versionSequence 135 independently identified after user manual publish. Figma hierarchy/layout correction is merged and runtime-verified with 34 successful browser checks and12 scenario comparisons. Model validation remains0 errors/4 baseline warnings. Existing Anonymous and Registered roles and the unused OnReady action are preserved. Startup and dialog/focus defects are resolved; root favicon404 and minor visual residuals are disclosed. Final read-only session closed with no pending changes. omlPublish remains disabled. See [UI-002 spec](specs/UI-002-tax-documents-visual-fidelity.md), [report](execution/UI-002.report.md) and [comparison gallery](../artifacts/ui-002/comparison.html); historical task notes below remain prior-session evidence.
+ 
+-## Confirmed observations
++## Historical MyApp observations
+ 
+ | Item | Evidence / value |
+ | --- | --- |
+@@ -16,7 +22,7 @@
+ | Style / open state | `Reactive`; `isOpen=true`, `isReference=false` from native `listApps` |
+ | Environment UI label | `Development - personal-g4et6y1o.outsystemscloud.com`, independently read with Windows UI Automation from Service Studio |
+ | Resident module references | `OutSystemsCharts`, `OutSystemsUI`, `OutSystemsMaps`, `(System)`, `Users` from `runQuery` |
+-| Local entities in current live model | `DocumentType`, `DocumentStatus`, both Static Entities for the Tax Documents frontend prototype; 0 ordinary persisted Entities. Bootstrap's empty collection is historical. |
++| Local entities in the recorded MyApp model | `DocumentType`, `DocumentStatus`, both Static Entities for the Tax Documents frontend prototype; 0 ordinary persisted Entities. Bootstrap's empty collection is historical. |
+ | Referenced entities in MCP data model | 57; includes `(System)/User`; see [preflight evidence](evidence/preflight.json) |
+ | Local server actions | `DoLogin`, `DoLogout`; 23 other server actions are referenced |
+ | Local role names | `Anonymous`, `Registered`; future feature role/ownership requirements remain UNKNOWN |
+@@ -24,9 +30,9 @@
+ | Model validation | Bootstrap baseline: 0 errors, 2 warnings. After Tax Documents merge: 0 errors, 3 warnings; new Registered-only Screen has the same Missing roles warning. See [feature evidence](evidence/tax-documents-live.json). |
+ | Version field | `listApps.version="0"`; this is not evidence of a published/recoverable platform version |
+ 
+-These are observations of the current setup, not a business architecture specification. Native module identity and the UI environment label were observed independently. Sidecar reads follow the host's current snapshot/pending-copy pointer. Bootstrap created no pending model copy; absence of unrelated pre-existing pending work is UNKNOWN.
++These are historical observations of the MyApp setup, not a business architecture specification. Native module identity and the UI environment label were observed independently. Sidecar reads follow the host's current snapshot/pending-copy pointer. Bootstrap created no pending model copy; absence of unrelated pre-existing pending work is UNKNOWN.
+ 
+-## Unknowns to resolve for the relevant feature
++## Historical bootstrap unknowns (reassess only for the selected task)
+ 
+ | Topic | Status |
+ | --- | --- |
+@@ -45,7 +51,7 @@
+ 
+ The original bootstrap request authorized local guidance/configuration and read-only model inspection. The user subsequently authorized the Tax Documents UI prototype and its normal manual merge through the full supplied prompt. This task is merged and read back from live; publish, runtime data access, migrations and production behavior were not part of it. See [feature report](tax-documents-preview.md).
+ 
+-Current feature objects: `MainFlow/TaxDocumentsPreview`, 9 reusable Blocks, 6 transient view-model Structures and native Script `TaxDocumentsPrototype`. The user confirmed manual Compare and Merge and waived a separate checkpoint for this prototype. The business architecture, backend rules and future deployment authority remain unestablished; presentation-only reviewer mode is not authorization.
++Historical MyApp feature objects: `MainFlow/TaxDocumentsPreview`, 9 reusable Blocks, 6 transient view-model Structures and native Script `TaxDocumentsPrototype`. The user confirmed manual Compare and Merge and waived a separate checkpoint for this prototype. The business architecture, backend rules and future deployment authority remain unestablished; presentation-only reviewer mode is not authorization.
+ 
+ CSS-001 corrective spec version 1.1 was subsequently authorized with CompletionTarget MERGED. Actual merge succeeded; fresh accepted-live readback found 0 errors / the same 3 warnings. Shared feature CSS now lives in MyApp theme under `.tax-documents-preview`, with Screen CSS empty, native btn classes, Content/Tag and native Popup inside existing Blocks. Theme prefix, primary palette/base theme and fixture/action contracts were preserved. See [execution report](execution/CSS-001.report.md). Publish/runtime remain NOT_RUN and [DEF-001](defects/DEF-001-tax-preview-reduce.md) remains OPEN. A later host restart interrupted acknowledgement of the read-only checkout's closure; current post-restart module/session state needs re-identification before further OML operations.
+ 
+--- before/docs\setup-status.md
++++ after/docs\setup-status.md
+@@ -1,4 +1,8 @@
+ # Pre-coding setup status
++
++## Current setup entry point - 2026-10-26
++
++Use [project.json](../project.json) and the selected task state/report for current binding and progress. See [setup corrections](execution/SETUP-CORRECTIONS.report.md), [native-first setup](execution/NATIVE-FIRST-SETUP.report.md) and [CheatSheet setup](execution/CHEATSHEET-SETUP.report.md) for local setup evidence. The dated bootstrap/MyApp entries below retain their original observations and instructions as history, not an active checklist. Do not reopen MyApp, repeat completed checks or inherit old approvals from those entries. Resolve only changed or missing prerequisites for the requested operation.
+ 
+ ## Native-first v1.1 documentation integration - 2026-10-25
+ 
+--- before/docs\verification.md
++++ after/docs\verification.md
+@@ -1,10 +1,12 @@
+ # Verification
+ 
+-## Current setup verification — 2026-10-23
++Current feature evidence belongs to the selected task report referenced by [project.json](../project.json); for the recorded WHT binding see [UI-001 report](../tasks/UI-001/report.md). The dated MyApp baselines below are historical and do not establish WHT validation/runtime results. Current local setup corrections are recorded [here](execution/SETUP-CORRECTIONS.report.md).
++
++## Historical setup verification — 2026-10-23
+ 
+ VibeWorkflow SETUP_ONLY verification is in [VIBE-SETUP.report.md](execution/VIBE-SETUP.report.md). Actual checks: package/metadata validation (nine cases), effective config loading, native analyst/reviewer role discovery and exact instruction loading, real result contracts, primary-only O11 identity/environment/validation/restrictions. Baseline is the current MCP view, 0 errors/4 warnings. No feature changes, merge, publication, Site or runtime checks were executed by this setup. Historical feature verification below does not establish the behavior or target of a future task.
+ 
+-Latest feature verification (2026-10-22): UI-002 reached RUNTIME_VERIFIED on Development MyApp135. 34 successful browser checks,12 reference scenario captures and 0-error/4-baseline-warning live validation are documented in [UI-002 report](execution/UI-002.report.md). Startup and dialog defects resolved; favicon404 recorded. Bootstrap/prototype NOT_RUN statements below are historical and do not override this feature evidence.
++Historical MyApp feature verification (2026-10-22): UI-002 reached RUNTIME_VERIFIED on Development MyApp135. 34 successful browser checks,12 reference scenario captures and 0-error/4-baseline-warning live validation are documented in [UI-002 report](execution/UI-002.report.md). Startup and dialog defects resolved; favicon404 recorded. Bootstrap/prototype NOT_RUN statements below are historical and do not override this feature evidence.
+ 
+ ## Bootstrap baseline
+ 
+--- before/scripts\verify_workflow_setup.py
++++ after/scripts\verify_workflow_setup.py
+@@ -21,8 +21,7 @@
+         ok = not errors if expect_error is None else any(expect_error in e for e in errors)
+         cases.append({'case': name, 'result': 'PASS' if ok else 'FAIL', 'observed': errors})
+ 
+-    record('Installed package and draft metadata', module.check(ROOT)[0])
+-    record('Draft cannot be ready', module.check(ROOT, ready=True)[0], 'profile_status must be ACTIVE')
++    record('Installed package and current metadata', module.check(ROOT)[0])
+     with tempfile.TemporaryDirectory(prefix='vibe-metadata-fixtures-') as tmp:
+         target = Path(tmp)
+         names = set(module.REQUIRED + ['project.json', 'templates/TASK_STATE.template.json'])
+@@ -31,7 +30,10 @@
+             dst = target / name
+             dst.parent.mkdir(parents=True, exist_ok=True)
+             shutil.copy2(ROOT / name, dst)
+-        profile = json.loads((target / 'project.json').read_text(encoding='utf-8'))
++        profile = json.loads((target / 'project.json').read_text(encoding='utf-8-sig'))
++        profile['profile_status'] = 'DRAFT'
++        (target / 'project.json').write_text(json.dumps(profile), encoding='utf-8')
++        record('Draft cannot be ready', module.check(target, ready=True)[0], 'profile_status must be ACTIVE')
+         profile.update(project_id='SYNTHETIC-METADATA-ONLY', display_name='Disposable validator fixture', profile_status='ACTIVE')
+         profile['o11'].update(environment='SYNTHETIC-NO-ENDPOINT', module='SYNTHETIC-NO-MODULE', module_style='Reactive')
+         (target / 'project.json').write_text(json.dumps(profile), encoding='utf-8')
+@@ -39,7 +41,7 @@
+         task_path.mkdir(parents=True)
+         for name in ('brief.md', 'spec.md', 'report.md'):
+             (task_path / name).write_text('Synthetic validator metadata only. No feature or authorization.', encoding='utf-8')
+-        state = json.loads((target / 'templates/TASK_STATE.template.json').read_text(encoding='utf-8'))
++        state = json.loads((target / 'templates/TASK_STATE.template.json').read_text(encoding='utf-8-sig'))
+         state.update(project_id=profile['project_id'], task_id=task_path.name, spec_revision='fixture-1.0', delivery_route='O11_ONLY', active_surface='LOCAL', o11_target='MODEL_REVIEW')
+ 
+         def run(**kwargs):
+--- before/templates\AGENTS.workflow.template.md
++++ after/templates\AGENTS.workflow.template.md
+@@ -19,7 +19,7 @@
+ 
+ Before material O11 changes establish an appropriate recoverable checkpoint, inspect affected elements and compare validation with baseline. Read back bounded changes. Record pending, accepted-live, published and runtime evidence separately. After interrupted/unknown writes inspect actual state before retrying. Do not discard/reset/refresh/publish as a probe.
+ 
+-For UI, settle the Visual Contract and platform component mapping before broad implementation. Keep native semantics/behavior and scoped custom CSS where needed. Do not equate fewer custom classes with design fidelity. For business features enforce authorization on the server; prototype role switches are presentation only.
++For UI, require the accepted contract before dependent O11 writes and apply representative-slice evidence conditions in the existing [protocol](../workflow/PROTOCOL.md). Keep native semantics/behavior and scoped custom CSS where needed. Do not equate fewer custom classes with design fidelity. For business features enforce authorization on the server; prototype role switches are presentation only.
+ 
+ Report actual checks as PASS/FAIL/NOT_RUN/BLOCKED/N/A. A PASS requires evidence at the required layer/version. No fabricated logs or scores. Do not downgrade requirements or CompletionTarget to claim DONE. Finish using `templates/EXECUTION_REPORT.template.md` and the selected target's required checks.
+ 
+--- before/tasks\UI-001\spec.md
++++ after/tasks\UI-001\spec.md
+@@ -1,5 +1,5 @@
+ # WHT UI-001 specification
+-Project/task/spec: wht / UI-001 / 0.2. Status: MODEL_VERIFIED, MERGE_ACCEPTED, ACCEPTED_LIVE_VERIFIED; awaiting manual DEV publication. Mode UI_PROTOTYPE, FULL. Route O11_ONLY, LOCAL. O11 target RUNTIME_VERIFIED; Sites N/A.
++Project/task/spec: wht / UI-001 / 0.2. Progress: see [current report](report.md) and [task state](task-state.json). Mode UI_PROTOTYPE, FULL. Route O11_ONLY, LOCAL. O11 target RUNTIME_VERIFIED; Sites N/A.
+ 
+ ## Outcome and boundaries
+ One new isolated prototype Screen and cohesive Blocks; preserve existing WHT_Request business screens and consumers. Synthetic in-memory state only. Request R1 is authoritative. No restoration of historical MyApp features.
+@@ -25,5 +25,5 @@
+ No backend operations added, so transaction/migration tests N/A; screen access and no accidental backend invocation still require verification.
+ Before each slice inspect guards/contracts. After each slice readback and exact validation delta; preserve existing warning identities. Unknown write outcome requires inspection, never blind repeat.
+ 
+-## Open work
+-Representative B01 and full B02 pending model are verified; RV04 checked seven readbacks,1259 assignments,9504 fixture values and53 flows. Remaining work: manual merge result, fresh accepted-live verification, user DEV publication and identified-version runtime/visual QA. Existing Request_COR_PELetter is rejected for reuse because inspected code performs server aggregates/download/delete/upload transactions (evidence/existing-cor-block.json). Do not alter its existing consumers. Publication and runtime QA remain later-stage dependencies, not permission to lower the target.
++## Progress reference and preserved constraints
++Current stage, completed checks and remaining actions are maintained in the [report](report.md) and [task state](task-state.json). Do not replay completed merge/readback based on superseded progress text in this spec. Existing Request_COR_PELetter is rejected for reuse because inspected code performs server aggregates/download/delete/upload transactions (evidence/existing-cor-block.json). Do not alter its existing consumers. Publication and runtime QA remain later-stage dependencies, not permission to lower the target.

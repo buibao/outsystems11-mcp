@@ -1,0 +1,17 @@
+{
+  "result": "PASS",
+  "baseline_count": 1235,
+  "changed_existing_paths": [
+    "docs\\project-context.md",
+    "docs\\setup-status.md",
+    "docs\\verification.md",
+    "scripts\\verify_workflow_setup.py",
+    "templates\\AGENTS.workflow.template.md",
+    "tasks\\UI-001\\spec.md"
+  ],
+  "all_other_existing_files_unchanged": true,
+  "baseline_snapshot": "C:\\Users\\buiba\\AppData\\Local\\Temp\\vscode-agent-codex-sandbox-yeo7Mz\\setup-corrections-_dstl57p\\before.json",
+  "upstream_git_status": " M .gitignore\n",
+  "WHT_state_report_profile_unchanged": true,
+  "WHT_spec_change": "Progress references only; requirements/AC/route/CompletionTarget untouched"
+}

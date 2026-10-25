@@ -1,12 +1,18 @@
 # Project context
 
-## Current workflow binding — 2026-10-23
+## Current binding and source of truth
+
+Read [project profile](../project.json) for the selected project and active task, then its canonical spec, task-state and report. The current recorded binding is WHT / UI-001; [task state](../tasks/UI-001/task-state.json) and [report](../tasks/UI-001/report.md) own progress and remaining work. This pointer is documentation, not a fresh live identity or runtime check. Re-identify live state before dependent operations.
+
+All MyApp/UI-002/CSS-001 observations below are retained history. Their keys, version numbers, permissions, checkpoint waivers and unresolved setup checks must not be inherited by WHT or replayed as current work. Some historical artifact links are no longer present; do not restore removed features to satisfy them. See [setup corrections](execution/SETUP-CORRECTIONS.report.md).
+
+## Historical workflow binding — 2026-10-23
 
 The VibeWorkflow setup created an intentionally unbound DRAFT [project.json](../project.json): business ID/name UNKNOWN, Site/O11 bindings null, no active task. For new work, confirm project/task/route/targets rather than inheriting historical feature context below. The live read-only setup observation is recorded separately in [VIBE-SETUP.report.md](execution/VIBE-SETUP.report.md); it does not select a business target. Existing records are retained as history; no removed feature/project is reactivated. See [quickstart](VIBEWORKFLOW_QUICKSTART.md) for Work/local responsibilities and project switching.
 
-Latest task state (UI-002 v1.1, 2026-10-22): MyApp Reactive key `1e4623ed-64fa-4600-97f5-8a8442332e57`; Development versionSequence 135 independently identified after user manual publish. Figma hierarchy/layout correction is merged and runtime-verified with 34 successful browser checks and12 scenario comparisons. Model validation remains0 errors/4 baseline warnings. Existing Anonymous and Registered roles and the unused OnReady action are preserved. Startup and dialog/focus defects are resolved; root favicon404 and minor visual residuals are disclosed. Final read-only session closed with no pending changes. omlPublish remains disabled. See [UI-002 spec](specs/UI-002-tax-documents-visual-fidelity.md), [report](execution/UI-002.report.md) and [comparison gallery](../artifacts/ui-002/comparison.html); historical task notes below remain prior-session evidence.
+Historical task state (UI-002 v1.1, 2026-10-22): MyApp Reactive key `1e4623ed-64fa-4600-97f5-8a8442332e57`; Development versionSequence 135 independently identified after user manual publish. Figma hierarchy/layout correction is merged and runtime-verified with 34 successful browser checks and12 scenario comparisons. Model validation remains0 errors/4 baseline warnings. Existing Anonymous and Registered roles and the unused OnReady action are preserved. Startup and dialog/focus defects are resolved; root favicon404 and minor visual residuals are disclosed. Final read-only session closed with no pending changes. omlPublish remains disabled. See [UI-002 spec](specs/UI-002-tax-documents-visual-fidelity.md), [report](execution/UI-002.report.md) and [comparison gallery](../artifacts/ui-002/comparison.html); historical task notes below remain prior-session evidence.
 
-## Confirmed observations
+## Historical MyApp observations
 
 | Item | Evidence / value |
 | --- | --- |
@@ -16,7 +22,7 @@ Latest task state (UI-002 v1.1, 2026-10-22): MyApp Reactive key `1e4623ed-64fa-4
 | Style / open state | `Reactive`; `isOpen=true`, `isReference=false` from native `listApps` |
 | Environment UI label | `Development - personal-g4et6y1o.outsystemscloud.com`, independently read with Windows UI Automation from Service Studio |
 | Resident module references | `OutSystemsCharts`, `OutSystemsUI`, `OutSystemsMaps`, `(System)`, `Users` from `runQuery` |
-| Local entities in current live model | `DocumentType`, `DocumentStatus`, both Static Entities for the Tax Documents frontend prototype; 0 ordinary persisted Entities. Bootstrap's empty collection is historical. |
+| Local entities in the recorded MyApp model | `DocumentType`, `DocumentStatus`, both Static Entities for the Tax Documents frontend prototype; 0 ordinary persisted Entities. Bootstrap's empty collection is historical. |
 | Referenced entities in MCP data model | 57; includes `(System)/User`; see [preflight evidence](evidence/preflight.json) |
 | Local server actions | `DoLogin`, `DoLogout`; 23 other server actions are referenced |
 | Local role names | `Anonymous`, `Registered`; future feature role/ownership requirements remain UNKNOWN |
@@ -24,9 +30,9 @@ Latest task state (UI-002 v1.1, 2026-10-22): MyApp Reactive key `1e4623ed-64fa-4
 | Model validation | Bootstrap baseline: 0 errors, 2 warnings. After Tax Documents merge: 0 errors, 3 warnings; new Registered-only Screen has the same Missing roles warning. See [feature evidence](evidence/tax-documents-live.json). |
 | Version field | `listApps.version="0"`; this is not evidence of a published/recoverable platform version |
 
-These are observations of the current setup, not a business architecture specification. Native module identity and the UI environment label were observed independently. Sidecar reads follow the host's current snapshot/pending-copy pointer. Bootstrap created no pending model copy; absence of unrelated pre-existing pending work is UNKNOWN.
+These are historical observations of the MyApp setup, not a business architecture specification. Native module identity and the UI environment label were observed independently. Sidecar reads follow the host's current snapshot/pending-copy pointer. Bootstrap created no pending model copy; absence of unrelated pre-existing pending work is UNKNOWN.
 
-## Unknowns to resolve for the relevant feature
+## Historical bootstrap unknowns (reassess only for the selected task)
 
 | Topic | Status |
 | --- | --- |
@@ -45,7 +51,7 @@ These are observations of the current setup, not a business architecture specifi
 
 The original bootstrap request authorized local guidance/configuration and read-only model inspection. The user subsequently authorized the Tax Documents UI prototype and its normal manual merge through the full supplied prompt. This task is merged and read back from live; publish, runtime data access, migrations and production behavior were not part of it. See [feature report](tax-documents-preview.md).
 
-Current feature objects: `MainFlow/TaxDocumentsPreview`, 9 reusable Blocks, 6 transient view-model Structures and native Script `TaxDocumentsPrototype`. The user confirmed manual Compare and Merge and waived a separate checkpoint for this prototype. The business architecture, backend rules and future deployment authority remain unestablished; presentation-only reviewer mode is not authorization.
+Historical MyApp feature objects: `MainFlow/TaxDocumentsPreview`, 9 reusable Blocks, 6 transient view-model Structures and native Script `TaxDocumentsPrototype`. The user confirmed manual Compare and Merge and waived a separate checkpoint for this prototype. The business architecture, backend rules and future deployment authority remain unestablished; presentation-only reviewer mode is not authorization.
 
 CSS-001 corrective spec version 1.1 was subsequently authorized with CompletionTarget MERGED. Actual merge succeeded; fresh accepted-live readback found 0 errors / the same 3 warnings. Shared feature CSS now lives in MyApp theme under `.tax-documents-preview`, with Screen CSS empty, native btn classes, Content/Tag and native Popup inside existing Blocks. Theme prefix, primary palette/base theme and fixture/action contracts were preserved. See [execution report](execution/CSS-001.report.md). Publish/runtime remain NOT_RUN and [DEF-001](defects/DEF-001-tax-preview-reduce.md) remains OPEN. A later host restart interrupted acknowledgement of the read-only checkout's closure; current post-restart module/session state needs re-identification before further OML operations.
 
